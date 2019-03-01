@@ -1,2 +1,6 @@
 *.class
 *.log
+keys.jpg
+rootkey.csv
+openleasekey.pem
+openleasekey.ppk
