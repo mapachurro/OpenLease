@@ -4,7 +4,7 @@
 		module="openlease-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190304221011"
+		publication="20190305101102"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

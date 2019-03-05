@@ -13,4 +13,12 @@ class HomeController @Inject()(cc: ControllerComponents)
   def index = Action {
     Ok(views.html.index())
   }
+
+  def newcontract = Action {
+    Ok(views.html.newcontract())
+  }
+
+  def signup = Action {
+    Ok(views.html.signup())
+  }
 }

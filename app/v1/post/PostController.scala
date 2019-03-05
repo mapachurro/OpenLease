@@ -38,6 +38,20 @@ class PostController @Inject()(cc: PostControllerComponents)(
     }
   }
 
+  def newcontract: Action[AnyContent] = PostAction.async { implicit request =>
+    logger.trace("/newcontract: ")
+    postResourceHandler.find.map { posts =>
+      Ok(Json.toJson(posts))
+    }
+  }
+
+  def signup: Action[AnyContent] = PostAction.async { implicit request =>
+    logger.trace("/signup: ")
+    postResourceHandler.find.map { posts =>
+      Ok(Json.toJson(posts))
+    }
+  }
+
   def process: Action[AnyContent] = PostAction.async { implicit request =>
     logger.trace("process: ")
     processJsonPost()

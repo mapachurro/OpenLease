@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\v1\post\PostRouter.scala:31:30: illegal start of simple pattern[0m
+[0m[[0m[31merror[0m] [0m[0m    case GET (p"/"newcontract) =>[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\v1\post\PostRouter.scala:34:25: illegal start of simple pattern[0m
+[0m[[0m[31merror[0m] [0m[0m    case GET (p"/"signup) =>[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
