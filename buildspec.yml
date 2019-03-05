@@ -5,7 +5,7 @@ phases:
     commands:
 
   build:
-    commands:
+    commands: sbt run
 
 artifacts:
   files:
