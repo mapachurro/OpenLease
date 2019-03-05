@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Owner/Resilio Sync/Synced Docs/Academic/CWRU Bootcamp/Projects/OpenLease/conf/routes
-// @DATE:Tue Mar 05 10:21:35 EST 2019
+// @DATE:Tue Mar 05 12:53:14 EST 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -17,6 +17,26 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:8
+    def newcontract: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.newcontract",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "newcontract"})
+        }
+      """
+    )
+  
+    // @LINE:10
+    def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.signup",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signup"})
+        }
+      """
+    )
   
     // @LINE:1
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(

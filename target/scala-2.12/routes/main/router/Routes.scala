@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Owner/Resilio Sync/Synced Docs/Academic/CWRU Bootcamp/Projects/OpenLease/conf/routes
-// @DATE:Tue Mar 05 10:21:35 EST 2019
+// @DATE:Tue Mar 05 12:53:14 EST 2019
 
 package router
 
@@ -46,6 +46,8 @@ class Routes(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
     prefixed_v1_post_PostRouter_0_1.router.documentation,
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """newcontract""", """controllers.HomeController.newcontract"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.HomeController.signup"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -92,6 +94,42 @@ class Routes(
     )
   )
 
+  // @LINE:8
+  private[this] lazy val controllers_HomeController_newcontract3_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("newcontract")))
+  )
+  private[this] lazy val controllers_HomeController_newcontract3_invoker = createInvoker(
+    HomeController_1.newcontract,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "newcontract",
+      Nil,
+      "GET",
+      this.prefix + """newcontract""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:10
+  private[this] lazy val controllers_HomeController_signup4_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signup")))
+  )
+  private[this] lazy val controllers_HomeController_signup4_invoker = createInvoker(
+    HomeController_1.signup,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "signup",
+      Nil,
+      "GET",
+      this.prefix + """signup""",
+      """""",
+      Seq()
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -108,6 +146,18 @@ class Routes(
     case controllers_Assets_at2_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
         controllers_Assets_at2_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:8
+    case controllers_HomeController_newcontract3_route(params@_) =>
+      call { 
+        controllers_HomeController_newcontract3_invoker.call(HomeController_1.newcontract)
+      }
+  
+    // @LINE:10
+    case controllers_HomeController_signup4_route(params@_) =>
+      call { 
+        controllers_HomeController_signup4_invoker.call(HomeController_1.signup)
       }
   }
 }

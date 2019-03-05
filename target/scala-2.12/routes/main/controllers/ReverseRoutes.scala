@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Owner/Resilio Sync/Synced Docs/Academic/CWRU Bootcamp/Projects/OpenLease/conf/routes
-// @DATE:Tue Mar 05 10:21:35 EST 2019
+// @DATE:Tue Mar 05 12:53:14 EST 2019
 
 import play.api.mvc.Call
 
@@ -16,6 +16,18 @@ package controllers {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:8
+    def newcontract(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "newcontract")
+    }
+  
+    // @LINE:10
+    def signup(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "signup")
+    }
   
     // @LINE:1
     def index(): Call = {

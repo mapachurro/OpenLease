@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Owner/Resilio Sync/Synced Docs/Academic/CWRU Bootcamp/Projects/OpenLease/conf/routes
-// @DATE:Tue Mar 05 10:21:35 EST 2019
+// @DATE:Tue Mar 05 12:53:14 EST 2019
 
 package controllers;
 
