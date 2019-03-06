@@ -4,7 +4,7 @@
 		module="play-scala-rest-api-example_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20190305101610"
+		publication="20190305203539"
 	>
 		<description>
 		play-scala-rest-api-example
@@ -66,5 +66,7 @@
 		<dependency org="org.scalatestplus.play" name="scalatestplus-play_2.12" rev="4.0.1" conf="test->default(compile)"/>
 		<dependency org="io.gatling.highcharts" name="gatling-charts-highcharts" rev="3.0.1.1" conf="test->default(compile)"/>
 		<dependency org="io.gatling" name="gatling-test-framework" rev="3.0.1.1" conf="test->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ahc-ws_2.12" rev="2.7.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ehcache_2.12" rev="2.7.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
