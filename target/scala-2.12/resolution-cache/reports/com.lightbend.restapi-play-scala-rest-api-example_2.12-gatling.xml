@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="gatling"
 		confs="compile, runtime, test, provided, optional, gatling, it, gatling-it, web-assets, web-assets-test, web-plugin, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, it-internal, plugin, pom, scala-tool, scalafmt, docs"
-		date="20190305203539"/>
+		date="20190306142356"/>
 	<dependencies>
 		<module organisation="io.gatling" name="gatling-test-framework">
 			<revision name="3.0.1.1" status="release" pubdate="20181123054017" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="191">
@@ -278,14 +278,6 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="1.0.6" status="release" pubdate="20161101102105" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
-				<metadata-artifact status="no" details="" size="3024" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.pom"/>
-				<evicted-by rev="1.1.0"/>
-				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="3.0.5"/>
-				<artifacts>
-				</artifacts>
-			</revision>
 			<revision name="1.1.0" status="release" pubdate="20180220125820" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="3305" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.0/scala-xml_2.12-1.1.0.pom"/>
@@ -293,6 +285,12 @@
 				<caller organisation="com.typesafe.play" name="twirl-api_2.12" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.4.0"/>
 				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="3.0.5"/>
 				<caller organisation="com.typesafe.play" name="play-ws-standalone-xml_2.12" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="2.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.0.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.1.0"/>
+				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="3.0.5"/>
 				<artifacts>
 				</artifacts>
 			</revision>
@@ -755,65 +753,6 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.12.7" status="release" pubdate="20180927043203" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2814" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/Owner/.sbt/preloaded/org.scala-lang/scala-reflect/2.12.7/ivys/ivy.xml"/>
-				<evicted-by rev="2.12.8"/>
-				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
-				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
-				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
-				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
-				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
-				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-			<revision name="2.12.8" status="release" pubdate="20181204051524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
-				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="2863" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.pom"/>
-				<caller organisation="com.typesafe.play" name="play_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.7.0"/>
-				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
-				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.7.0"/>
-				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
-				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
-				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
-				<caller organisation="net.codingwell" name="scala-guice_2.12" conf="default, compile, runtime, master" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="4.2.1"/>
-				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
-				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
-				<artifacts>
-					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3645095" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.8.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-			<revision name="2.12.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
-				<evicted-by rev="2.12.8"/>
-				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-			<revision name="2.12.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
-				<evicted-by rev="2.12.8"/>
-				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-			<revision name="2.12.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<evicted-by rev="2.12.8"/>
-				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
-				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
-				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-			<revision name="2.12.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<evicted-by rev="2.12.8"/>
-				<caller organisation="net.codingwell" name="scala-guice_2.12" conf="default, compile, runtime, master" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="4.2.1"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="io.gatling" name="gatling-netty-util">
 			<revision name="3.0.1.1" status="release" pubdate="20181123053923" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="139">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
@@ -900,24 +839,24 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-ehcache_2.12">
-			<revision name="2.7.0" status="release" pubdate="20190130172456" resolver="public" artresolver="public" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="71">
+			<revision name="2.7.0" status="release" pubdate="20190130172456" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="71">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="2727" time="208" location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-ehcache_2.12\ivy-2.7.0.xml" searched="true" original-local-location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-ehcache_2.12\ivy-2.7.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.pom"/>
+				<metadata-artifact status="no" details="" size="3758" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-ehcache_2.12\ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.pom"/>
 				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.12" conf="test, compile, runtime, gatling" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-ehcache_2.12" type="jar" ext="jar" status="successful" details="" size="36908" time="415" location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-ehcache_2.12\jars\play-ehcache_2.12-2.7.0.jar">
+					<artifact name="play-ehcache_2.12" type="jar" ext="jar" status="no" details="" size="36908" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-ehcache_2.12\jars\play-ehcache_2.12-2.7.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-cache_2.12">
-			<revision name="2.7.0" status="release" pubdate="20190130172503" resolver="public" artresolver="public" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
+			<revision name="2.7.0" status="release" pubdate="20190130172503" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.0/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="2866" time="230" location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-cache_2.12\ivy-2.7.0.xml" searched="true" original-local-location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-cache_2.12\ivy-2.7.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.pom"/>
+				<metadata-artifact status="no" details="" size="3677" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-cache_2.12\ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.pom"/>
 				<caller organisation="com.typesafe.play" name="play-ehcache_2.12" conf="default, compile, runtime, master" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="2.7.0"/>
 				<artifacts>
-					<artifact name="play-cache_2.12" type="jar" ext="jar" status="successful" details="" size="38829" time="366" location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-cache_2.12\jars\play-cache_2.12-2.7.0.jar">
+					<artifact name="play-cache_2.12" type="jar" ext="jar" status="no" details="" size="38829" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe.play\play-cache_2.12\jars\play-cache_2.12-2.7.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.jar"/>
 					</artifact>
 				</artifacts>
@@ -1041,12 +980,12 @@
 			</revision>
 		</module>
 		<module organisation="org.ehcache" name="jcache">
-			<revision name="1.0.1" status="release" pubdate="20141205103412" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
+			<revision name="1.0.1" status="release" pubdate="20141205103412" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="6543" time="122" location="C:\Users\Owner\.ivy2\cache\org.ehcache\jcache\ivy-1.0.1.xml" searched="true" original-local-location="C:\Users\Owner\.ivy2\cache\org.ehcache\jcache\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.pom"/>
+				<metadata-artifact status="no" details="" size="4653" time="0" location="C:\Users\Owner\.ivy2\cache\org.ehcache\jcache\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.pom"/>
 				<caller organisation="com.typesafe.play" name="play-ehcache_2.12" conf="default, compile, runtime, master" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.7.0"/>
 				<artifacts>
-					<artifact name="jcache" type="jar" ext="jar" status="successful" details="" size="45759" time="286" location="C:\Users\Owner\.ivy2\cache\org.ehcache\jcache\jars\jcache-1.0.1.jar">
+					<artifact name="jcache" type="jar" ext="jar" status="no" details="" size="45759" time="0" location="C:\Users\Owner\.ivy2\cache\org.ehcache\jcache\jars\jcache-1.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -1067,13 +1006,13 @@
 			</revision>
 		</module>
 		<module organisation="net.sf.ehcache" name="ehcache">
-			<revision name="2.10.6" status="release" pubdate="20181023084414" resolver="public" artresolver="public" homepage="http://ehcache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
+			<revision name="2.10.6" status="release" pubdate="20181023084414" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ehcache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
 				<license name="The Apache Software License, Version 2.0" url="src/assemble/EHCACHE-CORE-LICENSE.txt"/>
-				<metadata-artifact status="successful" details="" size="19547" time="168" location="C:\Users\Owner\.ivy2\cache\net.sf.ehcache\ehcache\ivy-2.10.6.xml" searched="true" original-local-location="C:\Users\Owner\.ivy2\cache\net.sf.ehcache\ehcache\ivy-2.10.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.pom"/>
+				<metadata-artifact status="no" details="" size="15173" time="0" location="C:\Users\Owner\.ivy2\cache\net.sf.ehcache\ehcache\ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.pom"/>
 				<caller organisation="org.ehcache" name="jcache" conf="compile, runtime" rev="2.8.3" rev-constraint-default="2.8.3" rev-constraint-dynamic="2.8.3" callerrev="1.0.1"/>
 				<caller organisation="com.typesafe.play" name="play-ehcache_2.12" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.7.0"/>
 				<artifacts>
-					<artifact name="ehcache" type="jar" ext="jar" status="successful" details="" size="10237841" time="1130" location="C:\Users\Owner\.ivy2\cache\net.sf.ehcache\ehcache\jars\ehcache-2.10.6.jar">
+					<artifact name="ehcache" type="jar" ext="jar" status="no" details="" size="10237841" time="0" location="C:\Users\Owner\.ivy2\cache\net.sf.ehcache\ehcache\jars\ehcache-2.10.6.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar"/>
 					</artifact>
 				</artifacts>
@@ -2359,6 +2298,63 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.8" status="release" pubdate="20181204051524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2863" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.pom"/>
+				<caller organisation="com.typesafe.play" name="play_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.7.0"/>
+				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.7.0"/>
+				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
+				<caller organisation="net.codingwell" name="scala-guice_2.12" conf="default, compile, runtime, master" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="4.2.1"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3645095" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.8/scala-reflect-2.12.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.12.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="2.12.8"/>
+				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="2.12.8"/>
+				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.8"/>
+				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
+				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.8"/>
+				<caller organisation="org.scalatest" name="scalatest_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.8"/>
+				<caller organisation="net.codingwell" name="scala-guice_2.12" conf="default, compile, runtime, master" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="4.2.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.play" name="play-functional_2.12">
 			<revision name="2.7.0" status="release" pubdate="20190116161051" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
@@ -2816,7 +2812,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.12.8" status="release" pubdate="20181204051556" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="1">
+			<revision name="2.12.8" status="release" pubdate="20181204051556" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default(compile)" position="1">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2688" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.pom"/>
 				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
@@ -2883,7 +2879,7 @@
 				<caller organisation="io.gatling" name="gatling-charts" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
 				<caller organisation="com.typesafe.play" name="play-ehcache_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.7.0"/>
 				<caller organisation="com.typesafe.play" name="play-json_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.7.0"/>
-				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.12" conf="test, compile, runtime, gatling" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.0-SNAPSHOT"/>
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.12" conf="test, compile, runtime, gatling" rev="2.12" rev-constraint-default="2.12" rev-constraint-dynamic="2.12" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="io.gatling" name="gatling-http" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
 				<caller organisation="io.gatling" name="gatling-jms" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
 				<caller organisation="io.gatling" name="jsonpath_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.6.14"/>
@@ -2896,9 +2892,20 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="2.12.7" status="release" pubdate="20180927043542" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="-1">
-				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2642" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/Owner/.sbt/preloaded/org.scala-lang/scala-library/2.12.7/ivys/ivy.xml"/>
+			<revision name="2.12.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="2.12.8"/>
+				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
+				<caller organisation="com.github.scopt" name="scopt_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.7.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="2.12.8"/>
+				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
 				<evicted-by rev="2.12.8"/>
 				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="1.1.1"/>
 				<caller organisation="io.gatling" name="gatling-jdbc" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
@@ -2930,26 +2937,12 @@
 				<caller organisation="io.gatling" name="gatling-redis" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
 				<caller organisation="io.gatling" name="gatling-charts" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
 				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
-				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.12" conf="test, compile, runtime, gatling" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="io.gatling" name="gatling-http" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
 				<caller organisation="io.gatling" name="gatling-jms" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
 				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
 				<caller organisation="io.gatling" name="jsonpath_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.6.14"/>
 				<caller organisation="io.gatling" name="gatling-netty-util" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
 				<caller organisation="org.json4s" name="json4s-ast_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.6.2"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-			<revision name="2.12.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<evicted-by rev="2.12.8"/>
-				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
-				<caller organisation="com.github.scopt" name="scopt_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.7.0"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-			<revision name="2.12.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<evicted-by rev="2.12.8"/>
-				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
 				<artifacts>
 				</artifacts>
 			</revision>
@@ -2985,6 +2978,19 @@
 				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
 				<caller organisation="org.scalactic" name="scalactic_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.5"/>
 				<caller organisation="net.debasishg" name="redisclient_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12" evicted="latest-revision" evicted-reason="" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<evicted-by rev="2.12.8"/>
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.12" conf="test, compile, runtime, gatling" rev="2.12" rev-constraint-default="2.12" rev-constraint-dynamic="2.12" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.japgolly.scalajs-react" name="core_2.12">
+			<revision name="1.4.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.12" conf="test, compile, runtime, gatling" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 				</artifacts>
 			</revision>

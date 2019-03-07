@@ -5,14 +5,32 @@
 [0m[[0m[0mdebug[0m] [0m[0m	refresh = false[0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'compile'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]})[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0m	found org.scala-lang#scala-library;2.12.7 in sbt-chain[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[2.12.7] org.scala-lang#scala-library;2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12 {compile=[default(compile)]})[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12 {compile=[default(compile)]})[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\org.scala-lang\scala-library\2.12\ivys\ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.scala-lang#scala-library;2.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12/scala-library-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12/scala-library-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public: no ivy file found for org.scala-lang#scala-library;2.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.sbt\preloaded\org.scala-lang\scala-library\2.12\ivys\ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded-ivy: no ivy file found for org.scala-lang#scala-library;2.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried file:/C:/Users/Owner/.sbt/preloaded/org/scala-lang/scala-library/2.12/scala-library-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded: no ivy file found for org.scala-lang#scala-library;2.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo.typesafe.com/typesafe/releases/org/scala-lang/scala-library/2.12/scala-library-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/releases/org/scala-lang/scala-library/2.12/scala-library-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	typesafe-releases: no ivy file found for org.scala-lang#scala-library;2.12[0m
+[0m[[0m[33mwarn[0m] [0m[0m	module not found: org.scala-lang#scala-library;2.12[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  C:\Users\Owner\.ivy2\local\org.scala-lang\scala-library\2.12\ivys\ivy.xml[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== public: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12/scala-library-2.12.pom[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local-preloaded-ivy: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  C:\Users\Owner\.sbt\preloaded\org.scala-lang\scala-library\2.12\ivys\ivy.xml[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local-preloaded: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  file:/C:/Users/Owner/.sbt/preloaded/org/scala-lang/scala-library/2.12/scala-library-2.12.pom[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== typesafe-releases: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  https://repo.typesafe.com/typesafe/releases/org/scala-lang/scala-library/2.12/scala-library-2.12.pom[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-api_2.12;1.4.0 {compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: com.typesafe.play#twirl-api_2.12;1.4.0[0m
@@ -26,8 +44,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	[2.12.8] org.scala-lang#scala-library;2.12.8[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#twirl-api_2.12;1.4.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#twirl-api_2.12;1.4.0->org.scala-lang#scala-library;2.12.8 [compile->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#twirl-api_2.12;1.4.0->org.scala-lang#scala-library;2.12.8 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#twirl-api_2.12;1.4.0->org.scala-lang#scala-library;2.12.8 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#twirl-api_2.12;1.4.0->org.scala-lang#scala-library;2.12.8 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#twirl-api_2.12;1.4.0->org.scala-lang#scala-library;2.12.8 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#twirl-api_2.12;1.4.0->org.scala-lang#scala-library;2.12.8 [compile->runtime][0m
@@ -1017,20 +1033,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ahc-ws_2.12;2.7.0 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-ehcache_2.12;2.7.0 {compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#play-ehcache_2.12;2.7.0 {compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\com.typesafe.play\play-ehcache_2.12\2.7.0\ivys\ivy.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for com.typesafe.play#play-ehcache_2.12;2.7.0[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: found md file for com.typesafe.play#play-ehcache_2.12;2.7.0[0m
-[0m[[0m[0mdebug[0m] [0m[0m		=> https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.pom (2.7.0)[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.pom ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.pom.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.play#play-ehcache_2.12;2.7.0!play-ehcache_2.12.pom(pom.original) (208ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\com.typesafe.play\play-ehcache_2.12\2.7.0\jars\play-ehcache_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	found com.typesafe.play#play-ehcache_2.12;2.7.0 in public[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: com.typesafe.play#play-ehcache_2.12;2.7.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m	found com.typesafe.play#play-ehcache_2.12;2.7.0 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[2.7.0] com.typesafe.play#play-ehcache_2.12;2.7.0[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->compile][0m
@@ -1040,20 +1044,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->com.typesafe.play#play_2.12;2.7.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->com.typesafe.play#play-cache_2.12;2.7.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-cache_2.12;2.7.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#play-cache_2.12;2.7.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\com.typesafe.play\play-cache_2.12\2.7.0\ivys\ivy.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for com.typesafe.play#play-cache_2.12;2.7.0[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: found md file for com.typesafe.play#play-cache_2.12;2.7.0[0m
-[0m[[0m[0mdebug[0m] [0m[0m		=> https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.pom (2.7.0)[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.pom ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.pom.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.play#play-cache_2.12;2.7.0!play-cache_2.12.pom(pom.original) (230ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\com.typesafe.play\play-cache_2.12\2.7.0\jars\play-cache_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	found com.typesafe.play#play-cache_2.12;2.7.0 in public[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: com.typesafe.play#play-cache_2.12;2.7.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m	found com.typesafe.play#play-cache_2.12;2.7.0 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[2.7.0] com.typesafe.play#play-cache_2.12;2.7.0[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->com.typesafe.play#play-cache_2.12;2.7.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-cache_2.12;2.7.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
@@ -1068,58 +1060,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-cache_2.12;2.7.0->com.typesafe.play#play_2.12;2.7.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->net.sf.ehcache#ehcache;2.10.6 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: net.sf.ehcache#ehcache;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: net.sf.ehcache#ehcache;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\net.sf.ehcache\ehcache\2.10.6\ivys\ivy.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for net.sf.ehcache#ehcache;2.10.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: found md file for net.sf.ehcache#ehcache;2.10.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m		=> https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.pom (2.10.6)[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.pom ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.pom.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] net.sf.ehcache#ehcache;2.10.6!ehcache.pom(pom.original) (168ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: net.sf.ehcache#ehcache-root;2.10.6 {}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: net.sf.ehcache#ehcache-root;2.10.6 {}[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\net.sf.ehcache\ehcache-root\2.10.6\ivys\ivy.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for net.sf.ehcache#ehcache-root;2.10.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: found md file for net.sf.ehcache#ehcache-root;2.10.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m		=> https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.pom (2.10.6)[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.pom ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.pom.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] net.sf.ehcache#ehcache-root;2.10.6!ehcache-root.pom(pom.original) (132ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: net.sf.ehcache#ehcache-parent;2.22 {}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: net.sf.ehcache#ehcache-parent;2.22 {}[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\net.sf.ehcache\ehcache-parent\2.22\ivys\ivy.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for net.sf.ehcache#ehcache-parent;2.22[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: found md file for net.sf.ehcache#ehcache-parent;2.22[0m
-[0m[[0m[0mdebug[0m] [0m[0m		=> https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.pom (2.22)[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.pom ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.pom.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] net.sf.ehcache#ehcache-parent;2.22!ehcache-parent.pom(pom.original) (155ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\net.sf.ehcache\ehcache-parent\2.22\jars\ehcache-parent.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.sbt\preloaded\net.sf.ehcache\ehcache-parent\2.22\jars\ehcache-parent.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried file:/C:/Users/Owner/.sbt/preloaded/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-parent/2.22/ehcache-parent-2.22.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\net.sf.ehcache\ehcache-root\2.10.6\jars\ehcache-root.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.sbt\preloaded\net.sf.ehcache\ehcache-root\2.10.6\jars\ehcache-root.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried file:/C:/Users/Owner/.sbt/preloaded/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-root/2.10.6/ehcache-root-2.10.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\net.sf.ehcache\ehcache\2.10.6\jars\ehcache.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	found net.sf.ehcache#ehcache;2.10.6 in public[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: net.sf.ehcache#ehcache;2.10.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m	found net.sf.ehcache#ehcache;2.10.6 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->net.sf.ehcache#ehcache;2.10.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.sf.ehcache#ehcache;2.10.6->org.slf4j#slf4j-api;1.7.25 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.sf.ehcache#ehcache;2.10.6->org.slf4j#slf4j-api;1.7.25 [compile->compile(*)][0m
@@ -1129,41 +1071,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.sf.ehcache#ehcache;2.10.6->org.slf4j#slf4j-api;1.7.25 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->org.ehcache#jcache;1.0.1 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.ehcache#jcache;1.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: org.ehcache#jcache;1.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\org.ehcache\jcache\1.0.1\ivys\ivy.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.ehcache#jcache;1.0.1[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: found md file for org.ehcache#jcache;1.0.1[0m
-[0m[[0m[0mdebug[0m] [0m[0m		=> https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.pom (1.0.1)[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.pom ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.pom.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] org.ehcache#jcache;1.0.1!jcache.pom(pom.original) (122ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.ehcache#ehcache-jcache-parent;1.0.1 {}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: org.ehcache#ehcache-jcache-parent;1.0.1 {}[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\org.ehcache\ehcache-jcache-parent\1.0.1\ivys\ivy.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.ehcache#ehcache-jcache-parent;1.0.1[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: found md file for org.ehcache#ehcache-jcache-parent;1.0.1[0m
-[0m[[0m[0mdebug[0m] [0m[0m		=> https://repo1.maven.org/maven2/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.pom (1.0.1)[0m
-[0m[[0m[0mdebug[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.pom ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.pom.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.pom[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[SUCCESSFUL ] org.ehcache#ehcache-jcache-parent;1.0.1!ehcache-jcache-parent.pom(pom.original) (111ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\org.ehcache\ehcache-jcache-parent\1.0.1\jars\ehcache-jcache-parent.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.sbt\preloaded\org.ehcache\ehcache-jcache-parent\1.0.1\jars\ehcache-jcache-parent.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried file:/C:/Users/Owner/.sbt/preloaded/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo.typesafe.com/typesafe/releases/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/releases/org/ehcache/ehcache-jcache-parent/1.0.1/ehcache-jcache-parent-1.0.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\org.ehcache\jcache\1.0.1\jars\jcache.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	found org.ehcache#jcache;1.0.1 in public[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.ehcache#jcache;1.0.1[0m
+[0m[[0m[0mdebug[0m] [0m[0m	found org.ehcache#jcache;1.0.1 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->org.ehcache#jcache;1.0.1 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.ehcache#jcache;1.0.1->net.sf.ehcache#ehcache;2.8.3 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.ehcache#jcache;1.0.1->net.sf.ehcache#ehcache;2.10.6 [compile->master(compile)][0m
@@ -1200,13 +1109,36 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.github.japgolly.scalajs-react#core_2.12;1.4.0 {compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: com.github.japgolly.scalajs-react#core_2.12;1.4.0 {compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\com.github.japgolly.scalajs-react\core_2.12\1.4.0\ivys\ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for com.github.japgolly.scalajs-react#core_2.12;1.4.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/com/github/japgolly/scalajs-react/core_2.12/1.4.0/core_2.12-1.4.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/github/japgolly/scalajs-react/core_2.12/1.4.0/core_2.12-1.4.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public: no ivy file found for com.github.japgolly.scalajs-react#core_2.12;1.4.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.sbt\preloaded\com.github.japgolly.scalajs-react\core_2.12\1.4.0\ivys\ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded-ivy: no ivy file found for com.github.japgolly.scalajs-react#core_2.12;1.4.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried file:/C:/Users/Owner/.sbt/preloaded/com/github/japgolly/scalajs-react/core_2.12/1.4.0/core_2.12-1.4.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded: no ivy file found for com.github.japgolly.scalajs-react#core_2.12;1.4.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo.typesafe.com/typesafe/releases/com/github/japgolly/scalajs-react/core_2.12/1.4.0/core_2.12-1.4.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/releases/com/github/japgolly/scalajs-react/core_2.12/1.4.0/core_2.12-1.4.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	typesafe-releases: no ivy file found for com.github.japgolly.scalajs-react#core_2.12;1.4.0[0m
+[0m[[0m[33mwarn[0m] [0m[0m	module not found: com.github.japgolly.scalajs-react#core_2.12;1.4.0[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  C:\Users\Owner\.ivy2\local\com.github.japgolly.scalajs-react\core_2.12\1.4.0\ivys\ivy.xml[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== public: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  https://repo1.maven.org/maven2/com/github/japgolly/scalajs-react/core_2.12/1.4.0/core_2.12-1.4.0.pom[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local-preloaded-ivy: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  C:\Users\Owner\.sbt\preloaded\com.github.japgolly.scalajs-react\core_2.12\1.4.0\ivys\ivy.xml[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local-preloaded: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  file:/C:/Users/Owner/.sbt/preloaded/com/github/japgolly/scalajs-react/core_2.12/1.4.0/core_2.12-1.4.0.pom[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== typesafe-releases: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  https://repo.typesafe.com/typesafe/releases/com/github/japgolly/scalajs-react/core_2.12/1.4.0/core_2.12-1.4.0.pom[0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->compile][0m
@@ -2000,14 +1932,12 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'test'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [test][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->compile][0m
@@ -2801,6 +2731,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-test_2.12;2.7.0 [test->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.12;2.7.0 {test=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: com.typesafe.play#play-test_2.12;2.7.0[0m
@@ -3902,8 +3833,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	found com.dongxiguo#fastring_2.12;1.0.0 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.dongxiguo#fastring_2.12;1.0.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.1 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.1 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-reflect;2.12.1 [compile->master(compile)][0m
@@ -3915,8 +3844,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	found io.suzaku#boopickle_2.12;1.3.0 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->io.suzaku#boopickle_2.12;1.3.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->org.typelevel#spire-macros_2.12;0.16.0 [compile->master(compile)][0m
@@ -3929,8 +3856,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.6 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mexcluding dependency: org.typelevel#machinist_2.12;0.6.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
 [0m[[0m[0mdebug[0m] [0m[0mexcluding dependency: org.typelevel#algebra_2.12;1.0.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.softwaremill.quicklens#quicklens_2.12;1.4.11 [compile->master(compile)][0m
@@ -3939,8 +3864,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	found com.softwaremill.quicklens#quicklens_2.12;1.4.11 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.softwaremill.quicklens#quicklens_2.12;1.4.11 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-reflect;2.12.3 [compile->master(compile)][0m
@@ -4083,8 +4006,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	found com.github.scopt#scopt_2.12;3.7.0 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->com.github.scopt#scopt_2.12;3.7.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->io.gatling#jsonpath_2.12;0.6.14 [compile->master(compile)][0m
@@ -4093,8 +4014,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	found io.gatling#jsonpath_2.12;0.6.14 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->io.gatling#jsonpath_2.12;0.6.14 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.6 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang.modules#scala-parser-combinators_2.12;1.1.1 [compile->master(compile)][0m
@@ -4402,8 +4321,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	found org.scala-lang.modules#scala-xml_2.12;1.1.1 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-http;3.0.1.1->org.scala-lang.modules#scala-xml_2.12;1.1.1 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.6 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-http;3.0.1.1->org.scala-lang.modules#scala-xml_2.12;1.1.1 [compile->runtime(*)][0m
@@ -4455,8 +4372,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	found net.debasishg#redisclient_2.12;3.7 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-redis;3.0.1.1->net.debasishg#redisclient_2.12;3.7 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->commons-pool#commons-pool;1.6 [compile->master(compile)][0m
@@ -4564,8 +4479,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	found org.scala-lang.modules#scala-swing_2.12;2.0.3 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-recorder;3.0.1.1->org.scala-lang.modules#scala-swing_2.12;2.0.3 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-recorder;3.0.1.1->com.fasterxml.jackson.core#jackson-databind;2.9.7 [compile->master(compile)][0m
@@ -4732,10 +4645,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [test][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->compile][0m
@@ -5529,6 +5439,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-test_2.12;2.7.0 [test->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-test_2.12;2.7.0 [test->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-test_2.12;2.7.0 [test->compile][0m
@@ -6375,8 +6286,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.dongxiguo#fastring_2.12;1.0.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.dongxiguo#fastring_2.12;1.0.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.1 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.1 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-reflect;2.12.1 [compile->master(compile)][0m
@@ -6385,8 +6294,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->io.suzaku#boopickle_2.12;1.3.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->io.suzaku#boopickle_2.12;1.3.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->org.typelevel#spire-macros_2.12;0.16.0 [compile->master(compile)][0m
@@ -6396,15 +6303,11 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.6 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mexcluding dependency: org.typelevel#machinist_2.12;0.6.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
 [0m[[0m[0mdebug[0m] [0m[0mexcluding dependency: org.typelevel#algebra_2.12;1.0.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.softwaremill.quicklens#quicklens_2.12;1.4.11 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.softwaremill.quicklens#quicklens_2.12;1.4.11 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-reflect;2.12.3 [compile->master(compile)][0m
@@ -6460,15 +6363,11 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->com.github.scopt#scopt_2.12;3.7.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->com.github.scopt#scopt_2.12;3.7.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->io.gatling#jsonpath_2.12;0.6.14 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->io.gatling#jsonpath_2.12;0.6.14 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.6 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang.modules#scala-parser-combinators_2.12;1.1.1 [compile->master(compile)][0m
@@ -6576,8 +6475,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-http;3.0.1.1->org.scala-lang.modules#scala-xml_2.12;1.1.1 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-http;3.0.1.1->org.scala-lang.modules#scala-xml_2.12;1.1.1 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.6 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-app;3.0.1.1->io.gatling#gatling-jms;3.0.1.1 [compile->master(compile)][0m
@@ -6609,8 +6506,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-redis;3.0.1.1->net.debasishg#redisclient_2.12;3.7 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-redis;3.0.1.1->net.debasishg#redisclient_2.12;3.7 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->commons-pool#commons-pool;1.6 [compile->master(compile)][0m
@@ -6642,8 +6537,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-recorder;3.0.1.1->org.scala-lang.modules#scala-swing_2.12;2.0.3 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-recorder;3.0.1.1->org.scala-lang.modules#scala-swing_2.12;2.0.3 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-recorder;3.0.1.1->com.fasterxml.jackson.core#jackson-databind;2.9.7 [compile->master(compile)][0m
@@ -7029,10 +6922,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [it][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->compile][0m
@@ -7826,15 +7716,13 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'gatling-it'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [gatling-it][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [it][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->compile][0m
@@ -8628,6 +8516,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'web-assets'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [web-assets][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'web-assets-test'[0m
@@ -8656,10 +8545,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'compile-internal'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile-internal][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->compile][0m
@@ -9453,16 +9339,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [optional][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [provided][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'runtime-internal'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [runtime-internal][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->compile][0m
@@ -10256,16 +10140,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [optional][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [test-internal][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [test][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->compile][0m
@@ -11059,6 +10941,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-test_2.12;2.7.0 [test->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-test_2.12;2.7.0 [test->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-test_2.12;2.7.0 [test->compile][0m
@@ -11905,8 +11788,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.dongxiguo#fastring_2.12;1.0.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.dongxiguo#fastring_2.12;1.0.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.1 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.1 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.dongxiguo#fastring_2.12;1.0.0->org.scala-lang#scala-reflect;2.12.1 [compile->master(compile)][0m
@@ -11915,8 +11796,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->io.suzaku#boopickle_2.12;1.3.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->io.suzaku#boopickle_2.12;1.3.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.suzaku#boopickle_2.12;1.3.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->org.typelevel#spire-macros_2.12;0.16.0 [compile->master(compile)][0m
@@ -11926,15 +11805,11 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.6 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mexcluding dependency: org.typelevel#machinist_2.12;0.6.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
 [0m[[0m[0mdebug[0m] [0m[0mexcluding dependency: org.typelevel#algebra_2.12;1.0.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.typelevel#spire-macros_2.12;0.16.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.softwaremill.quicklens#quicklens_2.12;1.4.11 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-commons;3.0.1.1->com.softwaremill.quicklens#quicklens_2.12;1.4.11 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.softwaremill.quicklens#quicklens_2.12;1.4.11->org.scala-lang#scala-reflect;2.12.3 [compile->master(compile)][0m
@@ -11990,15 +11865,11 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->com.github.scopt#scopt_2.12;3.7.0 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->com.github.scopt#scopt_2.12;3.7.0 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.github.scopt#scopt_2.12;3.7.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->io.gatling#jsonpath_2.12;0.6.14 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-core;3.0.1.1->io.gatling#jsonpath_2.12;0.6.14 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.6 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#jsonpath_2.12;0.6.14->org.scala-lang.modules#scala-parser-combinators_2.12;1.1.1 [compile->master(compile)][0m
@@ -12106,8 +11977,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-http;3.0.1.1->org.scala-lang.modules#scala-xml_2.12;1.1.1 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-http;3.0.1.1->org.scala-lang.modules#scala-xml_2.12;1.1.1 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.6 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.6 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.1.1->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-app;3.0.1.1->io.gatling#gatling-jms;3.0.1.1 [compile->master(compile)][0m
@@ -12139,8 +12008,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-redis;3.0.1.1->net.debasishg#redisclient_2.12;3.7 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-redis;3.0.1.1->net.debasishg#redisclient_2.12;3.7 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies net.debasishg#redisclient_2.12;3.7->commons-pool#commons-pool;1.6 [compile->master(compile)][0m
@@ -12172,8 +12039,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-recorder;3.0.1.1->org.scala-lang.modules#scala-swing_2.12;2.0.3 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-recorder;3.0.1.1->org.scala-lang.modules#scala-swing_2.12;2.0.3 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.8 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-swing_2.12;2.0.3->org.scala-lang#scala-library;2.12.8 [compile->compile(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies io.gatling#gatling-recorder;3.0.1.1->com.fasterxml.jackson.core#jackson-databind;2.9.7 [compile->master(compile)][0m
@@ -12562,10 +12427,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [it][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->runtime][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#twirl-api_2.12;1.4.0 [compile->compile][0m
@@ -13359,6 +13221,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.typesafe.play#play-ehcache_2.12;2.7.0->javax.cache#cache-api;1.0.0 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-ehcache_2.12;2.7.0 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.github.japgolly.scalajs-react#core_2.12;1.4.0 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [optional][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [provided][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'plugin'[0m
@@ -13367,65 +13230,35 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [pom][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'scala-tool'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [scala-tool][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->default][0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0m	found org.scala-lang#scala-compiler;2.12.7 in sbt-chain[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->compile(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->default][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->optional(default)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-reflect;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0m	found org.scala-lang#scala-reflect;2.12.7 in sbt-chain[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[2.12.7] org.scala-lang#scala-reflect;2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-reflect;2.12.7 [compile->compile(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-reflect;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-reflect;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->compile(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-reflect;2.12.7 [compile->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-reflect;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-reflect;2.12.7->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-reflect;2.12.7->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.12;1.0.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m	found org.scala-lang.modules#scala-xml_2.12;1.0.6 in sbt-chain[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.0 [compile->master(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.7 [compile->master(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.7 [compile->compile(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-reflect;2.12.7 [runtime->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-reflect;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->runtime(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12.7 [scala-tool->optional(default)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->jline#jline;2.14.6 [optional->master(compile)][0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: jline#jline;2.14.6 {optional=[compile(*), master(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: jline#jline;2.14.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m	found jline#jline;2.14.6 in sbt-chain[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->jline#jline;2.14.6 [optional->compile(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->default][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.7 [scala-tool->optional(default)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12 [scala-tool->default][0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.12 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scala-compiler;2.12 {scala-tool=[default, optional(default)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.ivy2\local\org.scala-lang\scala-compiler\2.12\ivys\ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.scala-lang#scala-compiler;2.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12/scala-compiler-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12/scala-compiler-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public: no ivy file found for org.scala-lang#scala-compiler;2.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried C:\Users\Owner\.sbt\preloaded\org.scala-lang\scala-compiler\2.12\ivys\ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded-ivy: no ivy file found for org.scala-lang#scala-compiler;2.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried file:/C:/Users/Owner/.sbt/preloaded/org/scala-lang/scala-compiler/2.12/scala-compiler-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local-preloaded: no ivy file found for org.scala-lang#scala-compiler;2.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo.typesafe.com/typesafe/releases/org/scala-lang/scala-compiler/2.12/scala-compiler-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/releases/org/scala-lang/scala-compiler/2.12/scala-compiler-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	typesafe-releases: no ivy file found for org.scala-lang#scala-compiler;2.12[0m
+[0m[[0m[33mwarn[0m] [0m[0m	module not found: org.scala-lang#scala-compiler;2.12[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  C:\Users\Owner\.ivy2\local\org.scala-lang\scala-compiler\2.12\ivys\ivy.xml[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== public: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12/scala-compiler-2.12.pom[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local-preloaded-ivy: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  C:\Users\Owner\.sbt\preloaded\org.scala-lang\scala-compiler\2.12\ivys\ivy.xml[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local-preloaded: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  file:/C:/Users/Owner/.sbt/preloaded/org/scala-lang/scala-compiler/2.12/scala-compiler-2.12.pom[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== typesafe-releases: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  https://repo.typesafe.com/typesafe/releases/org/scala-lang/scala-compiler/2.12/scala-compiler-2.12.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-compiler;2.12 [scala-tool->optional(default)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [scala-tool->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->org.scala-lang#scala-library;2.12 [scala-tool->optional(default)][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'scalafmt'[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT [scalafmt][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.geirsson#scalafmt-core_2.12;1.3.0 [scalafmt->default(compile)][0m
@@ -14411,35 +14244,33 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT->com.typesafe.play#play-omnidoc_2.12;2.7.0 [docs->master][0m
 [0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.7!scala-library.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\Owner\.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-server_2.12;2.7.0!play-server_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-akka-http-server_2.12;2.7.0!play-akka-http-server_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#twirl-api_2.12;1.4.0!twirl-api_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#filters-helpers_2.12;2.7.0!filters-helpers_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\Owner\.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#filters-helpers_2.12;2.7.0!filters-helpers_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-guice_2.12;2.7.0!play-guice_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-akka-http-server_2.12;2.7.0!play-akka-http-server_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\Owner\.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\Owner\.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-logback_2.12;2.7.0!play-logback_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\Owner\.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-server_2.12;2.7.0!play-server_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\Owner\.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (35ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\Owner\.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\Owner\.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (37ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -14448,93 +14279,69 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (55ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-guice_2.12;2.7.0!play-guice_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.logstash.logback#logstash-logback-encoder;5.2!logstash-logback-encoder.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.joda#joda-convert;2.1.2!joda-convert.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.logstash.logback#logstash-logback-encoder;5.2!logstash-logback-encoder.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.netaporter#scala-uri_2.12;0.4.16!scala-uri_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.codingwell#scala-guice_2.12;4.2.1!scala-guice_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-ahc-ws_2.12;2.7.0!play-ahc-ws_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.jar[0m
-[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-ehcache_2.12;2.7.0!play-ehcache_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.8!scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.1.0!scala-xml_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play_2.12;2.7.0!play_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#build-link;2.7.0!build-link.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (60ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-streams_2.12;2.7.0!play-streams_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (48ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.slf4j#jul-to-slf4j;1.7.25!jul-to-slf4j.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.slf4j#jcl-over-slf4j;1.7.25!jcl-over-slf4j.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (76ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.12;2.5.19!akka-actor_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (63ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.akka#akka-slf4j_2.12;2.5.19!akka-slf4j_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.9.8!jackson-core.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-annotations;2.9.8!jackson-annotations.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.9.8!jackson-databind.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.9.8!jackson-datatype-jdk8.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.9.8!jackson-datatype-jsr310.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-json_2.12;2.7.0!play-json_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.guava#guava;27.0-jre!guava.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\Owner\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (76ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.guava#guava;27.0-jre!guava.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.jsonwebtoken#jjwt;0.9.1!jjwt.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] javax.xml.bind#jaxb-api;2.3.1!jaxb-api.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] javax.transaction#jta;1.1!jta.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] javax.inject#javax.inject;1!javax.inject.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (87ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (61ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -14543,153 +14350,165 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] javax.inject#javax.inject;1!javax.inject.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-java8-compat_2.12;0.9.0!scala-java8-compat_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (108ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe#ssl-config-core_2.12;0.3.7!ssl-config-core_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/Owner/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-exceptions;2.7.0!play-exceptions.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (66ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\Owner\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.2!reactive-streams.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.1.1!scala-parser-combinators_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.akka#akka-stream_2.12;2.5.19!akka-stream_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.akka#akka-protobuf_2.12;2.5.19!akka-protobuf_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe#config;1.3.3!config.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-functional_2.12;2.7.0!play-functional_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.1.1!scala-parser-combinators_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.akka#akka-protobuf_2.12;2.5.19!akka-protobuf_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.typelevel#macro-compat_2.12;1.1.1!macro-compat_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-collection-compat_2.12;0.1.1!scala-collection-compat_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] joda-time#joda-time;2.10.1!joda-time.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.guava#failureaccess;1.0!failureaccess.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.guava#listenablefuture;9999.0-empty-to-avoid-conflict-with-guava!listenablefuture.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.2!jsr305.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.checkerframework#checker-qual;2.5.2!checker-qual.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.errorprone#error_prone_annotations;2.2.0!error_prone_annotations.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.j2objc#j2objc-annotations;1.1!j2objc-annotations.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.guava#listenablefuture;9999.0-empty-to-avoid-conflict-with-guava!listenablefuture.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.2!jsr305.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.codehaus.mojo#animal-sniffer-annotations;1.17!animal-sniffer-annotations.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] javax.activation#javax.activation-api;1.2.0!javax.activation-api.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.j2objc#j2objc-annotations;1.1!j2objc-annotations.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] ch.qos.logback#logback-core;1.2.3!logback-core.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.akka#akka-http-core_2.12;10.1.7!akka-http-core_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.akka#akka-parsing_2.12;10.1.7!akka-parsing_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.inject#guice;4.2.2!guice.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.inject.extensions#guice-assistedinject;4.2.2!guice-assistedinject.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.parboiled#parboiled_2.12;2.1.3!parboiled_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.akka#akka-http-core_2.12;10.1.7!akka-http-core_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] ch.qos.logback#logback-core;1.2.3!logback-core.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.inject#guice;4.2.2!guice.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] aopalliance#aopalliance;1.0!aopalliance.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.spray#spray-json_2.12;1.3.2!spray-json_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.chuusai#shapeless_2.12;2.3.2!shapeless_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.parboiled#parboiled_2.12;2.1.3!parboiled_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-ahc-ws-standalone_2.12;2.0.1!play-ahc-ws-standalone_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#shaded-asynchttpclient;2.0.1!shaded-asynchttpclient.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.spray#spray-json_2.12;1.3.2!spray-json_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#shaded-oauth;2.0.1!shaded-oauth.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] javax.cache#cache-api;1.0.0!cache-api.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-ws-standalone_2.12;2.0.1!play-ws-standalone_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe#config;1.3.3!config.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-ws-standalone-xml_2.12;2.0.1!play-ws-standalone-xml_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-ws-standalone-json_2.12;2.0.1!play-ws-standalone-json_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#cachecontrol_2.12;1.1.5!cachecontrol_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.jar[0m
-[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar[0m
-[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.jar[0m
-[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-ws_2.12;2.7.0!play-ws_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-test_2.12;2.7.0!play-test_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling.highcharts#gatling-charts-highcharts;3.0.1.1!gatling-charts-highcharts.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#cachecontrol_2.12;1.1.5!cachecontrol_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#shaded-asynchttpclient;2.0.1!shaded-asynchttpclient.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.sf.ehcache#ehcache;2.10.6!ehcache.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.ehcache#jcache;1.0.1!jcache.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-ws-standalone-json_2.12;2.0.1!play-ws-standalone-json_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalatestplus.play#scalatestplus-play_2.12;4.0.1!scalatestplus-play_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling.highcharts#gatling-charts-highcharts;3.0.1.1!gatling-charts-highcharts.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-cache_2.12;2.7.0!play-cache_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-test-framework;3.0.1.1!gatling-test-framework.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-netty-server_2.12;2.7.0!play-netty-server_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] junit#junit;4.12!junit.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.novocode#junit-interface;0.11!junit-interface.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.fluentlenium#fluentlenium-core;3.7.1!fluentlenium-core.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#htmlunit-driver;2.33.3!htmlunit-driver.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-api;3.141.59!selenium-api.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-support;3.141.59!selenium-support.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#htmlunit-driver;2.33.3!htmlunit-driver.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-test_2.12;2.7.0!play-test_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-firefox-driver;3.141.59!selenium-firefox-driver.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.netty#netty-reactive-streams-http;2.0.0!netty-reactive-streams-http.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-transport-native-epoll;4.1.31.Final!netty-transport-native-epoll.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.netty#netty-reactive-streams;2.0.0!netty-reactive-streams.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-netty-server_2.12;2.7.0!play-netty-server_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-common;4.1.31.Final!netty-common.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-buffer;4.1.31.Final!netty-buffer.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-transport-native-unix-common;4.1.31.Final!netty-transport-native-unix-common.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-transport;4.1.31.Final!netty-transport.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-resolver;4.1.31.Final!netty-resolver.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-remote-driver;3.141.59!selenium-remote-driver.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.atteo.classindex#classindex;3.4!classindex.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] commons-io#commons-io;2.6!commons-io.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.6!httpclient.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.bytebuddy#byte-buddy;1.8.15!byte-buddy.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-transport-native-unix-common;4.1.31.Final!netty-transport-native-unix-common.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.commons#commons-exec;1.3!commons-exec.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okhttp3#okhttp;3.11.0!okhttp.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.bytebuddy#byte-buddy;1.8.15!byte-buddy.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okio#okio;1.14.0!okio.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-transport-native-epoll;4.1.31.Final!netty-transport-native-epoll.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-buffer;4.1.31.Final!netty-buffer.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okhttp3#okhttp;3.11.0!okhttp.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4.10!httpcore.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] commons-codec#commons-codec;1.10!commons-codec.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.sourceforge.htmlunit#htmlunit;2.33!htmlunit.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] xalan#xalan;2.7.2!xalan.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.8!commons-lang3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.sourceforge.htmlunit#htmlunit;2.33!htmlunit.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.commons#commons-text;1.4!commons-text.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.httpcomponents#httpmime;4.5.6!httpmime.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.sourceforge.htmlunit#htmlunit-core-js;2.33!htmlunit-core-js.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.httpcomponents#httpmime;4.5.6!httpmime.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.sourceforge.htmlunit#neko-htmlunit;2.33!neko-htmlunit.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.sourceforge.htmlunit#htmlunit-cssparser;1.2.0!htmlunit-cssparser.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] commons-net#commons-net;3.6!commons-net.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty.websocket#websocket-client;9.4.12.v20180830!websocket-client.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] xalan#serializer;2.7.2!serializer.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] xerces#xercesImpl;2.12.0!xercesImpl.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] xml-apis#xml-apis;1.4.01!xml-apis.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-client;9.4.12.v20180830!jetty-client.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-xml;9.4.12.v20180830!jetty-xml.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-util;9.4.12.v20180830!jetty-util.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-io;9.4.12.v20180830!jetty-io.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty.websocket#websocket-common;9.4.12.v20180830!websocket-common.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-http;9.4.12.v20180830!jetty-http.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty.websocket#websocket-api;9.4.12.v20180830!websocket-api.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.5!scalatest_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-java;3.141.59!selenium-java.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.codeborne#phantomjsdriver;1.4.4!phantomjsdriver.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.5!scalactic_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-util;9.4.12.v20180830!jetty-util.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-chrome-driver;3.141.59!selenium-chrome-driver.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty.websocket#websocket-client;9.4.12.v20180830!websocket-client.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-edge-driver;3.141.59!selenium-edge-driver.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-ie-driver;3.141.59!selenium-ie-driver.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-opera-driver;3.141.59!selenium-opera-driver.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty.websocket#websocket-api;9.4.12.v20180830!websocket-api.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.seleniumhq.selenium#selenium-safari-driver;3.141.59!selenium-safari-driver.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-charts;3.0.1.1!gatling-charts.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-app;3.0.1.1!gatling-app.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-recorder;3.0.1.1!gatling-recorder.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-http-client;3.0.1.1!gatling-http-client.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-commons;3.0.1.1!gatling-commons.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-charts;3.0.1.1!gatling-charts.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-core;3.0.1.1!gatling-core.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-commons;3.0.1.1!gatling-commons.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.tdunning#t-digest;3.1!t-digest.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-http-client;3.0.1.1!gatling-http-client.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.simpleflatmapper#lightning-csv;6.0.1!lightning-csv.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.github.ben-manes.caffeine#caffeine;2.6.2!caffeine.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.pebbletemplates#pebble;3.0.6!pebble.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.simpleflatmapper#sfm-util;6.0.1!sfm-util.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.github.scopt#scopt_2.12;3.7.0!scopt_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#jsonpath_2.12;0.6.14!jsonpath_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.jodd#jodd-json;5.0.6!jodd-json.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.sf.saxon#Saxon-HE;9.9.0-2!Saxon-HE.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.jodd#jodd-lagarto;5.0.6!jodd-lagarto.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-netty-util;3.0.1.1!gatling-netty-util.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.7!scala-reflect.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.dongxiguo#fastring_2.12;1.0.0!fastring_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.suzaku#boopickle_2.12;1.3.0!boopickle_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.typelevel#spire-macros_2.12;0.16.0!spire-macros_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.suzaku#boopickle_2.12;1.3.0!boopickle_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eatthepath#fast-uuid;0.1!fast-uuid.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.softwaremill.quicklens#quicklens_2.12;1.4.11!quicklens_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.github.scopt#scopt_2.12;3.7.0!scopt_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.scala-logging#scala-logging_2.12;3.9.0!scala-logging_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.unbescape#unbescape;1.1.6.RELEASE!unbescape.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.jodd#jodd-bean;5.0.6!jodd-bean.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.jodd#jodd-core;5.0.6!jodd-core.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.jodd#jodd-log;5.0.6!jodd-log.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-http;3.0.1.1!gatling-http.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-jms;3.0.1.1!gatling-jms.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-jdbc;3.0.1.1!gatling-jdbc.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-redis;3.0.1.1!gatling-redis.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-graphite;3.0.1.1!gatling-graphite.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.1.1!scala-xml_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-codec-http;4.1.31.Final!netty-codec-http.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-handler;4.1.31.Final!netty-handler.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-http;3.0.1.1!gatling-http.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-handler-proxy;4.1.31.Final!netty-handler-proxy.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-resolver-dns;4.1.31.Final!netty-resolver-dns.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.netty#netty-codec-http2;4.1.31.Final!netty-codec-http2.jar[0m
@@ -14701,67 +14520,63 @@
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1!geronimo-jms_1.1_spec.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.debasishg#redisclient_2.12;3.7!redisclient_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] commons-pool#commons-pool;1.6!commons-pool.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eatthepath#fast-uuid;0.1!fast-uuid.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.hdrhistogram#HdrHistogram;2.1.10!HdrHistogram.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-swing_2.12;2.0.3!scala-swing_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.json4s#json4s-jackson_2.12;3.6.2!json4s-jackson_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.bouncycastle#bcpkix-jdk15on;1.60!bcpkix-jdk15on.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.json4s#json4s-core_2.12;3.6.2!json4s-core_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.json4s#json4s-scalap_2.12;3.6.2!json4s-scalap_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.json4s#json4s-ast_2.12;3.6.2!json4s-ast_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.bouncycastle#bcprov-jdk15on;1.60!bcprov-jdk15on.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.json4s#json4s-scalap_2.12;3.6.2!json4s-scalap_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.6!jline.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.7!scala-compiler.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.bouncycastle#bcprov-jdk15on;1.60!bcprov-jdk15on.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.geirsson#scalafmt-core_2.12;1.3.0!scalafmt-core_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lucidchart#scalafmt-impl_2.12;1.15-1.0!scalafmt-impl_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.2!scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#scalameta_2.12;1.7.0!scalameta_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.geirsson#metaconfig-core_2.12;0.4.0!metaconfig-core_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.geirsson#metaconfig-typesafe-config_2.12;0.4.0!metaconfig-typesafe-config_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#common_2.12;1.7.0!common_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.geirsson#metaconfig-typesafe-config_2.12;0.4.0!metaconfig-typesafe-config_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#dialects_2.12;1.7.0!dialects_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#parsers_2.12;1.7.0!parsers_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#quasiquotes_2.12;1.7.0!quasiquotes_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#dialects_2.12;1.7.0!dialects_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#tokenizers_2.12;1.7.0!tokenizers_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#transversers_2.12;1.7.0!transversers_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#trees_2.12;1.7.0!trees_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#semantic_2.12;1.7.0!semantic_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#sourcecode_2.12;0.1.3!sourcecode_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#inline_2.12;1.7.0!inline_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#build-link;2.7.0!build-link.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#inputs_2.12;1.7.0!inputs_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#io_2.12;1.7.0!io_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#tokens_2.12;1.7.0!tokens_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#fastparse_2.12;0.4.2!fastparse_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#inline_2.12;1.7.0!inline_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#scalaparse_2.12;0.4.2!scalaparse_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.trueaccord.scalapb#scalapb-runtime_2.12;0.6.0-pre2!scalapb-runtime_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.trueaccord.lenses#lenses_2.12;0.4.10!lenses_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#fastparse-utils_2.12;0.4.2!fastparse-utils_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.trueaccord.scalapb#scalapb-runtime_2.12;0.6.0-pre2!scalapb-runtime_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#fastparse_2.12;0.4.2!fastparse_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.trueaccord.lenses#lenses_2.12;0.4.10!lenses_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;3.2.0!protobuf-java.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-omnidoc_2.12;2.7.0!play-omnidoc_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-docs_2.12;2.7.0!play-docs_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-doc_2.12;2.0.0!play-doc_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.pegdown#pegdown;1.6.0!pegdown.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.parboiled#parboiled-java;1.1.7!parboiled-java.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.ow2.asm#asm;5.0.3!asm.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.parboiled#parboiled-core;1.1.7!parboiled-core.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.ow2.asm#asm;5.0.3!asm.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalameta#tokens_2.12;1.7.0!tokens_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.ow2.asm#asm-tree;5.0.3!asm-tree.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.ow2.asm#asm-analysis;5.0.3!asm-analysis.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.ow2.asm#asm-util;5.0.3!asm-util.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.jar.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.jar[0m
-[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.ehcache#jcache;1.0.1!jcache.jar (286ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.jar.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.jar.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.12/2.7.0/play-ehcache_2.12-2.7.0.jar[0m
-[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.play#play-ehcache_2.12;2.7.0!play-ehcache_2.12.jar (415ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.12/2.7.0/play-cache_2.12-2.7.0.jar[0m
-[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.play#play-cache_2.12;2.7.0!play-cache_2.12.jar (366ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	public: downloading https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar.sha1[0m
-[0m[[0m[0mdebug[0m] [0m[0msha1 OK for https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar[0m
-[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] net.sf.ehcache#ehcache;2.10.6!ehcache.jar (1130ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 12314ms :: artifacts dl 1305ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe.play#play-json_2.12;2.7.0!play-json_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] io.gatling#gatling-jdbc;3.0.1.1!gatling-jdbc.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.pegdown#pegdown;1.6.0!pegdown.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.simpleflatmapper#sfm-util;6.0.1!sfm-util.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 11428ms :: artifacts dl 273ms[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::          UNRESOLVED DEPENDENCIES         ::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: org.scala-lang#scala-library;2.12: not found[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: com.github.japgolly.scalajs-react#core_2.12;1.4.0: not found[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: org.scala-lang#scala-compiler;2.12: not found[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT compile produced in C:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\target\scala-2.12\resolution-cache\reports\com.lightbend.restapi-play-scala-rest-api-example_2.12-compile.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT runtime produced in C:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\target\scala-2.12\resolution-cache\reports\com.lightbend.restapi-play-scala-rest-api-example_2.12-runtime.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT test produced in C:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\target\scala-2.12\resolution-cache\reports\com.lightbend.restapi-play-scala-rest-api-example_2.12-test.xml[0m
@@ -14790,6 +14605,12 @@
 [0m[[0m[0mdebug[0m] [0m[0m	report for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT scala-tool produced in C:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\target\scala-2.12\resolution-cache\reports\com.lightbend.restapi-play-scala-rest-api-example_2.12-scala-tool.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT scalafmt produced in C:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\target\scala-2.12\resolution-cache\reports\com.lightbend.restapi-play-scala-rest-api-example_2.12-scalafmt.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	report for com.lightbend.restapi#play-scala-rest-api-example_2.12;1.0-SNAPSHOT docs produced in C:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\target\scala-2.12\resolution-cache\reports\com.lightbend.restapi-play-scala-rest-api-example_2.12-docs.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (12314ms resolve - 1305ms download)[0m
-[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
-[0m[[0m[33mwarn[0m] [0m[0mThere may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (11428ms resolve - 273ms download)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m	Note: Unresolved dependencies path:[0m
+[0m[[0m[33mwarn[0m] [0m[0m		org.scala-lang:scala-library:2.12 ((sbt.Classpaths.jvmBaseSettings) Defaults.scala#L2207)[0m
+[0m[[0m[33mwarn[0m] [0m[0m		  +- com.lightbend.restapi:play-scala-rest-api-example_2.12:1.0-SNAPSHOT[0m
+[0m[[0m[33mwarn[0m] [0m[0m		com.github.japgolly.scalajs-react:core_2.12:1.4.0 (C:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\build.sbt#L23-24)[0m
+[0m[[0m[33mwarn[0m] [0m[0m		  +- com.lightbend.restapi:play-scala-rest-api-example_2.12:1.0-SNAPSHOT[0m
+[0m[[0m[33mwarn[0m] [0m[0m		org.scala-lang:scala-compiler:2.12[0m
+[0m[[0m[33mwarn[0m] [0m[0m		  +- com.lightbend.restapi:play-scala-rest-api-example_2.12:1.0-SNAPSHOT[0m

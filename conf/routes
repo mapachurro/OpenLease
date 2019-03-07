@@ -8,4 +8,3 @@ GET        /assets/*file        controllers.Assets.at(path="/public", file)
 GET        /newcontract            controllers.HomeController.newcontract
 
 GET        /signup                 controllers.HomeController.signup
-

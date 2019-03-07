@@ -21,6 +21,14 @@ import scala.concurrent.ExecutionContext
 class HomeController @Inject()(cc: ControllerComponents)
     extends AbstractController(cc) {
 
+  apiClient = new APIClient({
+    root: "https://openlaw-instance-with-basic-auth.openlaw.io",
+    auth: {
+      username: "oliver.renwick@gmail.com",
+      password: "Palabra12"
+    }
+  });
+
   def index = Action {
     Ok(views.html.index())
   }
@@ -32,4 +40,14 @@ class HomeController @Inject()(cc: ControllerComponents)
   def signup = Action {
     Ok(views.html.signup())
   }
+
+  def getDraft = Action.async {
+    ws.url(www.openlaw.io/draft/raw/:draftId/:version).get().map { response =>
+      Ok(response.body)
+    }
+  }
+  status(wsAction(FakeRequest())) must_== OK
+
+
+
 }
