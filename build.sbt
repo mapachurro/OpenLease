@@ -2,7 +2,7 @@ import sbt.Keys._
 
 lazy val GatlingTest = config("gatling") extend Test
 
-scalaVersion in ThisBuild := "2.6.12"
+scalaVersion in ThisBuild := "2.12.7"
 
 libraryDependencies += guice
 libraryDependencies += "org.joda" % "joda-convert" % "2.1.2"

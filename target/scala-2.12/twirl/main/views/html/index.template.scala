@@ -28,19 +28,39 @@ Seq[Any](format.raw/*1.1*/("""<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Play REST API</title>
+    <title>OpenLease Overview</title>
   </head>
 
   <body>
-    <h1>Play REST API</h1>
+    <h1>OpenLease Overview</h1>
 
-    <p>
-      This is a placeholder page to show you the REST API.
-    </p>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      1 of 3
+    </div>
+    <div class="col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-md-auto">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+</div>
 
-    <ul>
-      <li><a href="/v1/posts">/v1/posts</a></li>
-    </ul>
+
+
   </body>
 </html>
 """))

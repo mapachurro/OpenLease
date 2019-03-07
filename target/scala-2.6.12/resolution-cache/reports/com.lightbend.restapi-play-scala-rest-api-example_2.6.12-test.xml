@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.lightbend.restapi"
+		module="play-scala-rest-api-example_2.6.12"
+		revision="1.0-SNAPSHOT"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, gatling, it, gatling-it, web-assets, web-assets-test, web-plugin, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, it-internal, plugin, pom, scala-tool, scalafmt, docs"
+		date="20190307152316"/>
+	<dependencies>
+		<module organisation="io.gatling" name="gatling-test-framework">
+			<revision name="3.0.1.1" status="release" pubdate="20181123054017" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="77">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3113" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-test-framework\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-test-framework/3.0.1.1/gatling-test-framework-3.0.1.1.pom"/>
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="gatling-test-framework" type="jar" ext="jar" status="no" details="" size="26051" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-test-framework\jars\gatling-test-framework-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-test-framework/3.0.1.1/gatling-test-framework-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="test-interface">
+			<revision name="1.0" status="release" pubdate="20130628184435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
+				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2621" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-sbt\test-interface\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.pom"/>
+				<caller organisation="io.gatling" name="gatling-test-framework" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="14755" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-sbt\test-interface\jars\test-interface-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling.highcharts" name="gatling-charts-highcharts">
+			<revision name="3.0.1.1" status="release" pubdate="20181123054347" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="Gatling Highcharts" url="https://raw.githubusercontent.com/gatling/gatling-highcharts/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3491" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling.highcharts\gatling-charts-highcharts\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts/3.0.1.1/gatling-charts-highcharts-3.0.1.1.pom"/>
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="gatling-charts-highcharts" type="jar" ext="jar" status="no" details="" size="214000" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling.highcharts\gatling-charts-highcharts\jars\gatling-charts-highcharts-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts/3.0.1.1/gatling-charts-highcharts-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-recorder">
+			<revision name="3.0.1.1" status="release" pubdate="20181123054027" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4521" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-recorder\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-recorder/3.0.1.1/gatling-recorder-3.0.1.1.pom"/>
+				<caller organisation="io.gatling.highcharts" name="gatling-charts-highcharts" conf="default, compile, runtime, master" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-recorder" type="jar" ext="jar" status="no" details="" size="803923" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-recorder\jars\gatling-recorder-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-recorder/3.0.1.1/gatling-recorder-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcpkix-jdk15on">
+			<revision name="1.60" status="release" pubdate="20180705202238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2960" time="0" location="C:\Users\Owner\.ivy2\cache\org.bouncycastle\bcpkix-jdk15on\ivy-1.60.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.pom"/>
+				<caller organisation="io.gatling" name="gatling-recorder" conf="compile, runtime" rev="1.60" rev-constraint-default="1.60" rev-constraint-dynamic="1.60" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="bcpkix-jdk15on" type="jar" ext="jar" status="no" details="" size="796532" time="0" location="C:\Users\Owner\.ivy2\cache\org.bouncycastle\bcpkix-jdk15on\jars\bcpkix-jdk15on-1.60.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcprov-jdk15on">
+			<revision name="1.60" status="release" pubdate="20180705201943" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bouncycastle.org/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="no" details="" size="2706" time="0" location="C:\Users\Owner\.ivy2\cache\org.bouncycastle\bcprov-jdk15on\ivy-1.60.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.pom"/>
+				<caller organisation="org.bouncycastle" name="bcpkix-jdk15on" conf="compile, runtime" rev="1.60" rev-constraint-default="1.60" rev-constraint-dynamic="1.60" callerrev="1.60"/>
+				<artifacts>
+					<artifact name="bcprov-jdk15on" type="jar" ext="jar" status="no" details="" size="4189874" time="0" location="C:\Users\Owner\.ivy2\cache\org.bouncycastle\bcprov-jdk15on\jars\bcprov-jdk15on-1.60.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-jackson_2.12">
+			<revision name="3.6.2" status="release" pubdate="20181101020518" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3001" time="0" location="C:\Users\Owner\.ivy2\cache\org.json4s\json4s-jackson_2.12\ivy-3.6.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.12/3.6.2/json4s-jackson_2.12-3.6.2.pom"/>
+				<caller organisation="io.gatling" name="gatling-recorder" conf="compile, runtime" rev="3.6.2" rev-constraint-default="3.6.2" rev-constraint-dynamic="3.6.2" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="json4s-jackson_2.12" type="jar" ext="jar" status="no" details="" size="36208" time="0" location="C:\Users\Owner\.ivy2\cache\org.json4s\json4s-jackson_2.12\jars\json4s-jackson_2.12-3.6.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.12/3.6.2/json4s-jackson_2.12-3.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-core_2.12">
+			<revision name="3.6.2" status="release" pubdate="20181101020259" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3130" time="0" location="C:\Users\Owner\.ivy2\cache\org.json4s\json4s-core_2.12\ivy-3.6.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.2/json4s-core_2.12-3.6.2.pom"/>
+				<caller organisation="org.json4s" name="json4s-jackson_2.12" conf="compile, runtime" rev="3.6.2" rev-constraint-default="3.6.2" rev-constraint-dynamic="3.6.2" callerrev="3.6.2"/>
+				<artifacts>
+					<artifact name="json4s-core_2.12" type="jar" ext="jar" status="no" details="" size="475386" time="0" location="C:\Users\Owner\.ivy2\cache\org.json4s\json4s-core_2.12\jars\json4s-core_2.12-3.6.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.2/json4s-core_2.12-3.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.8" status="release" pubdate="20150826072928" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4296" time="0" location="C:\Users\Owner\.ivy2\cache\com.thoughtworks.paranamer\paranamer\ivy-2.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="2.8" rev-constraint-default="2.8" rev-constraint-dynamic="2.8" callerrev="3.6.2"/>
+				<artifacts>
+					<artifact name="paranamer" type="bundle" ext="jar" status="no" details="" size="34654" time="0" location="C:\Users\Owner\.ivy2\cache\com.thoughtworks.paranamer\paranamer\bundles\paranamer-2.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-scalap_2.12">
+			<revision name="3.6.2" status="release" pubdate="20181101020314" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2690" time="0" location="C:\Users\Owner\.ivy2\cache\org.json4s\json4s-scalap_2.12\ivy-3.6.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.2/json4s-scalap_2.12-3.6.2.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="3.6.2" rev-constraint-default="3.6.2" rev-constraint-dynamic="3.6.2" callerrev="3.6.2"/>
+				<artifacts>
+					<artifact name="json4s-scalap_2.12" type="jar" ext="jar" status="no" details="" size="350477" time="0" location="C:\Users\Owner\.ivy2\cache\org.json4s\json4s-scalap_2.12\jars\json4s-scalap_2.12-3.6.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.2/json4s-scalap_2.12-3.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ast_2.12">
+			<revision name="3.6.2" status="release" pubdate="20181101020423" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2681" time="0" location="C:\Users\Owner\.ivy2\cache\org.json4s\json4s-ast_2.12\ivy-3.6.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.2/json4s-ast_2.12-3.6.2.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="3.6.2" rev-constraint-default="3.6.2" rev-constraint-dynamic="3.6.2" callerrev="3.6.2"/>
+				<artifacts>
+					<artifact name="json4s-ast_2.12" type="jar" ext="jar" status="no" details="" size="83593" time="0" location="C:\Users\Owner\.ivy2\cache\org.json4s\json4s-ast_2.12\jars\json4s-ast_2.12-3.6.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.2/json4s-ast_2.12-3.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-swing_2.12">
+			<revision name="2.0.3" status="release" pubdate="20180328160749" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2817" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-swing_2.12\ivy-2.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-swing_2.12/2.0.3/scala-swing_2.12-2.0.3.pom"/>
+				<caller organisation="io.gatling" name="gatling-recorder" conf="compile, runtime" rev="2.0.3" rev-constraint-default="2.0.3" rev-constraint-dynamic="2.0.3" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="scala-swing_2.12" type="jar" ext="jar" status="no" details="" size="735799" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-swing_2.12\jars\scala-swing_2.12-2.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-swing_2.12/2.0.3/scala-swing_2.12-2.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-app">
+			<revision name="3.0.1.1" status="release" pubdate="20181123054023" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3806" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-app\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-app/3.0.1.1/gatling-app-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-test-framework" conf="default, compile, runtime, master" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling.highcharts" name="gatling-charts-highcharts" conf="default, compile, runtime, master" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-app" type="jar" ext="jar" status="no" details="" size="63763" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-app\jars\gatling-app-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-app/3.0.1.1/gatling-app-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-graphite">
+			<revision name="3.0.1.1" status="release" pubdate="20181123053956" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3604" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-graphite\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-graphite/3.0.1.1/gatling-graphite-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-app" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-graphite" type="jar" ext="jar" status="no" details="" size="99134" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-graphite\jars\gatling-graphite-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-graphite/3.0.1.1/gatling-graphite-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hdrhistogram" name="HdrHistogram">
+			<revision name="2.1.10" status="release" pubdate="20170914200948" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hdrhistogram.github.io/HdrHistogram/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+				<license name="Public Domain, per Creative Commons CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
+				<license name="BSD-2-Clause" url="https://opensource.org/licenses/BSD-2-Clause"/>
+				<metadata-artifact status="no" details="" size="4318" time="0" location="C:\Users\Owner\.ivy2\cache\org.hdrhistogram\HdrHistogram\ivy-2.1.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.10/HdrHistogram-2.1.10.pom"/>
+				<caller organisation="io.gatling" name="gatling-graphite" conf="compile, runtime" rev="2.1.10" rev-constraint-default="2.1.10" rev-constraint-dynamic="2.1.10" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="HdrHistogram" type="bundle" ext="jar" status="no" details="" size="117910" time="0" location="C:\Users\Owner\.ivy2\cache\org.hdrhistogram\HdrHistogram\bundles\HdrHistogram-2.1.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hdrhistogram/HdrHistogram/2.1.10/HdrHistogram-2.1.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-redis">
+			<revision name="3.0.1.1" status="release" pubdate="20181123053953" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3593" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-redis\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-redis/3.0.1.1/gatling-redis-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-app" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-redis" type="jar" ext="jar" status="no" details="" size="12917" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-redis\jars\gatling-redis-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-redis/3.0.1.1/gatling-redis-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.debasishg" name="redisclient_2.12">
+			<revision name="3.7" status="release" pubdate="20180513134756" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/debasishg/scala-redis" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3499" time="0" location="C:\Users\Owner\.ivy2\cache\net.debasishg\redisclient_2.12\ivy-3.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/debasishg/redisclient_2.12/3.7/redisclient_2.12-3.7.pom"/>
+				<caller organisation="io.gatling" name="gatling-redis" conf="compile, runtime" rev="3.7" rev-constraint-default="3.7" rev-constraint-dynamic="3.7" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="redisclient_2.12" type="jar" ext="jar" status="no" details="" size="369783" time="0" location="C:\Users\Owner\.ivy2\cache\net.debasishg\redisclient_2.12\jars\redisclient_2.12-3.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/debasishg/redisclient_2.12/3.7/redisclient_2.12-3.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-pool" name="commons-pool">
+			<revision name="1.6" status="release" pubdate="20120109103305" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/pool/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7681" time="0" location="C:\Users\Owner\.ivy2\cache\commons-pool\commons-pool\ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.6/commons-pool-1.6.pom"/>
+				<caller organisation="net.debasishg" name="redisclient_2.12" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="3.7"/>
+				<artifacts>
+					<artifact name="commons-pool" type="jar" ext="jar" status="no" details="" size="111119" time="0" location="C:\Users\Owner\.ivy2\cache\commons-pool\commons-pool\jars\commons-pool-1.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.6/commons-pool-1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-jdbc">
+			<revision name="3.0.1.1" status="release" pubdate="20181123054007" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3558" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-jdbc\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-jdbc/3.0.1.1/gatling-jdbc-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-app" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-jdbc" type="jar" ext="jar" status="no" details="" size="10588" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-jdbc\jars\gatling-jdbc-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-jdbc/3.0.1.1/gatling-jdbc-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-jms">
+			<revision name="3.0.1.1" status="release" pubdate="20181123054010" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3738" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-jms\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-jms/3.0.1.1/gatling-jms-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-app" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-jms" type="jar" ext="jar" status="no" details="" size="227263" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-jms\jars\gatling-jms-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-jms/3.0.1.1/gatling-jms-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.geronimo.specs" name="geronimo-jms_1.1_spec">
+			<revision name="1.1.1" status="release" pubdate="20080206202655" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7391" time="0" location="C:\Users\Owner\.ivy2\cache\org.apache.geronimo.specs\geronimo-jms_1.1_spec\ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-jms" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="geronimo-jms_1.1_spec" type="jar" ext="jar" status="no" details="" size="32359" time="0" location="C:\Users\Owner\.ivy2\cache\org.apache.geronimo.specs\geronimo-jms_1.1_spec\jars\geronimo-jms_1.1_spec-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-http">
+			<revision name="3.0.1.1" status="release" pubdate="20181123053942" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3750" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-http\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-http/3.0.1.1/gatling-http-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-app" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-recorder" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-http" type="jar" ext="jar" status="no" details="" size="1371258" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-http\jars\gatling-http-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-http/3.0.1.1/gatling-http-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
+			<revision name="1.1.1" status="release" pubdate="20180926133248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3305" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.1/scala-xml_2.12-1.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-http" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="scala-xml_2.12" type="bundle" ext="jar" status="no" details="" size="553347" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.1/scala-xml_2.12-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-http-client">
+			<revision name="3.0.1.1" status="release" pubdate="20181123053908" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="5335" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-http-client\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-http-client/3.0.1.1/gatling-http-client-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-http" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling.highcharts" name="gatling-charts-highcharts" conf="default, compile, runtime, master" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-http-client" type="jar" ext="jar" status="no" details="" size="161114" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-http-client\jars\gatling-http-client-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-http-client/3.0.1.1/gatling-http-client-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.activation" name="javax.activation">
+			<revision name="1.2.0" status="release" pubdate="20170906191311" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="CDDL/GPLv2+CE" url="https://github.com/javaee/activation/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="5667" time="0" location="C:\Users\Owner\.ivy2\cache\com.sun.activation\javax.activation\ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="javax.activation" type="jar" ext="jar" status="no" details="" size="78030" time="0" location="C:\Users\Owner\.ivy2\cache\com.sun.activation\javax.activation\jars\javax.activation-1.2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-tcnative-boringssl-static">
+			<revision name="2.0.19.Final" status="release" pubdate="20181023150835" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="17759" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-tcnative-boringssl-static\ivy-2.0.19.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-tcnative-boringssl-static/2.0.19.Final/netty-tcnative-boringssl-static-2.0.19.Final.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="2.0.19.Final" rev-constraint-default="2.0.19.Final" rev-constraint-dynamic="2.0.19.Final" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="netty-tcnative-boringssl-static" type="jar" ext="jar" status="no" details="" size="3015976" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-tcnative-boringssl-static\jars\netty-tcnative-boringssl-static-2.0.19.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-tcnative-boringssl-static/2.0.19.Final/netty-tcnative-boringssl-static-2.0.19.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-codec-http2">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029120622" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="17426" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec-http2\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="netty-codec-http2" type="jar" ext="jar" status="no" details="" size="404008" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec-http2\jars\netty-codec-http2-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-codec-http2/4.1.31.Final/netty-codec-http2-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-transport-native-epoll">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029124213" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="18914" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-transport-native-epoll\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="netty-transport-native-epoll" type="jar" ext="jar" extra-classifier="linux-x86_64" status="no" details="" size="141019" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-transport-native-epoll\jars\netty-transport-native-epoll-4.1.31.Final-linux-x86_64.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-transport-native-epoll/4.1.31.Final/netty-transport-native-epoll-4.1.31.Final-linux-x86_64.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-transport-native-unix-common">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029131746" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="18145" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-transport-native-unix-common\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.pom"/>
+				<caller organisation="io.netty" name="netty-transport-native-epoll" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-transport-native-unix-common" type="jar" ext="jar" status="no" details="" size="33471" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-transport-native-unix-common\jars\netty-transport-native-unix-common-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-transport-native-unix-common/4.1.31.Final/netty-transport-native-unix-common-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-resolver-dns">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029121750" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="17609" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-resolver-dns\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-resolver-dns/4.1.31.Final/netty-resolver-dns-4.1.31.Final.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="netty-resolver-dns" type="jar" ext="jar" status="no" details="" size="128535" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-resolver-dns\jars\netty-resolver-dns-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-resolver-dns/4.1.31.Final/netty-resolver-dns-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-codec-dns">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029115803" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="17056" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec-dns\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec-dns/4.1.31.Final/netty-codec-dns-4.1.31.Final.pom"/>
+				<caller organisation="io.netty" name="netty-resolver-dns" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-codec-dns" type="jar" ext="jar" status="no" details="" size="54859" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec-dns\jars\netty-codec-dns-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-codec-dns/4.1.31.Final/netty-codec-dns-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-handler-proxy">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029121620" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="17606" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-handler-proxy\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="netty-handler-proxy" type="jar" ext="jar" status="no" details="" size="21275" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-handler-proxy\jars\netty-handler-proxy-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-handler-proxy/4.1.31.Final/netty-handler-proxy-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-codec-socks">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029121201" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="16917" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec-socks\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.pom"/>
+				<caller organisation="io.netty" name="netty-handler-proxy" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-codec-socks" type="jar" ext="jar" status="no" details="" size="119353" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec-socks\jars\netty-codec-socks-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-codec-socks/4.1.31.Final/netty-codec-socks-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-codec-http">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029120412" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="17280" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec-http\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="3.0.1.1"/>
+				<caller organisation="io.netty" name="netty-handler-proxy" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.gatling" name="gatling-recorder" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="3.0.1.1"/>
+				<caller organisation="io.netty" name="netty-codec-http2" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-codec-http" type="jar" ext="jar" status="no" details="" size="563216" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec-http\jars\netty-codec-http-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.31.Final/netty-codec-http-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-handler">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029120043" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="18429" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-handler\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="3.0.1.1"/>
+				<caller organisation="io.netty" name="netty-codec-http2" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-handler" type="jar" ext="jar" status="no" details="" size="419511" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-handler\jars\netty-handler-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-codec">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029115652" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="18361" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.pom"/>
+				<caller organisation="io.netty" name="netty-codec-socks" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-codec-http" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-codec-dns" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-handler" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-codec" type="jar" ext="jar" status="no" details="" size="316560" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-codec\jars\netty-codec-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-transport">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029115451" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="17182" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-transport\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.pom"/>
+				<caller organisation="io.netty" name="netty-transport-native-epoll" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-codec" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-handler-proxy" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-resolver-dns" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-handler" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-transport-native-unix-common" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-transport" type="jar" ext="jar" status="no" details="" size="463017" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-transport\jars\netty-transport-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-resolver">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029115238" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="17030" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-resolver\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.pom"/>
+				<caller organisation="io.netty" name="netty-resolver-dns" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-transport" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-resolver" type="jar" ext="jar" status="no" details="" size="32800" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-resolver\jars\netty-resolver-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-charts">
+			<revision name="3.0.1.1" status="release" pubdate="20181123053948" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3587" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-charts\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-charts/3.0.1.1/gatling-charts-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-app" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling.highcharts" name="gatling-charts-highcharts" conf="default, compile, runtime, master" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-charts" type="jar" ext="jar" status="no" details="" size="618073" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-charts\jars\gatling-charts-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-charts/3.0.1.1/gatling-charts-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.tdunning" name="t-digest">
+			<revision name="3.1" status="release" pubdate="20150405210516" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/tdunning/t-digest" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3777" time="0" location="C:\Users\Owner\.ivy2\cache\com.tdunning\t-digest\ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/tdunning/t-digest/3.1/t-digest-3.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-charts" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="t-digest" type="jar" ext="jar" status="no" details="" size="61298" time="0" location="C:\Users\Owner\.ivy2\cache\com.tdunning\t-digest\jars\t-digest-3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/tdunning/t-digest/3.1/t-digest-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-core">
+			<revision name="3.0.1.1" status="release" pubdate="20181123053930" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="5686" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-core\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-core/3.0.1.1/gatling-core-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-charts" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-jdbc" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-app" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-http" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-recorder" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-jms" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-graphite" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-redis" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-core" type="jar" ext="jar" status="no" details="" size="2027789" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-core\jars\gatling-core-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-core/3.0.1.1/gatling-core-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jodd" name="jodd-lagarto">
+			<revision name="5.0.6" status="release" pubdate="20181105073740" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jodd.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="The BSD 2-Clause License" url="http://jodd.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3295" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-lagarto\ivy-5.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jodd/jodd-lagarto/5.0.6/jodd-lagarto-5.0.6.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="5.0.6" rev-constraint-default="5.0.6" rev-constraint-dynamic="5.0.6" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="jodd-lagarto" type="jar" ext="jar" status="no" details="" size="220475" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-lagarto\jars\jodd-lagarto-5.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jodd/jodd-lagarto/5.0.6/jodd-lagarto-5.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jodd" name="jodd-log">
+			<revision name="5.0.6" status="release" pubdate="20181105073815" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jodd.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="The BSD 2-Clause License" url="http://jodd.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3146" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-log\ivy-5.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jodd/jodd-log/5.0.6/jodd-log-5.0.6.pom"/>
+				<caller organisation="org.jodd" name="jodd-lagarto" conf="compile, runtime" rev="5.0.6" rev-constraint-default="5.0.6" rev-constraint-dynamic="5.0.6" callerrev="5.0.6"/>
+				<artifacts>
+					<artifact name="jodd-log" type="jar" ext="jar" status="no" details="" size="19855" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-log\jars\jodd-log-5.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jodd/jodd-log/5.0.6/jodd-log-5.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.saxon" name="Saxon-HE">
+			<revision name="9.9.0-2" status="release" pubdate="20181107132219" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.saxonica.com/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="Mozilla Public License Version 2.0" url="http://www.mozilla.org/MPL/2.0/"/>
+				<metadata-artifact status="no" details="" size="3652" time="0" location="C:\Users\Owner\.ivy2\cache\net.sf.saxon\Saxon-HE\ivy-9.9.0-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/9.9.0-2/Saxon-HE-9.9.0-2.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="9.9.0-2" rev-constraint-default="9.9.0-2" rev-constraint-dynamic="9.9.0-2" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="Saxon-HE" type="jar" ext="jar" status="no" details="" size="5461818" time="0" location="C:\Users\Owner\.ivy2\cache\net.sf.saxon\Saxon-HE\jars\Saxon-HE-9.9.0-2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/9.9.0-2/Saxon-HE-9.9.0-2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jodd" name="jodd-json">
+			<revision name="5.0.6" status="release" pubdate="20181105073657" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jodd.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="The BSD 2-Clause License" url="http://jodd.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2783" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-json\ivy-5.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jodd/jodd-json/5.0.6/jodd-json-5.0.6.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="5.0.6" rev-constraint-default="5.0.6" rev-constraint-dynamic="5.0.6" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="jodd-json" type="jar" ext="jar" status="no" details="" size="88234" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-json\jars\jodd-json-5.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jodd/jodd-json/5.0.6/jodd-json-5.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jodd" name="jodd-bean">
+			<revision name="5.0.6" status="release" pubdate="20181105073518" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jodd.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="The BSD 2-Clause License" url="http://jodd.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2690" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-bean\ivy-5.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jodd/jodd-bean/5.0.6/jodd-bean-5.0.6.pom"/>
+				<caller organisation="org.jodd" name="jodd-json" conf="compile, runtime" rev="5.0.6" rev-constraint-default="5.0.6" rev-constraint-dynamic="5.0.6" callerrev="5.0.6"/>
+				<artifacts>
+					<artifact name="jodd-bean" type="jar" ext="jar" status="no" details="" size="122275" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-bean\jars\jodd-bean-5.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jodd/jodd-bean/5.0.6/jodd-bean-5.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jodd" name="jodd-core">
+			<revision name="5.0.6" status="release" pubdate="20181105073535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jodd.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="The BSD 2-Clause License" url="http://jodd.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2502" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-core\ivy-5.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jodd/jodd-core/5.0.6/jodd-core-5.0.6.pom"/>
+				<caller organisation="org.jodd" name="jodd-bean" conf="compile, runtime" rev="5.0.6" rev-constraint-default="5.0.6" rev-constraint-dynamic="5.0.6" callerrev="5.0.6"/>
+				<caller organisation="org.jodd" name="jodd-json" conf="compile, runtime" rev="5.0.6" rev-constraint-default="5.0.6" rev-constraint-dynamic="5.0.6" callerrev="5.0.6"/>
+				<caller organisation="org.jodd" name="jodd-lagarto" conf="compile, runtime" rev="5.0.6" rev-constraint-default="5.0.6" rev-constraint-dynamic="5.0.6" callerrev="5.0.6"/>
+				<artifacts>
+					<artifact name="jodd-core" type="jar" ext="jar" status="no" details="" size="403412" time="0" location="C:\Users\Owner\.ivy2\cache\org.jodd\jodd-core\jars\jodd-core-5.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jodd/jodd-core/5.0.6/jodd-core-5.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.9.7" status="release" pubdate="20180918224946" resolver="public" artresolver="public" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="6307" time="108" location="C:\Users\Owner\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.9.7.xml" searched="true" original-local-location="C:\Users\Owner\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.9.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="2.9.7" rev-constraint-default="2.9.7" rev-constraint-dynamic="2.9.7" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-recorder" conf="compile, runtime" rev="2.9.7" rev-constraint-default="2.9.7" rev-constraint-dynamic="2.9.7" callerrev="3.0.1.1"/>
+				<caller organisation="net.logstash.logback" name="logstash-logback-encoder" conf="default, compile, runtime, master" rev="2.9.6" rev-constraint-default="2.9.6" rev-constraint-dynamic="2.9.6" callerrev="5.2"/>
+				<caller organisation="org.json4s" name="json4s-jackson_2.12" conf="compile, runtime" rev="2.9.6" rev-constraint-default="2.9.6" rev-constraint-dynamic="2.9.6" callerrev="3.6.2"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="successful" details="" size="1350857" time="447" location="C:\Users\Owner\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.9.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.9.6" status="release" pubdate="20180611211528" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="23383" time="0" location="C:\Users\Owner\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.9.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.pom"/>
+				<evicted-by rev="2.9.7"/>
+				<caller organisation="net.logstash.logback" name="logstash-logback-encoder" conf="default, compile, runtime, master" rev="2.9.6" rev-constraint-default="2.9.6" rev-constraint-dynamic="2.9.6" callerrev="5.2"/>
+				<caller organisation="org.json4s" name="json4s-jackson_2.12" conf="compile, runtime" rev="2.9.6" rev-constraint-default="2.9.6" rev-constraint-dynamic="2.9.6" callerrev="3.6.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.9.7" status="release" pubdate="20180918224229" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22666" time="0" location="C:\Users\Owner\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.9.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.9.7" rev-constraint-default="2.9.7" rev-constraint-dynamic="2.9.7" callerrev="2.9.7"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.9.6" rev-constraint-default="2.9.6" rev-constraint-dynamic="2.9.6" callerrev="2.9.6"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="324036" time="0" location="C:\Users\Owner\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.9.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.9.6" status="release" pubdate="20180611205451" resolver="sbt-chain" artresolver="sbt-chain" evicted="transitive" evicted-reason="" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22666" time="0" location="C:\Users\Owner\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.9.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.9.6" rev-constraint-default="2.9.6" rev-constraint-dynamic="2.9.6" callerrev="2.9.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="jsonpath_2.12">
+			<revision name="0.6.14" status="release" pubdate="20180926085336" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3228" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\jsonpath_2.12\ivy-0.6.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/jsonpath_2.12/0.6.14/jsonpath_2.12-0.6.14.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="0.6.14" rev-constraint-default="0.6.14" rev-constraint-dynamic="0.6.14" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="jsonpath_2.12" type="jar" ext="jar" status="no" details="" size="121117" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\jsonpath_2.12\jars\jsonpath_2.12-0.6.14.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/jsonpath_2.12/0.6.14/jsonpath_2.12-0.6.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scopt" name="scopt_2.12">
+			<revision name="3.7.0" status="release" pubdate="20170825052648" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scopt/scopt" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2835" time="0" location="C:\Users\Owner\.ivy2\cache\com.github.scopt\scopt_2.12\ivy-3.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.7.0/scopt_2.12-3.7.0.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="3.7.0" rev-constraint-default="3.7.0" rev-constraint-dynamic="3.7.0" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="scopt_2.12" type="jar" ext="jar" status="no" details="" size="78676" time="0" location="C:\Users\Owner\.ivy2\cache\com.github.scopt\scopt_2.12\jars\scopt_2.12-3.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.7.0/scopt_2.12-3.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12">
+			<revision name="1.1.1" status="release" pubdate="20180608210928" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="jsonpath_2.12" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.6.14"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.12" type="bundle" ext="jar" status="no" details="" size="226573" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\bundles\scala-parser-combinators_2.12-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.pebbletemplates" name="pebble">
+			<revision name="3.0.6" status="release" pubdate="20181111110020" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pebbletemplates.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="BSD 3-Clause License" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="4209" time="0" location="C:\Users\Owner\.ivy2\cache\io.pebbletemplates\pebble\ivy-3.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/pebbletemplates/pebble/3.0.6/pebble-3.0.6.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="3.0.6" rev-constraint-default="3.0.6" rev-constraint-dynamic="3.0.6" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="pebble" type="jar" ext="jar" status="no" details="" size="285361" time="0" location="C:\Users\Owner\.ivy2\cache\io.pebbletemplates\pebble\jars\pebble-3.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/pebbletemplates/pebble/3.0.6/pebble-3.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.unbescape" name="unbescape">
+			<revision name="1.1.6.RELEASE" status="release" pubdate="20180330130601" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.unbescape.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3518" time="0" location="C:\Users\Owner\.ivy2\cache\org.unbescape\unbescape\ivy-1.1.6.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.pom"/>
+				<caller organisation="io.pebbletemplates" name="pebble" conf="compile, runtime" rev="1.1.6.RELEASE" rev-constraint-default="1.1.6.RELEASE" rev-constraint-dynamic="1.1.6.RELEASE" callerrev="3.0.6"/>
+				<artifacts>
+					<artifact name="unbescape" type="jar" ext="jar" status="no" details="" size="173935" time="0" location="C:\Users\Owner\.ivy2\cache\org.unbescape\unbescape\jars\unbescape-1.1.6.RELEASE.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.ben-manes.caffeine" name="caffeine">
+			<revision name="2.6.2" status="release" pubdate="20180221215124" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/ben-manes/caffeine" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5669" time="0" location="C:\Users\Owner\.ivy2\cache\com.github.ben-manes.caffeine\caffeine\ivy-2.6.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.6.2/caffeine-2.6.2.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="2.6.2" rev-constraint-default="2.6.2" rev-constraint-dynamic="2.6.2" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="caffeine" type="jar" ext="jar" status="no" details="" size="660440" time="0" location="C:\Users\Owner\.ivy2\cache\com.github.ben-manes.caffeine\caffeine\jars\caffeine-2.6.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.6.2/caffeine-2.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.simpleflatmapper" name="lightning-csv">
+			<revision name="6.0.1" status="release" pubdate="20181010142652" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="The MIT License (MIT)" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="4093" time="0" location="C:\Users\Owner\.ivy2\cache\org.simpleflatmapper\lightning-csv\ivy-6.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/simpleflatmapper/lightning-csv/6.0.1/lightning-csv-6.0.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="6.0.1" rev-constraint-default="6.0.1" rev-constraint-dynamic="6.0.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="lightning-csv" type="bundle" ext="jar" status="no" details="" size="75976" time="0" location="C:\Users\Owner\.ivy2\cache\org.simpleflatmapper\lightning-csv\bundles\lightning-csv-6.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/simpleflatmapper/lightning-csv/6.0.1/lightning-csv-6.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.simpleflatmapper" name="sfm-util">
+			<revision name="6.0.1" status="release" pubdate="20181010142703" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="The MIT License (MIT)" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="4137" time="0" location="C:\Users\Owner\.ivy2\cache\org.simpleflatmapper\sfm-util\ivy-6.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/simpleflatmapper/sfm-util/6.0.1/sfm-util-6.0.1.pom"/>
+				<caller organisation="org.simpleflatmapper" name="lightning-csv" conf="compile, runtime" rev="6.0.1" rev-constraint-default="6.0.1" rev-constraint-dynamic="6.0.1" callerrev="6.0.1"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="6.0.1" rev-constraint-default="6.0.1" rev-constraint-dynamic="6.0.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="sfm-util" type="jar" ext="jar" extra-classifier="" status="no" details="" size="54971" time="0" location="C:\Users\Owner\.ivy2\cache\org.simpleflatmapper\sfm-util\jars\sfm-util-6.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/simpleflatmapper/sfm-util/6.0.1/sfm-util-6.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.12">
+			<revision name="2.5.18" status="release" pubdate="20181107115324" resolver="public" artresolver="public" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.18" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2549" time="141" location="C:\Users\Owner\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.12\ivy-2.5.18.xml" searched="true" original-local-location="C:\Users\Owner\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.12\ivy-2.5.18.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.18/akka-slf4j_2.12-2.5.18.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="2.5.18" rev-constraint-default="2.5.18" rev-constraint-dynamic="2.5.18" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.12" type="jar" ext="jar" status="successful" details="" size="16041" time="286" location="C:\Users\Owner\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.12\jars\akka-slf4j_2.12-2.5.18.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.18/akka-slf4j_2.12-2.5.18.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.12">
+			<revision name="2.5.18" status="release" pubdate="20181107114901" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.18" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3139" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe.akka\akka-actor_2.12\ivy-2.5.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.18/akka-actor_2.12-2.5.18.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="2.5.18" rev-constraint-default="2.5.18" rev-constraint-dynamic="2.5.18" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-recorder" conf="compile, runtime" rev="2.5.18" rev-constraint-default="2.5.18" rev-constraint-dynamic="2.5.18" callerrev="3.0.1.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.12" conf="compile, runtime" rev="2.5.18" rev-constraint-default="2.5.18" rev-constraint-dynamic="2.5.18" callerrev="2.5.18"/>
+				<artifacts>
+					<artifact name="akka-actor_2.12" type="jar" ext="jar" status="no" details="" size="3446745" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe.akka\akka-actor_2.12\jars\akka-actor_2.12-2.5.18.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.18/akka-actor_2.12-2.5.18.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-commons">
+			<revision name="3.0.1.1" status="release" pubdate="20181123053903" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="5335" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-commons\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-commons/3.0.1.1/gatling-commons-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling.highcharts" name="gatling-charts-highcharts" conf="default, compile, runtime, master" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-commons" type="jar" ext="jar" status="no" details="" size="433078" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-commons\jars\gatling-commons-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-commons/3.0.1.1/gatling-commons-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.scala-logging" name="scala-logging_2.12">
+			<revision name="3.9.0" status="release" pubdate="20180411055603" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/scala-logging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3393" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe.scala-logging\scala-logging_2.12\ivy-3.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.12/3.9.0/scala-logging_2.12-3.9.0.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="3.9.0" rev-constraint-default="3.9.0" rev-constraint-dynamic="3.9.0" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="3.9.0" rev-constraint-default="3.9.0" rev-constraint-dynamic="3.9.0" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="scala-logging_2.12" type="bundle" ext="jar" status="no" details="" size="54709" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe.scala-logging\scala-logging_2.12\bundles\scala-logging_2.12-3.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.12/3.9.0/scala-logging_2.12-3.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.eatthepath" name="fast-uuid">
+			<revision name="0.1" status="release" pubdate="20180126210443" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jchambers/fast-uuid" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="The MIT License (MIT)" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3303" time="0" location="C:\Users\Owner\.ivy2\cache\com.eatthepath\fast-uuid\ivy-0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/eatthepath/fast-uuid/0.1/fast-uuid-0.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="0.1" rev-constraint-default="0.1" rev-constraint-dynamic="0.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="fast-uuid" type="jar" ext="jar" status="no" details="" size="5246" time="0" location="C:\Users\Owner\.ivy2\cache\com.eatthepath\fast-uuid\jars\fast-uuid-0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/eatthepath/fast-uuid/0.1/fast-uuid-0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-java8-compat_2.12">
+			<revision name="0.9.0" status="release" pubdate="20180503054720" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3069" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.12\ivy-0.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.9.0/scala-java8-compat_2.12-0.9.0.pom"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="0.9.0" rev-constraint-default="0.9.0" rev-constraint-dynamic="0.9.0" callerrev="3.0.1.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.12" conf="compile, runtime" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="2.5.18"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="0.9.0" rev-constraint-default="0.9.0" rev-constraint-dynamic="0.9.0" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="scala-java8-compat_2.12" type="jar" ext="jar" status="no" details="" size="1171396" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.12\jars\scala-java8-compat_2.12-0.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.9.0/scala-java8-compat_2.12-0.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.8.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="0.9.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.12" conf="compile, runtime" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="2.5.18"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.softwaremill.quicklens" name="quicklens_2.12">
+			<revision name="1.4.11" status="release" pubdate="20171002134748" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.softwaremill.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2839" time="0" location="C:\Users\Owner\.ivy2\cache\com.softwaremill.quicklens\quicklens_2.12\ivy-1.4.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/softwaremill/quicklens/quicklens_2.12/1.4.11/quicklens_2.12-1.4.11.pom"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="1.4.11" rev-constraint-default="1.4.11" rev-constraint-dynamic="1.4.11" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="quicklens_2.12" type="jar" ext="jar" status="no" details="" size="79319" time="0" location="C:\Users\Owner\.ivy2\cache\com.softwaremill.quicklens\quicklens_2.12\jars\quicklens_2.12-1.4.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/softwaremill/quicklens/quicklens_2.12/1.4.11/quicklens_2.12-1.4.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="spire-macros_2.12">
+			<revision name="0.16.0" status="release" pubdate="20180615032551" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spire-math.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3476" time="0" location="C:\Users\Owner\.ivy2\cache\org.typelevel\spire-macros_2.12\ivy-0.16.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/spire-macros_2.12/0.16.0/spire-macros_2.12-0.16.0.pom"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="0.16.0" rev-constraint-default="0.16.0" rev-constraint-dynamic="0.16.0" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="spire-macros_2.12" type="jar" ext="jar" status="no" details="" size="73593" time="0" location="C:\Users\Owner\.ivy2\cache\org.typelevel\spire-macros_2.12\jars\spire-macros_2.12-0.16.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/spire-macros_2.12/0.16.0/spire-macros_2.12-0.16.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.suzaku" name="boopickle_2.12">
+			<revision name="1.3.0" status="release" pubdate="20180325161436" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/suzaku-io/boopickle" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache 2.0 license" url="http://www.opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="C:\Users\Owner\.ivy2\cache\io.suzaku\boopickle_2.12\ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/suzaku/boopickle_2.12/1.3.0/boopickle_2.12-1.3.0.pom"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="boopickle_2.12" type="jar" ext="jar" status="no" details="" size="240397" time="0" location="C:\Users\Owner\.ivy2\cache\io.suzaku\boopickle_2.12\jars\boopickle_2.12-1.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/suzaku/boopickle_2.12/1.3.0/boopickle_2.12-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.dongxiguo" name="fastring_2.12">
+			<revision name="1.0.0" status="release" pubdate="20180324151023" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Atry/fastring" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2933" time="0" location="C:\Users\Owner\.ivy2\cache\com.dongxiguo\fastring_2.12\ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/dongxiguo/fastring_2.12/1.0.0/fastring_2.12-1.0.0.pom"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="fastring_2.12" type="jar" ext="jar" status="no" details="" size="105028" time="0" location="C:\Users\Owner\.ivy2\cache\com.dongxiguo\fastring_2.12\jars\fastring_2.12-1.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/dongxiguo/fastring_2.12/1.0.0/fastring_2.12-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.3.3" status="release" pubdate="20180221090821" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2909" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe\config\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.12" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="2.5.18"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="286090" time="0" location="C:\Users\Owner\.ivy2\cache\com.typesafe\config\bundles\config-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.7" status="release" pubdate="20180927043203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2814" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/Owner/.sbt/preloaded/org.scala-lang/scala-reflect/2.12.7/ivys/ivy.xml"/>
+				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3616372" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.7.jar">
+						<origin-location is-local="false" location="file:/C:/Users/Owner/.sbt/preloaded/org.scala-lang/scala-reflect/2.12.7/jars/scala-reflect.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.12.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.7"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.7"/>
+				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.7"/>
+				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.gatling" name="gatling-netty-util">
+			<revision name="3.0.1.1" status="release" pubdate="20181123053923" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://gatling.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3091" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-netty-util\ivy-3.0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/gatling/gatling-netty-util/3.0.1.1/gatling-netty-util-3.0.1.1.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="3.0.1.1" rev-constraint-default="3.0.1.1" rev-constraint-dynamic="3.0.1.1" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="gatling-netty-util" type="jar" ext="jar" status="no" details="" size="10506" time="0" location="C:\Users\Owner\.ivy2\cache\io.gatling\gatling-netty-util\jars\gatling-netty-util-3.0.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/gatling/gatling-netty-util/3.0.1.1/gatling-netty-util-3.0.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-buffer">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029115206" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="17024" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-buffer\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.pom"/>
+				<caller organisation="io.netty" name="netty-transport-native-epoll" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="3.0.1.1"/>
+				<caller organisation="io.netty" name="netty-transport" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.gatling" name="gatling-netty-util" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="3.0.1.1"/>
+				<caller organisation="io.netty" name="netty-handler" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-buffer" type="jar" ext="jar" status="no" details="" size="273373" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-buffer\jars\netty-buffer-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-common">
+			<revision name="4.1.31.Final" status="release" pubdate="20181029115020" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="19574" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-common\ivy-4.1.31.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.pom"/>
+				<caller organisation="io.netty" name="netty-transport-native-epoll" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-resolver" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-buffer" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<caller organisation="io.netty" name="netty-transport-native-unix-common" conf="compile, runtime" rev="4.1.31.Final" rev-constraint-default="4.1.31.Final" rev-constraint-dynamic="4.1.31.Final" callerrev="4.1.31.Final"/>
+				<artifacts>
+					<artifact name="netty-common" type="jar" ext="jar" status="no" details="" size="586456" time="0" location="C:\Users\Owner\.ivy2\cache\io.netty\netty-common\jars\netty-common-4.1.31.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.7" status="release" pubdate="20180927043542" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="4">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2642" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/Owner/.sbt/preloaded/org.scala-lang/scala-library/2.12.7/ivys/ivy.xml"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="1.1.1"/>
+				<caller organisation="io.gatling" name="gatling-jdbc" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
+				<caller organisation="io.gatling" name="gatling-core" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="org.scala-lang.modules" name="scala-swing_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.3"/>
+				<caller organisation="io.suzaku" name="boopickle_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="1.3.0"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
+				<caller organisation="io.gatling" name="gatling-test-framework" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="org.json4s" name="json4s-core_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.6.2"/>
+				<caller organisation="org.json4s" name="json4s-jackson_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.6.2"/>
+				<caller organisation="io.gatling" name="gatling-graphite" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.6.12" rev-constraint-default="2.6.12" rev-constraint-dynamic="2.6.12" callerrev="1.0-SNAPSHOT"/>
+				<caller organisation="net.debasishg" name="redisclient_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.7"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="1.1.1"/>
+				<caller organisation="io.gatling" name="gatling-app" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="org.scala-lang.modules" name="scala-java8-compat_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.9.0"/>
+				<caller organisation="com.github.scopt" name="scopt_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.7.0"/>
+				<caller organisation="org.json4s" name="json4s-scalap_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.6.2"/>
+				<caller organisation="io.gatling.highcharts" name="gatling-charts-highcharts" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
+				<caller organisation="org.typelevel" name="spire-macros_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.16.0"/>
+				<caller organisation="io.gatling" name="gatling-recorder" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-redis" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-charts" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-http" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-jms" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.5.18"/>
+				<caller organisation="io.gatling" name="jsonpath_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.6.14"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.12.7"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.5.18"/>
+				<caller organisation="io.gatling" name="gatling-netty-util" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.0.1.1"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.6.2"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5277511" time="0" location="C:\Users\Owner\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.7.jar">
+						<origin-location is-local="false" location="file:/C:/Users/Owner/.sbt/preloaded/org.scala-lang/scala-library/2.12.7/jars/scala-library.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.12.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.7"/>
+				<caller organisation="com.softwaremill.quicklens" name="quicklens_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.4.11"/>
+				<caller organisation="com.github.scopt" name="scopt_2.12" conf="compile, runtime" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="3.7.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.7"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="1.1.1"/>
+				<caller organisation="org.typelevel" name="spire-macros_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.16.0"/>
+				<caller organisation="io.gatling" name="jsonpath_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.6.14"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="1.1.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.7"/>
+				<caller organisation="org.scala-lang.modules" name="scala-swing_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.3"/>
+				<caller organisation="io.suzaku" name="boopickle_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="1.3.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-java8-compat_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.9.0"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.9.0"/>
+				<caller organisation="net.debasishg" name="redisclient_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.7"/>
+				<caller organisation="com.dongxiguo" name="fastring_2.12" conf="compile, runtime" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.6.12" evicted="latest-revision" evicted-reason="" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<evicted-by rev="2.12.7"/>
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.6.12" rev-constraint-default="2.6.12" rev-constraint-dynamic="2.6.12" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.logstash.logback" name="logstash-logback-encoder">
+			<revision name="5.2" status="release" pubdate="20180804201327" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/logstash/logstash-logback-encoder" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="MIT License" url="http://www.slf4j.org/license.html"/>
+				<metadata-artifact status="no" details="" size="7388" time="0" location="C:\Users\Owner\.ivy2\cache\net.logstash.logback\logstash-logback-encoder\ivy-5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/logstash/logback/logstash-logback-encoder/5.2/logstash-logback-encoder-5.2.pom"/>
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="5.2" rev-constraint-default="5.2" rev-constraint-dynamic="5.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logstash-logback-encoder" type="jar" ext="jar" status="no" details="" size="516115" time="0" location="C:\Users\Owner\.ivy2\cache\net.logstash.logback\logstash-logback-encoder\jars\logstash-logback-encoder-5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/logstash/logback/logstash-logback-encoder/5.2/logstash-logback-encoder-5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.9.0" status="release" pubdate="20170729235340" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7030" time="0" location="C:\Users\Owner\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.9.0" rev-constraint-default="2.9.0" rev-constraint-dynamic="2.9.0" callerrev="2.9.7"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.9.0" rev-constraint-default="2.9.0" rev-constraint-dynamic="2.9.0" callerrev="2.9.6"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="66519" time="0" location="C:\Users\Owner\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.2.3" status="release" pubdate="20170331152753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10512" time="0" location="C:\Users\Owner\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="3.0.1.1"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="3.0.1.1"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="290339" time="0" location="C:\Users\Owner\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.25" status="release" pubdate="20170316123632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5431" time="0" location="C:\Users\Owner\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
+				<caller organisation="io.pebbletemplates" name="pebble" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="3.0.6"/>
+				<caller organisation="io.gatling" name="gatling-http-client" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="3.0.1.1"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.12" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="3.9.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.12" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="2.5.18"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.2.3"/>
+				<caller organisation="io.gatling" name="gatling-commons" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="3.0.1.1"/>
+				<caller organisation="net.debasishg" name="redisclient_2.12" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="3.7"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41203" time="0" location="C:\Users\Owner\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.2.3" status="release" pubdate="20170331152715" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="7994" time="0" location="C:\Users\Owner\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.2.3"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="471901" time="0" location="C:\Users\Owner\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="2.1.2" status="release" pubdate="20181023061541" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.joda.org/${joda.artifactId}/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="Apache 2" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8093" time="0" location="C:\Users\Owner\.ivy2\cache\org.joda\joda-convert\ivy-2.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/joda/joda-convert/2.1.2/joda-convert-2.1.2.pom"/>
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.1.2" rev-constraint-default="2.1.2" rev-constraint-dynamic="2.1.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="145011" time="0" location="C:\Users\Owner\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-2.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/2.1.2/joda-convert-2.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatestplus.play" name="scalatestplus-play_2.6.12">
+			<revision name="4.0.1" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="4.0.1" rev-constraint-default="4.0.1" rev-constraint-dynamic="4.0.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-test_2.6.12">
+			<revision name="2.7.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ehcache_2.6.12">
+			<revision name="2.7.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ahc-ws_2.6.12">
+			<revision name="2.7.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.codingwell" name="scala-guice_2.6.12">
+			<revision name="4.2.1" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="4.2.1" rev-constraint-default="4.2.1" rev-constraint-dynamic="4.2.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.netaporter" name="scala-uri_2.6.12">
+			<revision name="0.4.16" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="0.4.16" rev-constraint-default="0.4.16" rev-constraint-dynamic="0.4.16" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-guice_2.6.12">
+			<revision name="2.7.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="filters-helpers_2.6.12">
+			<revision name="2.7.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-akka-http-server_2.6.12">
+			<revision name="2.7.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-logback_2.6.12">
+			<revision name="2.7.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-server_2.6.12">
+			<revision name="2.7.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="twirl-api_2.6.12">
+			<revision name="1.4.0" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.lightbend.restapi" name="play-scala-rest-api-example_2.6.12" conf="test, compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
