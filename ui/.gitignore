@@ -20,13 +20,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-admincredentials.csv
-JenkinsInstance.pem
-JenkinsInstance.ppk
-keys.jpg
-OL_4.pem
-OL_4.ppk
-rootkey.csv
+/admincredentials.csv
+/JenkinsInstance.pem
+/JenkinsInstance.ppk
+/keys.jpg
+/OL_4.pem
+/OL_4.ppk
+/rootkey.csv
 
 logs
 target
@@ -37,12 +37,3 @@ target
 /.settings
 /RUNNING_PID
 /public
-
-admincredentials.csv
-JenkinsInstance.pem
-JenkinsInstance.ppk
-keys.jpg
-OL_4.pem
-OL_4.ppk
-rootkey.csv
-
