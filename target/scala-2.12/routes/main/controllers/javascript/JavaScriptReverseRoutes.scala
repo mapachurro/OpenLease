@@ -1,16 +1,17 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Owner/Resilio Sync/Synced Docs/Academic/CWRU Bootcamp/Projects/OpenLease/conf/routes
-// @DATE:Tue Mar 05 12:53:14 EST 2019
+// @DATE:Fri Mar 08 09:31:07 EST 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
 
 import _root_.controllers.Assets.Asset
+import _root_.play.libs.F
 
-// @LINE:1
+// @LINE:6
 package controllers.javascript {
 
-  // @LINE:1
+  // @LINE:9
   class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -18,32 +19,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:8
-    def newcontract: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.newcontract",
+    // @LINE:9
+    def appSummary: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.appSummary",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "newcontract"})
-        }
-      """
-    )
-  
-    // @LINE:10
-    def signup: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.signup",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signup"})
-        }
-      """
-    )
-  
-    // @LINE:1
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/summary"})
         }
       """
     )
@@ -51,19 +32,29 @@ package controllers.javascript {
   }
 
   // @LINE:6
-  class ReverseAssets(_prefix: => String) {
+  class ReverseFrontendController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:6
-    def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Assets.at",
+    // @LINE:12
+    def assetOrDefault: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.FrontendController.assetOrDefault",
       """
-        function(file1) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("file", file1)})
+        function(file0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + (""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("file", file0)})
+        }
+      """
+    )
+  
+    // @LINE:6
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.FrontendController.index",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + """"})
         }
       """
     )

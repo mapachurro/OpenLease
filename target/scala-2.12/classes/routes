@@ -1,11 +1,12 @@
-GET        /                       controllers.HomeController.index
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
 
-->         /v1/posts               v1.post.PostRouter
+# Serve index page from public directory
+GET     /                           controllers.FrontendController.index()
 
-# Map static resources from the /public folder to the /assets URL path
-GET        /assets/*file        controllers.Assets.at(path="/public", file)
+# An example route (Prefix all API routes with apiPrefix defined in application.conf)
+GET     /api/summary                controllers.HomeController.appSummary
 
-GET        /newcontract            controllers.HomeController.newcontract
-
-GET        /signup                 controllers.HomeController.signup
-
+# Serve static assets under public directory
+GET     /*file                      controllers.FrontendController.assetOrDefault(file)

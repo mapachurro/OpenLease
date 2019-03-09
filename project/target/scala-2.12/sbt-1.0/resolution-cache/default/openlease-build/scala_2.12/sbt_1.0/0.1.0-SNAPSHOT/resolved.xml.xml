@@ -4,7 +4,7 @@
 		module="openlease-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190305101102"
+		publication="20190308092518"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
@@ -31,13 +31,9 @@
 		<artifact name="openlease-build" type="doc" ext="jar" conf="compile" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.7" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.12.7" conf="scala-tool->default,optional(default);provided->default(compile)"/>
-		<dependency org="org.scala-sbt" name="sbt" rev="1.2.8" conf="provided->default(compile)"/>
-		<dependency org="com.typesafe.play" name="sbt-plugin" rev="2.7.0" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
-		<dependency org="com.lightbend.paradox" name="sbt-paradox" rev="0.4.4" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
-		<dependency org="io.gatling" name="gatling-sbt" rev="2.2.2" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
-		<dependency org="com.lucidchart" name="sbt-scalafmt" rev="1.15" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
-		<override org="org.scala-sbt" module="scripted-plugin_2.12" matcher="exact" rev="1.2.8"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.4" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" conf="scala-tool->default,optional(default);provided->default(compile)"/>
+		<dependency org="org.scala-sbt" name="sbt" rev="1.1.1" conf="provided->default(compile)"/>
+		<dependency org="com.typesafe.play" name="sbt-plugin" rev="2.6.13" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
 	</dependencies>
 </ivy-module>

@@ -10,29 +10,6 @@
     </encoder>
   </appender>
 
-  <appender name="JSON" class="ch.qos.logback.core.FileAppender">
-    <file>${application.home:-.}/logs/application.json</file>
-    <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
-      <providers>
-        <timestamp/>
-        <logLevel/>
-        <loggerName/>
-        <threadName/>
-        <message/>
-        <logstashMarkers/>
-        <arguments/>
-        <stackTrace/>
-      </providers>
-    </encoder>
-  </appender>
-
-  <appender name="METRICS" class="ch.qos.logback.core.FileAppender">
-    <file>${application.home:-.}/logs/metrics.log</file>
-    <encoder>
-      <pattern>%date [%level] from %logger in %thread - %message%n%xException</pattern>
-    </encoder>
-  </appender>
-
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
       <pattern>%coloredLevel %logger{15} - %message%n%xException{10}</pattern>
@@ -43,21 +20,21 @@
     <appender-ref ref="FILE" />
   </appender>
 
-  <appender name="ASYNCJSON" class="ch.qos.logback.classic.AsyncAppender">
-    <appender-ref ref="JSON" />
-  </appender>
-
   <appender name="ASYNCSTDOUT" class="ch.qos.logback.classic.AsyncAppender">
     <appender-ref ref="STDOUT" />
   </appender>
 
   <logger name="play" level="INFO" />
   <logger name="application" level="DEBUG" />
-  <logger name="v1.post" level="TRACE" />
+
+  <!-- Off these ones as they are annoying, and anyway we manage configuration ourselves -->
+  <logger name="com.avaje.ebean.config.PropertyMapLoader" level="OFF" />
+  <logger name="com.avaje.ebeaninternal.server.core.XmlConfigLoader" level="OFF" />
+  <logger name="com.avaje.ebeaninternal.server.lib.BackgroundThread" level="OFF" />
+  <logger name="com.gargoylesoftware.htmlunit.javascript" level="OFF" />
 
   <root level="WARN">
     <appender-ref ref="ASYNCFILE" />
-    <appender-ref ref="ASYNCJSON" />
     <appender-ref ref="ASYNCSTDOUT" />
   </root>
 
