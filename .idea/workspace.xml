@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="45" />
+    <option name="y" value="8" />
+    <option name="width" value="1856" />
+    <option name="height" value="1028" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../scala-play-react-seed-master" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+</project>
