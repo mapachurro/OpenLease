@@ -7,3 +7,11 @@ target
 /.settings
 /RUNNING_PID
 /public
+
+admincredentials.csv
+JenkinsInstance.pem
+JenkinsInstance.ppk
+keys.jpg
+OL_4.pem
+OL_4.ppk
+rootkey.csv
