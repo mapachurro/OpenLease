@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/openlease_3775.iml" filepath="$PROJECT_DIR$/.idea/modules/openlease_3775.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/openlease_3775-build.iml" filepath="$PROJECT_DIR$/.idea/modules/openlease_3775-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-play-react-seed.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-play-react-seed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-play-react-seed-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-play-react-seed-build.iml" />
     </modules>
   </component>
 </project>
