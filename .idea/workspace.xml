@@ -2,76 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed8fb95-913d-4bb3-8bbb-ebcab1bf7ad6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/.env" beforeDir="false" afterPath="$PROJECT_DIR$/openlaw-api-tutorial/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/openlaw-api-tutorial/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/openlaw-api-tutorial/client/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/autoprefixer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/autoprefixer.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/browserslist.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/css-beautify" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/css-beautify.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/editorconfig.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/errno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/errno.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/gulp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/gulp.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/html-beautify" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/html-beautify.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/image-size" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/image-size.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/js-beautify" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/js-beautify.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/json2yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/json2yaml.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/lessc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/lessc.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/mime" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/mime.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/mkdirp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/mkdirp.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/nopt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/nopt.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/rimraf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/rimraf.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/rtlcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/rtlcss.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/semver.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-conv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-conv.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-sign" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-sign.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-verify" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-verify.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/strip-bom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/strip-bom.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/uglifyjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/uglifyjs.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/user-home" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/user-home.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/uuid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/uuid.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/which" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/which.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/yaml2json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/yaml2json.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-copy/node_modules/.bin/gulp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-copy/node_modules/.bin/gulp.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-copy/node_modules/gulp/node_modules/.bin/gulp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-copy/node_modules/gulp/node_modules/.bin/gulp.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-uglify/node_modules/.bin/uglifyjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-uglify/node_modules/.bin/uglifyjs.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/node-notifier/node_modules/.bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/node-notifier/node_modules/.bin/semver.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/node-releases/node_modules/.bin/semver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/node-releases/node_modules/.bin/semver.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/truffle.js" beforeDir="false" afterPath="$PROJECT_DIR$/openlaw-api-tutorial/truffle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/scala-play-react-seed.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scala-play-react-seed.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/FrontendRunHook.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project/FrontendRunHook.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$256e4a4150bedde8a0d9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$3ac4d2714704b3af137d.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4512f320a3170a8fca30.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4cd6d049c4e657f98271.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$55faf3c53485e0a70ca4.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$6fde19aafdb733afe8eb.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$700004b670afbe14befb.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$76907e4d8ceac8fe6f38.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7c5d979ca695b20d9864.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a5bc8589f3a492d8fb9e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$aa279921ae6053b6759d.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c12b46700d2230eed26f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$cceb5da648d0ffa48f0f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$d57249c89d7b6d6eb7b0.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$eb376856223bff5e298b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -87,14 +38,87 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sbt-dist/bin/sbt.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sbt-dist/bin/sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sbt-dist/bin/sbt-launch-lib.bash">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scala-play-react-seed-master/scala-play-react-seed-master/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project/FrontendRunHook.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/FrontendCommands.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>serve</find>
+      <find>npm</find>
+      <find>ui</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/project/FrontendCommands.scala" />
+        <option value="$PROJECT_DIR$/project/FrontendRunHook.scala" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="45" />
     <option name="y" value="8" />
     <option name="width" value="1856" />
-    <option name="height" value="1028" />
+    <option name="height" value="976" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -102,10 +126,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="openlease" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenLease" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openlease" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenLease" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553640424245" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -171,9 +214,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="8" width="1856" height="1028" extended-state="0" />
+    <frame x="45" y="8" width="1856" height="976" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25278395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25556794" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -204,5 +248,73 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sbt.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbt-dist/bin/sbt.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbt-dist/bin/sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sbt-dist/bin/sbt-launch-lib.bash">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scala-play-react-seed-master/scala-play-react-seed-master/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/FrontendCommands.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/FrontendRunHook.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

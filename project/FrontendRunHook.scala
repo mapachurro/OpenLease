@@ -32,7 +32,7 @@ object FrontendRunHook {
         * Run npm install if node modules are not installed.
         */
       override def beforeStarted(): Unit = {
-        if (!(base / "ui" / "node_modules").exists()) Process(npmInstall, base / "ui").!
+        if (!(base / "ui/client" / "node_modules").exists()) Process(npmInstall, base / "ui/client").!
       }
 
       /**
@@ -41,7 +41,7 @@ object FrontendRunHook {
         */
       override def afterStarted(addr: InetSocketAddress): Unit = {
         process = Option(
-          Process(npmRun, base / "ui").run
+          Process(npmRun, base / "ui/client").run
         )
       }
 
