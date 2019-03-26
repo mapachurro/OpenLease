@@ -1,7 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ed8fb95-913d-4bb3-8bbb-ebcab1bf7ad6" name="Default Changelist" comment="" />
+    <list default="true" id="7ed8fb95-913d-4bb3-8bbb-ebcab1bf7ad6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/.env" beforeDir="false" afterPath="$PROJECT_DIR$/openlaw-api-tutorial/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/openlaw-api-tutorial/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/openlaw-api-tutorial/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/autoprefixer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/autoprefixer.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/browserslist.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/css-beautify" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/css-beautify.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/editorconfig.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/errno" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/errno.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/gulp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/gulp.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/html-beautify" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/html-beautify.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/image-size" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/image-size.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/js-beautify" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/js-beautify.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/json2yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/json2yaml.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/lessc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/lessc.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/mime" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/mime.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/mkdirp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/mkdirp.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/nopt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/nopt.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/rimraf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/rimraf.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/rtlcss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/rtlcss.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/semver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/semver.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-conv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-conv.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-sign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-sign.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-verify" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/sshpk-verify.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/strip-bom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/strip-bom.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/uglifyjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/uglifyjs.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/user-home" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/user-home.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/uuid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/uuid.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/which" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/which.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/yaml2json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/.bin/yaml2json.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-copy/node_modules/.bin/gulp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-copy/node_modules/.bin/gulp.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-copy/node_modules/gulp/node_modules/.bin/gulp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-copy/node_modules/gulp/node_modules/.bin/gulp.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-uglify/node_modules/.bin/uglifyjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/gulp-uglify/node_modules/.bin/uglifyjs.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/node-notifier/node_modules/.bin/semver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/node-notifier/node_modules/.bin/semver.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/node-releases/node_modules/.bin/semver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/node_modules/node-releases/node_modules/.bin/semver.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openlaw-api-tutorial/truffle.js" beforeDir="false" afterPath="$PROJECT_DIR$/openlaw-api-tutorial/truffle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/App.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -31,9 +102,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -75,6 +146,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="7760271817760" />
         <entry key="$PROJECT_DIR$/build.sbt" value="952659071" />
         <entry key="$PROJECT_DIR$/project/FrontendCommands.scala" value="1457661926" />
         <entry key="$PROJECT_DIR$/project/FrontendRunHook.scala" value="609151072" />
@@ -101,19 +173,14 @@
   <component name="ToolWindowManager">
     <frame x="45" y="8" width="1856" height="1028" extended-state="0" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25278395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -121,16 +188,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="sbt" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="sbt" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
 </project>
