@@ -12,7 +12,7 @@ contract BillOfSale {
   ) public {
     descr = _descr;
     price = _price;
-    seller = _seller; 
+    seller = _seller;
     buyer = _buyer;
   }
 

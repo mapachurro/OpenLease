@@ -1,5 +1,5 @@
-var BillOfSale = artifacts.require('./BillOfSale.sol')
+var DraftOhioResidentialLease = artifacts.require('./DraftOhioResidentialLease.sol')
 
 module.exports = function (deployer) {
-  deployer.deploy(BillOfSale)
+  deployer.deploy(DraftOhioResidentialLease)
 };

@@ -4,7 +4,7 @@
 		module="scala-play-react-seed$sources"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20190309120951"
+		publication="20190326204306"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
