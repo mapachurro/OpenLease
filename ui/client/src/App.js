@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navbar from "./components/navbar";
 import Login from "./components/pages/login";
 import Newlease from "./components/pages/newlease.js";
 import Overview from "./components/pages/overview.js";
@@ -14,7 +13,6 @@ function App() {
     <Router>
       <div>
         <Head/>
-        <Navbar />
         <Route exact path="/" component={Overview} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/login" component={Login} />

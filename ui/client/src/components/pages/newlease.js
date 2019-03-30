@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BillOfSaleContract from "../../contracts/BillOfSale.json";
+import DraftOhioResidentialLeaseContract from "../../contracts/DraftOhioResidentialLease.json";
 import getWeb3 from "../../utils/getWeb3";
 import truffleContract from "truffle-contract";
 import Navbar from "../navbar"
@@ -17,7 +17,7 @@ class Newlease extends Component {
       const accounts = await web3.eth.getAccounts();
 
       // Get the contract instance.
-      const Contract = truffleContract(BillOfSaleContract);
+      const Contract = truffleContract(DraftOhioResidentialLeaseContract);
       Contract.setProvider(web3.currentProvider);
       const instance = await Contract.deployed();
 
