@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "../components.css"
+import Navbar from "../navbar"
     
 
 class Login extends Component {
     render() {
         return (
             <div>
-
+                <Navbar/>
             <div className="card">
                 <div className="card-body">
                     <h5 className="card-title">Log In</h5>
