@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../components.css"
 import Navbar from "../navbar"
+import "../../App.css"
 
 
 class Signup extends Component {
@@ -8,7 +9,7 @@ class Signup extends Component {
         return (
             <div>
                 <Navbar/>
-            <div className="card">
+            <div className="card offset-5">
                 <div className="card-body">
                     <h5 className="card-title">Create a new account</h5>
                     <h6 className="card-subtitle mb-2 text-muted">Enter your information below to create an account.</h6>
@@ -30,6 +31,7 @@ class Signup extends Component {
                         <span className="input-group-addon" id="basic-addon1">email :</span>
                         <input type="text" className="form-control" placeholder="email" aria-describedby="basic-addon1"></input>
                     </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
                 </div>
             </div>
 

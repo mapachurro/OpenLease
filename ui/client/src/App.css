@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -15,4 +15,10 @@
 
 .App-link {
   color: #61dafb;
+} */
+
+
+#navigation,.navbar .navbar-default{
+  background-image: url("./skybanner.jpg");
+  background: url('./skybanner.jpg');
 }

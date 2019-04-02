@@ -9,7 +9,7 @@ class Overview extends Component {
         return (
             <div>
                 <Navbar />
-                    <div className="card, offset-3">
+                    <div className="card offset-5">
                     <div className="card-body">
                         <h5 className="card-title">Welcome to OpenLease</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Free, secure, forever-available execution and registry of residential leases</h6>

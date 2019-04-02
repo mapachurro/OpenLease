@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../components.css"
 import Navbar from "../navbar"
+import "../../App.css"
     
 
 class Login extends Component {
@@ -8,7 +9,7 @@ class Login extends Component {
         return (
             <div>
                 <Navbar/>
-            <div className="card">
+            <div className="card offset-5">
                 <div className="card-body">
                     <h5 className="card-title">Log In</h5>
                     <h6 className="card-subtitle mb-2 text-muted">Log in to see your leases</h6>
@@ -21,6 +22,7 @@ class Login extends Component {
                         <span className="input-group-addon" id="basic-addon1">password</span>
                         <input type="text" className="form-control" placeholder="password" aria-describedby="basic-addon1"></input>
                     </div>
+                    <button type="submit" class="btn btn-primary">Log In</button>
                 </div>
             </div>
 

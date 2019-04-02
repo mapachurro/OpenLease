@@ -4,9 +4,9 @@
 		module="scala-play-react-seed_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20190308093107"
+		publication="20190401150753"
 	>
-		<description>
+		<description homepage="http://joscha.github.io/play-authenticate">
 		scala-play-react-seed
 		</description>
 	</info>
