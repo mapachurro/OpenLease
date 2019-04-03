@@ -5,7 +5,6 @@ import Newlease from "./components/pages/newlease.js";
 import Overview from "./components/pages/overview.js";
 import Previous from "./components/pages/previous.js";
 import Signup from "./components/pages/signup.js"
-import Head from "./components/head"
 import "./App.css"
 
 
@@ -13,7 +12,6 @@ function App() {
   return (
     <Router>
       <div>
-        <Head/>
         <Route exact path="/" component={Overview} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/login" component={Previous} />

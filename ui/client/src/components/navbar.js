@@ -21,10 +21,10 @@ return(
             <li className="nav-item">
                 {/* <a className="nav-link" href="./signup.template.scala">Sign Up</a> */}
                 <Link to="/signup" className={window.location.pathname === "./pages/signup.js" ? "nav-link active" : "nav-link"}>Sign Up</Link>
+                </li>
             <li className="nav-item">
               {/* <a className="nav-link" href="./login.template.scala">Log In</a> */}
               <Link to="/login" className={window.location.pathname === "./pages/login.js" ? "nav-link active" : "nav-link"}>Log In</Link>
-            </li>
             </li>
           </ul>
         </div>
