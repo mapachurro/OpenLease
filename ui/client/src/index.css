@@ -12,3 +12,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#navigation,.navbar .navbar-default{
+  background-image: url("./skybanner.jpg");
+  background: url('./skybanner.jpg');
+}
+
+.entry {
+  margin-left: 10px;
+  margin-top: 5px;
+}

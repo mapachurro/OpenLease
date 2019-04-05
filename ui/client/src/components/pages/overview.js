@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Navbar from "../navbar";
-import "../components.css"
 
 
 
@@ -9,7 +8,7 @@ class Overview extends Component {
         return (
             <div>
                 <Navbar />
-                    <div className="card offset-5">
+                    <div className="card">
                     <div className="card-body">
                         <h5 className="card-title">Welcome to OpenLease</h5>
                         <h6 className="card-subtitle mb-2 text-muted">A free platform for landlords and tenants to register legally-binding leases</h6>

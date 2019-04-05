@@ -13,6 +13,8 @@ contract DraftOhioResidentialLease {
     uint public Daily_Animal_Restriction_Violation_Fee;
     string public Landlord_Notice_Address;
     uint256 public Effective_Date;
+    string public Landlord_Email;
+    string public Tenant_Email;
 
 //     function recordContract( string memory Landlord_Name, string Tenant_Name,
 // string Property_Name, uint256 Lease_Commencement_Date, uint256 Lease_Termination_Date,

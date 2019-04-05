@@ -5,6 +5,7 @@ import getWeb3 from "../../utils/getWeb3";
 import { Container, Grid, Button, Form} from 'semantic-ui-react';
 import { APIClient, Openlaw } from 'openlaw';
 import "../../App.css";
+import Navbar from "../navbar"
 
 
     const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
@@ -38,7 +39,9 @@ class App extends Component {
    Premises_Description: '',
    Daily_Animal_Restriction_Violation_Fee: null,
    Landlord_Notice_Address: '',
-   Effective_Date: null
+   Effective_Date: null,
+   Landlord_Email: '',
+   Tenant_Email: ''
   };
 
   componentDidMount = async () => {
@@ -88,9 +91,9 @@ class App extends Component {
     //Get my compiled Template, for use in rendering the HTML in previewTemplate
     const myCompiledTemplate = await Openlaw.compileTemplate(myContent);
     if (myCompiledTemplate.isError) {
-      throw "my Template error" + myCompiledTemplate.errorMessage;
+      throw myCompiledTemplate.errorMessage;
     }
-     console.log("my compiled template..",myCompiledTemplate);
+     console.log("my compiled template..", myCompiledTemplate);
      this.setState({myCompiledTemplate});
 
     } catch (error) {
@@ -110,10 +113,21 @@ previewTemplate = async (event) => {
     try{
       
       const params = {
-          "Seller Address": this.state.seller,
-          "Buyer Address": this.state.buyer,
-          "Purchased Item": this.state.descr,
-          "Purchase Price":this.state.price,
+
+        "Landlord_Name": this.state.Landlord_Name,
+        "Tenant_Name": this.state.Tenant_Name,
+        "Property_Name": this.state.Property_Name,
+        "Lease_Commencement_Date": this.state.Lease_Commencement_Date,
+        "Lease_Termination_Date": this.state.Lease_Termination_Date, 
+        "Rent_Due_Date": this.state.Rent_Due_Date,
+        "Rent_Increase_Date": this.state.Rent_Increase_Date,
+        "Security_Deposit_Amount": this.state.Security_Deposit_Amount,
+        "Premises_Description": this.state.Premises_Description,
+        "Daily_Animal_Restriction_Violation_Fee": this.state.Daily_Animal_Restriction_Violation_Fee,
+        "Landlord_Notice_Address": this.state.Landlord_Notice_Address,
+        "Effective_Date": this.state.Effective_Date,
+        "Landlord_Email": this.state.Landlord_Email,
+        "Tenant_Email": this.state.Tenant_Email
        };
       
        const executionResult = await Openlaw.execute(this.state.myCompiledTemplate.compiledTemplate, {}, params);
@@ -132,12 +146,13 @@ previewTemplate = async (event) => {
 /*HELPERS*/
   runExample = async () => {
     const { accounts, contract } = this.state;
-    console.log("example openlaw starting");
+    console.log("OpenLease starting");
   };
 /*converts an email address into an object, to be used with uploadDraft
 or upLoadContract methods from the APIClient.
 Eventually this function will no longer be needed. */
   convertUserObject = (original) => {
+    console.log("original email : ")
     const object = {
       id: {
         id: original.id
@@ -154,10 +169,12 @@ Eventually this function will no longer be needed. */
   }
 
 /*Build Open Law Params to Submit for Upload Contract*/
-  buildOpenLawParamsObj = async (myTemplate, creatorId) => {
+  buildOpenLawParamsObj = async (myTemplate) => {
+    console.log("within buildOpenLawParamsObj : " + this.state)
 
-    const sellerUser = await apiClient.getUserDetails(this.state.sellerEmail);
-    const buyerUser = await apiClient.getUserDetails(this.state.buyerEmail);
+  const landlord = await apiClient.getUserDetails(this.state.Landlord_Email);
+  const tenant = await apiClient.getUserDetails(this.state.Tenant_Email);
+
 
     const object = {
       templateId: myTemplate.id,
@@ -165,12 +182,20 @@ Eventually this function will no longer be needed. */
       text: myTemplate.content,
       creator: this.state.creatorId,
       parameters: {
-        "Seller Address": this.state.seller,
-        "Buyer Address": this.state.buyer,
-        "Purchased Item": this.state.descr,
-        "Purchase Price": this.state.price,
-        "Seller Signatory Email": JSON.stringify(this.convertUserObject(sellerUser)),
-        "Buyer Signatory Email": JSON.stringify(this.convertUserObject(buyerUser)),
+        "Landlord Name: ": this.state.Landlord_Name,
+        "Tenant Name: ": this.state.Tenant_Name,
+        "Property Name: ": this.state.Property_Name,
+        "Lease Commencement Date: ": this.state.Lease_Commencement_Date,
+        "Lease Termination Date: ": this.state.Lease_Termination_Date,
+        "Rent_Due_Date": this.state.Rent_Due_Date,
+        "Rent_Increase_Date": this.state.Rent_Increase_Date,
+        "Security_Deposit_Amount": this.state.Security_Deposit_Amount,
+        "Premises_Description": this.state.Premises_Description,
+        "Daily_Animal_Restriction_Violation_Fee": this.state.Daily_Animal_Restriction_Violation_Fee,
+        "Landlord_Notice_Address": this.state.Landlord_Notice_Address,
+        "Effective_Date": this.state.Effective_Date,
+        "Landlord_Email": JSON.stringify(this.convertUserObject(landlord)),
+        "Tenant_Email: ": JSON.stringify(this.convertUserObject(tenant))
       },
       overriddenParagraphs: {},
       agreements: {},
@@ -178,11 +203,13 @@ Eventually this function will no longer be needed. */
       editEmails: [],
       draftId: this.state.draftId
     };
+    console.log(object)
     return object;
   };
 
   onSubmit = async(event) => {
-    console.log('submiting to OL..');
+    console.log('submitting to OL..');
+    console.log(this.state);
     event.preventDefault();
 
     try{
@@ -192,11 +219,11 @@ Eventually this function will no longer be needed. */
 
       //add Open Law params to be uploaded
       const uploadParams = await this.buildOpenLawParamsObj(this.state.myTemplate,this.state.creatorId);
-      console.log('parmeters from user..', uploadParams.parameters);
+      console.log('parameters from user..', uploadParams.parameters);
       console.log('all parameters uploading...', uploadParams);
       
       //uploadDraft, sends a draft contract to "Draft Management", which can be edited. 
-      const draftId = await apiClient.uploadDraft(uploadParams);
+      const draftId = await apiClient.uploadDraft(uploadParams.parameters);
       console.log('draft id..', draftId);
       this.setState({draftId});
 
@@ -215,66 +242,120 @@ Eventually this function will no longer be needed. */
     }
     return (
       <div className="App">
+        <Navbar />
         <Container>
                 <h1>OpenLaw </h1>
                 <h2>{this.state.myTitle} </h2>
 
              {/* Show HTML in 'Preview' beware dangerouslySet... for xss vulnerable */}
                 <Grid columns={2}>
-
                   <Grid.Column>
                     <Form onSubmit = {this.onSubmit}>
                       <Form.Field>
-                        <label>Seller Ethereum Address</label>
-                        <input 
-                          placeholder = "Seller Ethereum"
-                          value = {this.state.seller}
-                          onChange = {event => this.setState({seller: event.target.value})}
+                        <label>Landlord Name : </label>
+                        <input className="entry" 
+                          placeholder = "Landlord name"
+                          onChange = {event =>  this.setState({Landlord_Name: event.target.value}) }
                         />
                       </Form.Field>
                        <Form.Field>
-                        <label>Description Sale Item</label>
-                        <input 
-                        placeholder = "sale item"
-                          value = {this.state.descr}
-                          onChange = {event => this.setState({descr: event.target.value})}
+                        <label>Tenant Name : </label>
+                        <input className="entry" 
+                        placeholder = "Tenant name"
+                          onChange = {event => this.setState({Tenant_Name: event.target.value})}
                         />
                       </Form.Field>
                         <Form.Field>
-                        <label>Buyer Ethereum Address</label>
-                        <input 
-                      placeholder = 'buyer'
-                          value = {this.state.buyer}
-                          onChange = {event => this.setState({buyer: event.target.value})}
-
+                        <label>Property name :</label>
+                        <input className="entry" 
+                      placeholder = "Address of Property"
+                          onChange = {event => this.setState({Property_Name: event.target.value})}
                         />
+                        </Form.Field>
+                        <Form.Field>
+                        <label>Lease begin date :</label>
+                        <input className="entry" 
+                      placeholder = "First date of lease"
+                          onChange = {event => this.setState({Lease_Commencement_Date: event.target.value})}
+                        />
+                        </Form.Field>
+                        <Form.Field>
+                        <label>Lease end date :</label>
+                        <input className="entry" 
+                      placeholder = "Date lease ends"
+                          onChange = {event => this.setState({Lease_Termination_Date: event.target.value})}
+                        />
+                        </Form.Field>
+                        <Form.Field>
+                        <label>Rent due date :</label>
+                        <input className="entry" 
+                      placeholder = "Day each month that rent is due"
+                          onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
+                        />
+                        </Form.Field>
+                        <Form.Field>
+                        <label>Rent increase date :</label>
+                        <input className="entry" 
+                      placeholder = "Nonpayment penalty date"
+                          onChange = {event => this.setState({Rent_Increase_Date: event.target.value})}
+                        />  
                       </Form.Field>   
                          <Form.Field>
-                        <label>Purchase Price</label>
-                        <input
-                          placeholder = 'price'
-                          value = {this.state.price}
-                          onChange = {event => this.setState({price: event.target.value})}
+                        <label>Security Deposit Amount : </label>
+                        <input className="entry" 
+                          placeholder = 'Security deposit amount'
+                          onChange = {event => this.setState({Security_Deposit_Amount: event.target.value})}
+                         />
+                      </Form.Field>  
+                      <Form.Field>
+                        <label>Premises Description : </label>
+                        <input className="entry" 
+                          placeholder = 'Any information beyond the address'
+                          onChange = {event => this.setState({Premises_Description: event.target.value})}
+                         />
+                      </Form.Field>  
+                      <Form.Field>
+                        <label>Daily Animal Fee : </label>
+                        <input className="entry" 
+                          placeholder = 'Daily penalty'
+                          onChange = {event => this.setState({Daily_Animal_Restriction_Fee: event.target.value})}
+                         />
+                      </Form.Field>  
+                      <Form.Field>
+                        <label>Landlord Notice Address : </label>
+                        <input className="entry" 
+                          placeholder = 'Address for notice for landlord'
+                          onChange = {event => this.setState({Landlord_Notice_Address: event.target.value})}
+                         />
+                      </Form.Field>  
+                      <Form.Field>
+                        <label>Effective Date : </label>
+                        <input className="entry" 
+                          placeholder = 'Effective date of lease'
+                          onChange = {event => this.setState({Effective_Date: event.target.value})}
                          />
                       </Form.Field>  
 
+                      <br></br>
+
                       <Form.Field>
-                        <label>Seller Email</label>
-                        <input 
-                          type="text" placeholder="Seller Email Address"
-                          onChange={event => this.setState({sellerEmail: event.target.value})} />
+                        <label>Landlord Email : </label>
+                        <input className="entry" 
+                          type="text" placeholder="Landlord Email Address : "
+                          onChange={event => {console.log(this.state, event.target.value); this.setState({Landlord_Email: event.target.value})} }/>
                       </Form.Field>  
                        <Form.Field>
-                        <label>Buyer Email</label>
-                        <input 
-                          type="text" placeholder="Buyer Email Address"
-                          onChange={event => this.setState({buyerEmail: event.target.value})} />
-                      </Form.Field>                                      
+                        <label>Tenant Email : </label>
+                        <input className="entry" 
+                          type="text" placeholder="Tenant Email Address : "
+                          onChange={event => this.setState({Tenant_Email: event.target.value})} />
+                      </Form.Field>
+                      <br></br>                                      
                       <Button color='pink' type="submit"> Submit Draft </Button>
                     </Form>
 
                   </Grid.Column>
-
+                <br></br>
                 <Grid.Column>
                     <div dangerouslySetInnerHTML={{__html: this.state.html}} />
                    <Button onClick = {this.previewTemplate}>Preview</Button>

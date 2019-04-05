@@ -22,3 +22,7 @@
   background-image: url("./skybanner.jpg");
   background: url('./skybanner.jpg');
 }
+
+.input {
+  margin: 20px;
+}

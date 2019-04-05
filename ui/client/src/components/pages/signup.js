@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../components.css"
 import Navbar from "../navbar"
 import "../../App.css"
 
@@ -31,7 +30,7 @@ class Signup extends Component {
                         <span className="input-group-addon" id="basic-addon1">email :</span>
                         <input type="text" className="form-control" placeholder="email" aria-describedby="basic-addon1"></input>
                     </div>
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <button type="submit" className="btn btn-primary">Sign Up</button>
                 </div>
             </div>
 
