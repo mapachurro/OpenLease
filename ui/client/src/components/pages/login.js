@@ -15,11 +15,11 @@ class Login extends Component {
                     <p className="card-text">By logging in, you will be able to see the leases you have executed through OpenLease, and download .pdf versions of them.</p>
                     <div className="input-group">
                         <span className="input-group-addon" id="basic-addon1">username</span>
-                        <input type="text" className="form-control" placeholder="username" aria-describedby="basic-addon1"></input>
+                        <input type="text" className="form-control, entry" placeholder="username" aria-describedby="basic-addon1"></input>
                     </div>
                     <div className="input-group">
                         <span className="input-group-addon" id="basic-addon1">password</span>
-                        <input type="text" className="form-control" placeholder="password" aria-describedby="basic-addon1"></input>
+                        <input type="text" className="form-control, entry" placeholder="password" aria-describedby="basic-addon1"></input>
                     </div>
                     <button type="submit" class="btn btn-primary">Log In</button>
                 </div>

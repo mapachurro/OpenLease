@@ -8,7 +8,7 @@ class Signup extends Component {
         return (
             <div>
                 <Navbar/>
-            <div className="card offset-5">
+            <div className="card">
                 <div className="card-body">
                     <h5 className="card-title">Create a new account</h5>
                     <h6 className="card-subtitle mb-2 text-muted">Enter your information below to create an account.</h6>
@@ -18,18 +18,21 @@ class Signup extends Component {
                     <br></br>
                     <div className="input-group">
                         <span className="input-group-addon" id="basic-addon1">username :</span>
-                        <input type="text" className="form-control" placeholder="username" aria-describedby="basic-addon1"></input>
+                        <input type="text" className="form-control, entry" placeholder="username" aria-describedby="basic-addon1"></input>
                     </div>
                     <br></br>
                     <div className="input-group">
                         <span className="input-group-addon" id="basic-addon1">password :</span>
-                        <input type="text" className="form-control" placeholder="password" aria-describedby="basic-addon1"></input>
+                        <input type="text" className="form-control, entry" placeholder="password" aria-describedby="basic-addon1"></input>
                     </div>
                     <br></br>
                     <div className="input-group">
                         <span className="input-group-addon" id="basic-addon1">email :</span>
-                        <input type="text" className="form-control" placeholder="email" aria-describedby="basic-addon1"></input>
+                        <input type="text" className="form-control, entry" placeholder="email" aria-describedby="basic-addon1"></input>
                     </div>
+
+                    <br></br>
+
                     <button type="submit" className="btn btn-primary">Sign Up</button>
                 </div>
             </div>

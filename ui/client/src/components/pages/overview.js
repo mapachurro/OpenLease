@@ -11,7 +11,7 @@ class Overview extends Component {
                     <div className="card">
                     <div className="card-body">
                         <h5 className="card-title">Welcome to OpenLease</h5>
-                        <h6 className="card-subtitle mb-2 text-muted">A free platform for landlords and tenants to register legally-binding leases</h6>
+                        <h6 className="card-subtitle">A free platform for landlords and tenants to register legally-binding leases</h6>
                         <p className="card-text">OpenLease leverages the infrastructure built by OpenLaw to resolve an all-too-common problem: 
                         tenants and landlords not having an actual lease in place when entering into a rental agreement. If there's ever a dispute, 
                         the argument is that much more likely to end up in court because there is no record of a meeting of the minds. And if it does end 

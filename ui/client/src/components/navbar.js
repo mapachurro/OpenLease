@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../index.css"
 
 class Navbar extends Component {
 render(){
 return(
     <div>
-    <nav className="navbar  navbar-light bg-light">
+    <nav className="navbar navbar-light bg-light">
         <h1 className="navbar-brand" href="#">OpenLease Project</h1>
-        <div className="navbar " id="navbarNav">
+        <div className="navbar" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
             {/* The original links from the Scala-written project are kept here in case rewriting as per Scala controller, or external linking to Scala controller, is required */}
