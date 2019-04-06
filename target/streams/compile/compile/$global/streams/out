@@ -1,0 +1,13 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\PlayAuthenticate.java:9:8: object cache is not a member of package play[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.cache.SyncCacheApi;[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\PlayAuthenticate.java:40:109: not found: type SyncCacheApi[0m
+[0m[[0m[31merror[0m] [0m[0m	public PlayAuthenticate(final Config config, final Resolver resolver, final MessagesApi messagesApi, final SyncCacheApi cacheApi) {[0m
+[0m[[0m[31merror[0m] [0m[0m	                                                                                                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0man unexpected type representation reached the compiler backend while compiling currentAuth.template.scala: <error>. If possible, please file a bug on issues.scala-lang.org.[0m
+[0m[[0m[31merror[0m] [0m[0mError while emitting currentAuth.template.scala[0m
+[0m[[0m[31merror[0m] [0m[0m<error> (of class scala.reflect.internal.Types$ErrorType$)[0m
+[0m[[0m[31merror[0m] [0m[0mError while emitting forProviders.template.scala[0m
+[0m[[0m[31merror[0m] [0m[0massertion failed: ClassBType.info not yet assigned: Lcom/feth/play/module/pa/PlayAuthenticate;[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

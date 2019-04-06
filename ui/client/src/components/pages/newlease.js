@@ -142,10 +142,10 @@ previewTemplate = async (event) => {
 };
 
 /*HELPERS*/
-  runExample = async () => {
-    const { accounts, contract } = this.state;
-    console.log("OpenLease starting");
-  };
+  // runExample = async () => {
+  //   const { accounts, contract } = this.state;
+  //   console.log("OpenLease starting");
+  // };
 /*converts an email address into an object, to be used with uploadDraft
 or upLoadContract methods from the APIClient.
 Eventually this function will no longer be needed. */
