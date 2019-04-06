@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import getWeb3 from "../../utils/getWeb3";
 import { APIClient, Openlaw } from 'openlaw';
 import Navbar from "../navbar"
-import {Route, Redirect} from 'react-router'
 
 
     const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"

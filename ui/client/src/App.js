@@ -17,7 +17,6 @@ function App() {
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/login" component={Login} />  
         <Route path="/new" component={Newlease} />
-        <Route path="/previous" component={Previous}/>
       </div>
     </Router>
   );

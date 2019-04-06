@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Navbar from "../navbar"
 import { APIClient, Openlaw } from 'openlaw';
 
-
 const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
 // const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
 const OPENLAW_USER = 'oliver.renwick@gmail.com'; //add your Openlaw login email
@@ -26,6 +25,7 @@ this.state={
 data: {},
 username: '',
 password: '',
+redirect: false
 
 }
 
@@ -38,11 +38,17 @@ onSubmit = async(event) => {
 
     apiClient.login(openLawConfig.userName,openLawConfig.password).then(data => {
         console.log(data);
-        this.setState({data:data});
+        this.setState({data:data, redirect: true});
         return data;
         });
       console.log("current state: " + this.state.data)
 
+    redirectToPrevious()
+
+}
+
+redirectToPrevious = () => {
+    this.props.history.push('/previous')
 }
 
 
