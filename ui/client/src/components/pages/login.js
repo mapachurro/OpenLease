@@ -43,7 +43,7 @@ onSubmit = async(event) => {
         });
       console.log("current state: " + this.state.data)
 
-    redirectToPrevious()
+    this.redirectToPrevious()
 
 }
 

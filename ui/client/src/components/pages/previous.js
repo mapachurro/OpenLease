@@ -28,7 +28,6 @@ constructor(props){
     
   }
 
-this.login = this.login.bind(this)
 }
 
   searchDrafts(){
