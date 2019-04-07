@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Router, Route, Switch } from "react-router-dom"; 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
 import Login from "./components/pages/login";
 import Newlease from "./components/pages/newlease.js";
 import Overview from "./components/pages/overview.js";
@@ -12,7 +12,7 @@ function App() {
 
   return (
 
-    <BrowserRouter>
+    <Router>
       <Switch>
         <Route exact path="/" component={Overview} />
         <Route exact path="/signup" component={Signup} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/new" component={Newlease} />
         <Route exact path="/previous" component = {Previous} />
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 

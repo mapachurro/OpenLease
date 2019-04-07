@@ -78,6 +78,10 @@ constructor(props){
     }
   }
 
+  componentWillUnmount(){
+    
+  }
+
   render(){
       return (
         <div>
