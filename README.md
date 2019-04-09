@@ -13,12 +13,9 @@ HOW TO MAKE IT WORK:
 
 **Please note -- currently in development**
 
-Given that the backend runs on Scala, I have been developing this with SBT and a Java SDK installed. As it is, there are two commands that need to be run once you clone the repo:
+Given that the backend runs on Scala, I have been developing this with SBT and a Java SDK installed, as well as your standard node.js. Given that there is a React app involved, it may require an 'npm install' in both the root director as well as in /ui. But in terms of actually running it:
 
 In root directory:
 'sbt run'
 
-In root/keycloak-5.0.0/bin, run 'standalone.sh' 
--I'm not sure that Keycloak will be in the final build (if not, this instruction will be deleted).
-
-That should spin up the server and React; currently it's hosting at the React default of localhost:3000.
+That should spin up the server and React; currently it's hosting at internet default of localhost: 80.

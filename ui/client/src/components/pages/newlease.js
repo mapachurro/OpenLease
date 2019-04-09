@@ -26,20 +26,25 @@ class App extends Component {
 //initial state of variables for BillOfSale Template, and web3,etc
   state = { 
 
+   Effective_Date: null,
    Landlord_Name: '',
    Tenant_Name: '',
    Property_Name: '',
    Lease_Commencement_Date: null,
    Lease_Termination_Date: null, 
+   Rent_Amount: null,
    Rent_Due_Date: '',
+   Returned_Check_Fee: null,
    Rent_Increase_Date: '',
    Security_Deposit_Amount: null,
    Premises_Description: '',
    Daily_Animal_Restriction_Violation_Fee: null,
    Landlord_Notice_Address: '',
-   Effective_Date: null,
    Landlord_Email: '',
-   Tenant_Email: ''
+   Tenant_Email: '',
+
+   UserObject: {}
+
   };
 
   componentDidMount = async () => {
@@ -64,6 +69,7 @@ class App extends Component {
     //Login to your instance with your email and password, return JSON 
     apiClient.login(openLawConfig.userName,openLawConfig.password).then(console.log);
     
+
     //Retrieve your OpenLaw template by name, use async/await 
     const myTemplate = await apiClient.getTemplate(openLawConfig.templateName);
    
@@ -111,21 +117,22 @@ previewTemplate = async (event) => {
     try{
       
       const params = {
-
-        "Landlord_Name": this.state.Landlord_Name,
-        "Tenant_Name": this.state.Tenant_Name,
-        "Property_Name": this.state.Property_Name,
-        "Lease_Commencement_Date": this.state.Lease_Commencement_Date,
-        "Lease_Termination_Date": this.state.Lease_Termination_Date, 
-        "Rent_Due_Date": this.state.Rent_Due_Date,
-        "Rent_Increase_Date": this.state.Rent_Increase_Date,
-        "Security_Deposit_Amount": this.state.Security_Deposit_Amount,
-        "Premises_Description": this.state.Premises_Description,
-        "Daily_Animal_Restriction_Violation_Fee": this.state.Daily_Animal_Restriction_Violation_Fee,
-        "Landlord_Notice_Address": this.state.Landlord_Notice_Address,
-        "Effective_Date": this.state.Effective_Date,
-        "Landlord_Email": this.state.Landlord_Email,
-        "Tenant_Email": this.state.Tenant_Email
+        "Effective Date": this.state.Effective_Date,
+        "Landlord Name": this.state.Landlord_Name,
+        "Tenant Name": this.state.Tenant_Name,
+        "Property Name": this.state.Property_Name,
+        "Lease Commencement Date": this.state.Lease_Commencement_Date,
+        "Lease Termination Date": this.state.Lease_Termination_Date, 
+        "Rent Amount": this.state.Rent_Amount,
+        "Rent Due Date": this.state.Rent_Due_Date,
+        "Returned Check Fee": this.state.Returned_Check_Fee,
+        "Rent Increase Date": this.state.Rent_Increase_Date,
+        "Security Deposit Amount": this.state.Security_Deposit_Amount,
+        "Premises Description": this.state.Premises_Description,
+        "Daily Animal Restriction Violation Fee": this.state.Daily_Animal_Restriction_Violation_Fee,
+        "Landlord Notice Address": this.state.Landlord_Notice_Address,
+        "Landlord Email": this.state.Landlord_Email,
+        "Tenant Email": this.state.Tenant_Email
        };
       
        const executionResult = await Openlaw.execute(this.state.myCompiledTemplate.compiledTemplate, {}, params);
@@ -161,8 +168,10 @@ Eventually this function will no longer be needed. */
           identityProviderId: "openlaw",
           identifier: original.identifiers[0].id
         }
-      ]
+      ]     
     }
+    console.log("UserObject returned: " + original.id)
+    this.setState({UserObject: original})
     return object;
   }
 
@@ -180,20 +189,22 @@ Eventually this function will no longer be needed. */
       text: myTemplate.content,
       creator: this.state.creatorId,
       parameters: {
-        "Landlord Name: ": this.state.Landlord_Name,
-        "Tenant Name: ": this.state.Tenant_Name,
-        "Property Name: ": this.state.Property_Name,
-        "Lease Commencement Date: ": this.state.Lease_Commencement_Date,
-        "Lease Termination Date: ": this.state.Lease_Termination_Date,
-        "Rent_Due_Date": this.state.Rent_Due_Date,
-        "Rent_Increase_Date": this.state.Rent_Increase_Date,
-        "Security_Deposit_Amount": this.state.Security_Deposit_Amount,
-        "Premises_Description": this.state.Premises_Description,
-        "Daily_Animal_Restriction_Violation_Fee": this.state.Daily_Animal_Restriction_Violation_Fee,
-        "Landlord_Notice_Address": this.state.Landlord_Notice_Address,
-        "Effective_Date": this.state.Effective_Date,
-        "Landlord_Email": JSON.stringify(this.convertUserObject(landlord)),
-        "Tenant_Email: ": JSON.stringify(this.convertUserObject(tenant))
+        "Effective Date": this.state.Effective_Date,
+        "Landlord Name": this.state.Landlord_Name,
+        "Tenant Name": this.state.Tenant_Name,
+        "Property Name": this.state.Property_Name,
+        "Lease Commencement Date": this.state.Lease_Commencement_Date,
+        "Lease Termination Date": this.state.Lease_Termination_Date,
+        "Rent Amount": this.state.Rent_Amount,
+        "Rent Due Date": this.state.Rent_Due_Date,
+        "Returned Check Fee": "",
+        "Rent Increase Date": this.state.Rent_Increase_Date,
+        "Security Deposit Amount": this.state.Security_Deposit_Amount,
+        "Premises Description": this.state.Premises_Description,
+        "Daily Animal Restriction Violation Fee": this.state.Daily_Animal_Restriction_Violation_Fee,
+        "Landlord Notice Address": this.state.Landlord_Notice_Address,
+        "Landlord Email": this.state.Landlord_Email,
+        "Tenant Email": this.state.Tenant_Email
       },
       overriddenParagraphs: {},
       agreements: {},
@@ -214,6 +225,10 @@ Eventually this function will no longer be needed. */
       //login to api
       apiClient.login(openLawConfig.userName,openLawConfig.password);
       console.log('apiClient logged in');
+
+      //Make user admin
+      // apiClient.toAdminUser(this.UserObject).then(console.log);
+      // console.log("Adminified!")
 
       //add Open Law params to be uploaded
       const uploadParams = await this.buildOpenLawParamsObj(this.state.myTemplate,this.state.creatorId);
@@ -249,6 +264,13 @@ Eventually this function will no longer be needed. */
                 <Grid columns={2}>
                   <Grid.Column>
                     <Form onSubmit = {this.onSubmit}>
+                    <Form.Field>
+                        <label>Effective Date : </label>
+                        <input className="entry" 
+                          placeholder = 'Effective date of lease'
+                          onChange = {event => this.setState({Effective_Date: event.target.value})}
+                         />
+                      </Form.Field>  
                       <Form.Field>
                         <label>Landlord Name : </label>
                         <input className="entry" 
@@ -285,9 +307,23 @@ Eventually this function will no longer be needed. */
                         />
                         </Form.Field>
                         <Form.Field>
+                        <label>Rent amount :</label>
+                        <input className="entry" 
+                      placeholder = "Monthly rent payment"
+                          onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
+                        />
+                        </Form.Field>
+                        <Form.Field>
                         <label>Rent due date :</label>
                         <input className="entry" 
                       placeholder = "Day each month that rent is due"
+                          onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
+                        />
+                        </Form.Field>
+                        <Form.Field>
+                        <label>Returned check fee :</label>
+                        <input className="entry" 
+                      placeholder = "Fee for returned checks"
                           onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
                         />
                         </Form.Field>
@@ -326,13 +362,7 @@ Eventually this function will no longer be needed. */
                           onChange = {event => this.setState({Landlord_Notice_Address: event.target.value})}
                          />
                       </Form.Field>  
-                      <Form.Field>
-                        <label>Effective Date : </label>
-                        <input className="entry" 
-                          placeholder = 'Effective date of lease'
-                          onChange = {event => this.setState({Effective_Date: event.target.value})}
-                         />
-                      </Form.Field>  
+
 
                       <br></br>
 
