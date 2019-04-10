@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <profile name="sbt 1" modules="openlease_3775" />
-    <profile name="sbt 2" modules="scala-play-react-seed">
+    <profile name="sbt 2" modules="openlease,scala-play-react-seed">
       <option name="deprecationWarnings" value="true" />
       <option name="uncheckedWarnings" value="true" />
       <parameters>

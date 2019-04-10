@@ -24,13 +24,18 @@ def runOnCommandline(script: String)(implicit dir: File): Int = {
 // Check of node_modules directory exist in given directory.
 def isNodeModulesInstalled(implicit dir: File): Boolean = (dir / "node_modules").exists()
 
+//Use this command if you're using npm
 // Execute `npm install` command to install all node module dependencies. Return Success if already installed.
-def runNpmInstall(implicit dir: File): Int =
+//def runNpmInstall(implicit dir: File): Int =
+//  if (isNodeModulesInstalled) Success else runOnCommandline(FrontendCommands.dependencyInstall)
+
+//Use this command if you're using Yarn
+def runYarnInstall(implicit dir: File): Int =
   if (isNodeModulesInstalled) Success else runOnCommandline(FrontendCommands.dependencyInstall)
 
 // Execute task if node modules are installed, else return Error status.
 def ifNodeModulesInstalled(task: => Int)(implicit dir: File): Int =
-  if (runNpmInstall == Success) task
+  if (runYarnInstall == Success) task
   else Error
 
 // Execute frontend test task. Update to change the frontend test task.
