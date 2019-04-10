@@ -1,13 +1,292 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\PlayAuthenticate.java:9:8: object cache is not a member of package play[0m
-[0m[[0m[31merror[0m] [0m[0mimport play.cache.SyncCacheApi;[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\PlayAuthenticate.java:40:109: not found: type SyncCacheApi[0m
-[0m[[0m[31merror[0m] [0m[0m	public PlayAuthenticate(final Config config, final Resolver resolver, final MessagesApi messagesApi, final SyncCacheApi cacheApi) {[0m
-[0m[[0m[31merror[0m] [0m[0m	                                                                                                           ^[0m
-[0m[[0m[33mwarn[0m] [0m[0man unexpected type representation reached the compiler backend while compiling currentAuth.template.scala: <error>. If possible, please file a bug on issues.scala-lang.org.[0m
-[0m[[0m[31merror[0m] [0m[0mError while emitting currentAuth.template.scala[0m
-[0m[[0m[31merror[0m] [0m[0m<error> (of class scala.reflect.internal.Types$ErrorType$)[0m
-[0m[[0m[31merror[0m] [0m[0mError while emitting forProviders.template.scala[0m
-[0m[[0m[31merror[0m] [0m[0massertion failed: ClassBType.info not yet assigned: Lcom/feth/play/module/pa/PlayAuthenticate;[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\ext\ExternalAuthProvider.java:7:1: package org.apache.http does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.NameValuePair;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\ext\ExternalAuthProvider.java:8:1: package org.apache.http.client.methods does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.client.methods.HttpGet;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\ext\ExternalAuthProvider.java:9:1: package org.apache.http.client.utils does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.client.utils.URLEncodedUtils;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\ext\ExternalAuthProvider.java:28:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class NameValuePair[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.ext.ExternalAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m			final List<? extends NameValuePair> params) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\ext\ExternalAuthProvider.java:55:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class NameValuePair[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.ext.ExternalAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m			final List<? extends NameValuePair> params) throws ResolverMissingException {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:13:1: package play.libs.oauth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:14:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.ConsumerKey;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:15:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.OAuthCalculator;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:16:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.RequestToken;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:17:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.ServiceInfo;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:18:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:19:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:37:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.OAuth1AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	private final WSClient wsClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:39:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.OAuth1AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	public OAuth1AuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:44:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class RequestToken[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.OAuth1AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	protected abstract I buildInfo(final RequestToken rtoken)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:163:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class OAuthCalculator[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.OAuth1AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	protected JsonNode signedOauthGet(final String url, final OAuthCalculator calculator) throws AuthException {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:174:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class OAuthCalculator[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.OAuth1AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	protected OAuthCalculator getOAuthCalculator(final OAuth1AuthInfo info) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:75:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class RequestToken[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.OAuth1AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	public static class SerializableRequestToken extends RequestToken implements Serializable {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\OAuth1AuthProvider.java:82:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class RequestToken[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.OAuth1AuthProvider.SerializableRequestToken[0m
+[0m[[0m[31merror[0m] [0m[0m		public SerializableRequestToken(RequestToken source) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\linkedin\LinkedinAuthProvider.java:11:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.OAuthCalculator;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\linkedin\LinkedinAuthProvider.java:12:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.RequestToken;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\linkedin\LinkedinAuthProvider.java:13:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\linkedin\LinkedinAuthProvider.java:31:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.linkedin.LinkedinAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	public LinkedinAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\linkedin\LinkedinAuthProvider.java:65:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class RequestToken[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.linkedin.LinkedinAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected LinkedinAuthInfo buildInfo(final RequestToken requestToken)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\twitter\TwitterAuthProvider.java:11:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.OAuthCalculator;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\twitter\TwitterAuthProvider.java:12:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.RequestToken;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\twitter\TwitterAuthProvider.java:13:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\twitter\TwitterAuthProvider.java:29:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.twitter.TwitterAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	public TwitterAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\twitter\TwitterAuthProvider.java:59:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class RequestToken[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.twitter.TwitterAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected TwitterAuthInfo buildInfo(final RequestToken rtoken)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\xing\XingAuthProvider.java:11:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.OAuthCalculator;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\xing\XingAuthProvider.java:12:1: package play.libs.oauth.OAuth does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.oauth.OAuth.RequestToken;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\xing\XingAuthProvider.java:13:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\xing\XingAuthProvider.java:35:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.xing.XingAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	public XingAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth1\xing\XingAuthProvider.java:40:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class RequestToken[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth1.xing.XingAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected XingAuthInfo buildInfo(RequestToken rtoken)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:9:1: package org.apache.http does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.NameValuePair;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:10:1: package org.apache.http.client.utils does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.client.utils.URLEncodedUtils;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:11:1: package org.apache.http.message does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.message.BasicNameValuePair;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:15:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:16:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSRequest;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:17:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:44:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.OAuth2AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	protected final WSClient wsClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:47:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.OAuth2AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	public OAuth2AuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient, final MessagesApi messagesApi) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:95:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.OAuth2AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	protected WSResponse fetchAuthResponse(String url, QueryParam...params) throws AuthException {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:146:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.OAuth2AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	protected abstract I buildInfo(final WSResponse r)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:156:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class NameValuePair[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.OAuth2AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	protected List<NameValuePair> getAuthParams(final Config c,[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java:183:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class NameValuePair[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.OAuth2AuthProvider<U,I>[0m
+[0m[[0m[31merror[0m] [0m[0m	protected List<NameValuePair> getParams(final Request request,[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\eventbrite\EventBriteAuthProvider.java:11:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\eventbrite\EventBriteAuthProvider.java:12:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\eventbrite\EventBriteAuthProvider.java:31:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.eventbrite.EventBriteAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m    public EventBriteAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient, final MessagesApi messagesApi) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\eventbrite\EventBriteAuthProvider.java:60:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.eventbrite.EventBriteAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m    protected EventBriteAuthInfo buildInfo(WSResponse r)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\facebook\FacebookAuthProvider.java:9:1: package org.apache.http does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.NameValuePair;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\facebook\FacebookAuthProvider.java:10:1: package org.apache.http.message does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.message.BasicNameValuePair;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\facebook\FacebookAuthProvider.java:14:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\facebook\FacebookAuthProvider.java:15:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\facebook\FacebookAuthProvider.java:36:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.facebook.FacebookAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m    public FacebookAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient, final MessagesApi messagesApi) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\facebook\FacebookAuthProvider.java:78:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.facebook.FacebookAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m    protected FacebookAuthInfo buildInfo(final WSResponse r) throws AccessTokenException {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\facebook\FacebookAuthProvider.java:96:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class NameValuePair[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.facebook.FacebookAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m    protected List<NameValuePair> getAuthParams(final Config c,[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\foursquare\FoursquareAuthProvider.java:12:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\foursquare\FoursquareAuthProvider.java:13:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\foursquare\FoursquareAuthProvider.java:29:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.foursquare.FoursquareAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	public FoursquareAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient, final MessagesApi messagesApi) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\foursquare\FoursquareAuthProvider.java:34:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.foursquare.FoursquareAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected FoursquareAuthInfo buildInfo(final WSResponse r)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\github\GithubAuthProvider.java:10:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\github\GithubAuthProvider.java:11:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\github\GithubAuthProvider.java:27:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.github.GithubAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m    public GithubAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient, final MessagesApi messagesApi) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\github\GithubAuthProvider.java:62:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.github.GithubAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m    protected GithubAuthInfo buildInfo(final WSResponse r)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\google\GoogleAuthProvider.java:11:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\google\GoogleAuthProvider.java:12:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\google\GoogleAuthProvider.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.google.GoogleAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	public GoogleAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient, final MessagesApi messagesApi) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\google\GoogleAuthProvider.java:57:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.google.GoogleAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected GoogleAuthInfo buildInfo(final WSResponse r)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:12:1: package org.apache.http does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.NameValuePair;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:13:1: package org.apache.http.client.utils does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.client.utils.URLEncodedUtils;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:14:1: package org.apache.http.message does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.message.BasicNameValuePair;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:17:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:18:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:36:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.pocket.PocketAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	public PocketAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient, final MessagesApi messagesApi) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:51:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class NameValuePair[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.pocket.PocketAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	private static JsonNode encodeParamsAsJson(final List<NameValuePair> params) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:72:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.pocket.PocketAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected PocketAuthInfo buildInfo(final WSResponse r)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:125:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class NameValuePair[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.pocket.PocketAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	private List<NameValuePair> getRequestTokenParams(final Request request,[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\pocket\PocketAuthProvider.java:136:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class NameValuePair[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.pocket.PocketAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected List<NameValuePair> getAuthParams(final Config c,[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\untappd\UntappdAuthProvider.java:11:1: package org.apache.http does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.NameValuePair;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\untappd\UntappdAuthProvider.java:12:1: package org.apache.http.message does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.message.BasicNameValuePair;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\untappd\UntappdAuthProvider.java:16:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\untappd\UntappdAuthProvider.java:17:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\untappd\UntappdAuthProvider.java:53:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.untappd.UntappdAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	public UntappdAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient, final MessagesApi messagesApi) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\untappd\UntappdAuthProvider.java:120:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class NameValuePair[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.untappd.UntappdAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected List<NameValuePair> getParams(final Request request,[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\untappd\UntappdAuthProvider.java:130:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.untappd.UntappdAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected UntappdAuthInfo buildInfo(final WSResponse r)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\vk\VkAuthProvider.java:11:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\vk\VkAuthProvider.java:12:1: package play.libs.ws does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.ws.WSResponse;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\vk\VkAuthProvider.java:34:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.vk.VkAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	public VkAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final WSClient wsClient, final MessagesApi messagesApi) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\vk\VkAuthProvider.java:68:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class WSResponse[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.oauth2.vk.VkAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	protected VkAuthInfo buildInfo(final WSResponse r)[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\openid\OpenIdAuthProvider.java:10:1: package play.api.libs.openid does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.libs.openid.OpenIDError;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\openid\OpenIdAuthProvider.java:12:1: package play.libs.openid does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.openid.OpenIdClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\openid\OpenIdAuthProvider.java:13:1: package play.libs.openid does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.openid.UserInfo;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\openid\OpenIdAuthProvider.java:37:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class OpenIdClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.openid.OpenIdAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	private final OpenIdClient openIdClient;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\openid\OpenIdAuthProvider.java:40:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class OpenIdClient[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.openid.OpenIdAuthProvider[0m
+[0m[[0m[31merror[0m] [0m[0m	public OpenIdAuthProvider(final PlayAuthenticate auth, final ApplicationLifecycle lifecycle, final OpenIdClient openIdClient) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\openid\OpenIdAuthUser.java:5:1: package play.libs.openid does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.libs.openid.UserInfo;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\openid\OpenIdAuthUser.java:20:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class UserInfo[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class com.feth.play.module.pa.providers.openid.OpenIdAuthUser[0m
+[0m[[0m[31merror[0m] [0m[0m	public OpenIdAuthUser(final UserInfo u) {[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\password\UsernamePasswordAuthUser.java:3:1: package org.mindrot.jbcrypt does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.mindrot.jbcrypt.BCrypt;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\password\UsernamePasswordAuthProvider.java:5:1: package com.feth.play.module.mail does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.feth.play.module.mail.IMailer;[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\password\UsernamePasswordAuthProvider.java:6:1: package com.feth.play.module.mail does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.feth.play.module.mail.Mailer;[0m
+[0m[[0m[0minfo[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java: Some input files use unchecked or unsafe operations.[0m
+[0m[[0m[0minfo[0m] [0m[0mC:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\app\com\feth\play\module\pa\providers\oauth2\OAuth2AuthProvider.java: Recompile with -Xlint:unchecked for details.[0m
