@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "keycloak-js": "^4.0.0-beta.2",
+    "openlaw": "^0.1.25",
+    "openlaw-elements": "^1.0.0-beta.16",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^5.0.0",

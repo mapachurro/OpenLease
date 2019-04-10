@@ -68,7 +68,6 @@ class App extends Component {
 
     //Login to your instance with your email and password, return JSON 
     apiClient.login(openLawConfig.userName,openLawConfig.password).then(console.log);
-    
 
     //Retrieve your OpenLaw template by name, use async/await 
     const myTemplate = await apiClient.getTemplate(openLawConfig.templateName);
@@ -131,8 +130,8 @@ previewTemplate = async (event) => {
         "Premises Description": this.state.Premises_Description,
         "Daily Animal Restriction Violation Fee": this.state.Daily_Animal_Restriction_Violation_Fee,
         "Landlord Notice Address": this.state.Landlord_Notice_Address,
-        "Landlord Email": this.state.Landlord_Email,
-        "Tenant Email": this.state.Tenant_Email
+        "Landlord Email": JSON.stringify(this.convertUserObject(this.state.Landlord_Email)),
+        "Tenant Email": JSON.stringify(this.convertUserObject(this.state.Tenant_Email))
        };
       
        const executionResult = await Openlaw.execute(this.state.myCompiledTemplate.compiledTemplate, {}, params);
@@ -156,8 +155,9 @@ previewTemplate = async (event) => {
 /*converts an email address into an object, to be used with uploadDraft
 or upLoadContract methods from the APIClient.
 Eventually this function will no longer be needed. */
+
   convertUserObject = (original) => {
-    console.log("original email : ")
+    console.log("original email : " + original.email)
     const object = {
       id: {
         id: original.id
@@ -177,17 +177,19 @@ Eventually this function will no longer be needed. */
 
 /*Build Open Law Params to Submit for Upload Contract*/
   buildOpenLawParamsObj = async (myTemplate) => {
-    console.log("within buildOpenLawParamsObj : " + this.state)
+    console.log("within buildOpenLawParamsObj : ")
 
   const landlord = await apiClient.getUserDetails(this.state.Landlord_Email);
   const tenant = await apiClient.getUserDetails(this.state.Tenant_Email);
-
+  console.log("landlord name: " + landlord.name)
+  console.log("tenant name: " + tenant.name)
+  console.log(this.state.UserObject)
 
     const object = {
       templateId: myTemplate.id,
       title: myTemplate.title,
       text: myTemplate.content,
-      creator: this.state.creatorId,
+      creator: this.state.UserObject,
       parameters: {
         "Effective Date": this.state.Effective_Date,
         "Landlord Name": this.state.Landlord_Name,
@@ -203,8 +205,8 @@ Eventually this function will no longer be needed. */
         "Premises Description": this.state.Premises_Description,
         "Daily Animal Restriction Violation Fee": this.state.Daily_Animal_Restriction_Violation_Fee,
         "Landlord Notice Address": this.state.Landlord_Notice_Address,
-        "Landlord Email": this.state.Landlord_Email,
-        "Tenant Email": this.state.Tenant_Email
+        "Landlord Email": JSON.stringify(this.convertUserObject(landlord)),
+        "Tenant Email": JSON.stringify(this.convertUserObject(tenant))
       },
       overriddenParagraphs: {},
       agreements: {},
@@ -249,9 +251,10 @@ Eventually this function will no longer be needed. */
     }
   }
 
+    
   render() {
     if (!this.state.web3) {
-      return <div>Loading Web3, accounts, and contract...</div>;
+      return <div>Loading Web3, accounts, and template. If nothing loads, refresh the page.</div>
     }
     return (
       <div className="App">
@@ -370,7 +373,8 @@ Eventually this function will no longer be needed. */
                         <label>Landlord Email : </label>
                         <input className="entry" 
                           type="text" placeholder="Landlord Email Address : "
-                          onChange={event => {console.log(this.state, event.target.value); this.setState({Landlord_Email: event.target.value})} }/>
+                          onChange={event => this.setState({Landlord_Email: event.target.value})}
+                          />
                       </Form.Field>  
                        <Form.Field>
                         <label>Tenant Email : </label>

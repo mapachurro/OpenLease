@@ -32,7 +32,7 @@ class Previous extends Component {
   }
 
   searchDrafts() {
-    apiClient.searchDrafts(openLawConfig.userName, 1, 10, "creationdate").then(console.log);
+    apiClient.searchDrafts("Ross Campbell", 1, 10, "creationdate").then(console.log);
     console.log("post search")
   }
 

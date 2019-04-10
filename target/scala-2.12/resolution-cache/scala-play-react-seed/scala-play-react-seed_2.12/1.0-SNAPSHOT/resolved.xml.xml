@@ -4,7 +4,7 @@
 		module="scala-play-react-seed_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20190401150753"
+		publication="20190409183321"
 	>
 		<description homepage="http://joscha.github.io/play-authenticate">
 		scala-play-react-seed
@@ -52,5 +52,6 @@
 		<dependency org="com.typesafe.play" name="play-guice_2.12" rev="2.6.13" conf="compile->default(compile)"/>
 		<dependency org="org.scalatestplus.play" name="scalatestplus-play_2.12" rev="3.1.2" conf="test->default(compile)"/>
 		<dependency org="com.h2database" name="h2" rev="1.4.196" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ehcache_2.12" rev="2.6.13" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
