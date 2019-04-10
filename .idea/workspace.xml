@@ -2,34 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed8fb95-913d-4bb3-8bbb-ebcab1bf7ad6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/BasicOAuth2AuthUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/OAuth2AuthInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/OAuth2AuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/OAuth2AuthUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/eventbrite/EventBriteAuthInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/eventbrite/EventBriteAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/eventbrite/EventBriteAuthUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/facebook/FacebookAuthInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/facebook/FacebookAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/facebook/FacebookAuthUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/foursquare/FoursquareAuthInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/foursquare/FoursquareAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/foursquare/FoursquareAuthUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/github/GithubAuthInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/github/GithubAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/github/GithubAuthUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/google/GoogleAuthInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/google/GoogleAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/google/GoogleAuthUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/pocket/PocketAuthInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/pocket/PocketAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/pocket/PocketAuthUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/untappd/UntappdAuthInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/untappd/UntappdAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/untappd/UntappdAuthUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/vk/VkAuthInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/vk/VkAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/oauth2/vk/VkAuthUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/openid/OpenIdAuthProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/openid/OpenIdAuthUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/openid/exceptions/NoOpenIdAuthException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/com/feth/play/module/pa/providers/openid/exceptions/OpenIdConnectException.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -120,7 +97,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554903468880" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554903871786" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -206,7 +183,7 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.16439909" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.327787" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
