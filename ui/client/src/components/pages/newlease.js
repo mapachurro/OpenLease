@@ -99,6 +99,11 @@ class App extends Component {
      console.log("my compiled template..", myCompiledTemplate);
      this.setState({myCompiledTemplate});
 
+      // const userToken = await apiClient.getAccessToken(
+      //   "9285a52486fe289ad25c31df48d50107cc874adadd37e15eff42083aa7ca551e"
+      // );
+      // console.log(userToken)
+
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
@@ -189,7 +194,7 @@ Eventually this function will no longer be needed. */
       templateId: myTemplate.id,
       title: myTemplate.title,
       text: myTemplate.content,
-      creator: this.state.UserObject,
+      creator: "c963aa23-3942-4d93-8d3a-b42b8528aa3e",
       parameters: {
         "Effective Date": this.state.Effective_Date,
         "Landlord Name": this.state.Landlord_Name,
