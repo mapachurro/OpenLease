@@ -13,7 +13,7 @@
     "semantic-ui-react": "^0.86.0",
     "web3": "^1.0.0-beta.36",
     "webpack-cli": "^3.3.0",
-    "dotenv": "^6.2.0",
+    "dotenv": "^6.2.0"
   },
   "scripts": {
     "start": "set PORT=3000 && react-scripts start",
