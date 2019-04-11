@@ -7,5 +7,5 @@ object FrontendCommands {
   val test: String = "npm test"
   val serve: String = "npm run"
   val build: String = "npm run build"
-  val start: String = "cd ./ui/client && npm start"
+  val start: String = "npm start"
 }

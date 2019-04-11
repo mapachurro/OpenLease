@@ -53,7 +53,6 @@ object FrontendRunHook {
         process.foreach(_.destroy())
         process = None
       }
-
     }
 
     UIBuildHook

@@ -1,14 +1,33 @@
 {
-  "scripts" : 
-  {
-
-    "dev": "webpack --config webpack.config.dev.js",
-    "build": "webpack  --config webpack.config.build.js"
-  },
-
-
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://openlease.herokuapp.com/",
   "dependencies": {
+    "openlaw": "^0.1.25",
     "openlaw-elements": "^1.0.0-beta.16",
-    "webpack-cli": "^3.3.0"
-  }
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.1",
+    "semantic-ui-react": "^0.86.0",
+    "truffle-contract": "^4.0.0-beta.1",
+    "web3": "^1.0.0-beta.36",
+    "webpack-cli": "^3.3.0",
+    "dotenv": "^6.2.0",
+    "truffle-core": "^5.0.9",
+    "truffle-hdwallet-provider": "^1.0.0-web3one.5" 
+  },
+  "scripts": {
+    "start": "set PORT=3000 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

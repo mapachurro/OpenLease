@@ -2,8 +2,8 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://openlease.herokuapp.com/",
   "dependencies": {
-    "keycloak-js": "^4.0.0-beta.2",
     "openlaw": "^0.1.25",
     "openlaw-elements": "^1.0.0-beta.16",
     "react": "^16.6.3",
@@ -16,7 +16,7 @@
     "webpack-cli": "^3.3.0"
   },
   "scripts": {
-    "start": "set PORT=3000 && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
