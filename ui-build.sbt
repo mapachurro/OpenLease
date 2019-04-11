@@ -26,16 +26,16 @@ def isNodeModulesInstalled(implicit dir: File): Boolean = (dir / "node_modules")
 
 //Use this command if you're using npm
 // Execute `npm install` command to install all node module dependencies. Return Success if already installed.
-//def runNpmInstall(implicit dir: File): Int =
-//  if (isNodeModulesInstalled) Success else runOnCommandline(FrontendCommands.dependencyInstall)
+def runNpmInstall(implicit dir: File): Int =
+ if (isNodeModulesInstalled) Success else runOnCommandline(FrontendCommands.dependencyInstall)
 
 //Use this command if you're using Yarn
-def runYarnInstall(implicit dir: File): Int =
-  if (isNodeModulesInstalled) Success else runOnCommandline(FrontendCommands.dependencyInstall)
+// def runYarnInstall(implicit dir: File): Int =
+//   if (isNodeModulesInstalled) Success else runOnCommandline(FrontendCommands.dependencyInstall)
 
 // Execute task if node modules are installed, else return Error status.
 def ifNodeModulesInstalled(task: => Int)(implicit dir: File): Int =
-  if (runYarnInstall == Success) task
+  if (runNpmInstall == Success) task
   else Error
 
 // Execute frontend test task. Update to change the frontend test task.
