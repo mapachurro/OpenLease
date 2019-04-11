@@ -7,9 +7,9 @@ import Navbar from "../navbar"
 
 
     const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
-    const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
-    const OPENLAW_USER = 'oliver.renwick@gmail.com'; //add your Openlaw login email
-    const OPENLAW_PASSWORD = 'Palabra12' //add your Openlaw password
+    const TEMPLATE_NAME = process.env.TEMPLATE_NAME; //name of template stored on Openlaw
+    const OPENLAW_USER = process.env.OPENLAW_USER; //add your Openlaw login email
+    const OPENLAW_PASSWORD = process.env.OPENLAW_PASSWORD //add your Openlaw password
     //create config 
     const openLawConfig = {
       server:URL, 
@@ -43,7 +43,10 @@ class App extends Component {
    Landlord_Email: '',
    Tenant_Email: '',
 
-   UserObject: {}
+   UserObject: {},
+   draftId: "",
+   myTemplate: "",
+   creatorId: ""
 
   };
 
@@ -194,7 +197,7 @@ Eventually this function will no longer be needed. */
       templateId: myTemplate.id,
       title: myTemplate.title,
       text: myTemplate.content,
-      creator: "c963aa23-3942-4d93-8d3a-b42b8528aa3e",
+      creator: this.state.creatorId,
       parameters: {
         "Effective Date": this.state.Effective_Date,
         "Landlord Name": this.state.Landlord_Name,
@@ -259,7 +262,9 @@ Eventually this function will no longer be needed. */
     
   render() {
     if (!this.state.web3) {
-      return <div>Loading Web3, accounts, and template. If nothing loads, refresh the page.</div>
+      return <div>Loading Web3, accounts, and template. 
+        <br></br>
+        If nothing loads, refresh the page.</div>
     }
     return (
       <div className="App">
@@ -370,7 +375,6 @@ Eventually this function will no longer be needed. */
                           onChange = {event => this.setState({Landlord_Notice_Address: event.target.value})}
                          />
                       </Form.Field>  
-
 
                       <br></br>
 
