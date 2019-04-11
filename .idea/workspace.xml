@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ed8fb95-913d-4bb3-8bbb-ebcab1bf7ad6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/FrontendRunHook.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project/FrontendRunHook.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/active.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
-    </list>
+    <list default="true" id="7ed8fb95-913d-4bb3-8bbb-ebcab1bf7ad6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -47,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/project/FrontendCommands.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -55,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/FrontendRunHook.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            <state relative-caret-position="-8">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -73,6 +66,7 @@
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease</dir>
+      <dir>C:\Users\Owner\Resilio Sync\Synced Docs\Academic\CWRU Bootcamp\Projects\OpenLease\.elasticbeanstalk</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -95,9 +89,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="386" />
-    <option name="y" value="39" />
-    <option name="width" value="1489" />
+    <option name="x" value="822" />
+    <option name="y" value="20" />
+    <option name="width" value="1108" />
     <option name="height" value="902" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -124,7 +118,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555013867082" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555021439048" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -168,7 +162,7 @@
       <map>
         <entry key="$PROJECT_DIR$/build.sbt" value="354964730" />
         <entry key="$PROJECT_DIR$/project/FrontendCommands.scala" value="1457661926" />
-        <entry key="$PROJECT_DIR$/project/FrontendRunHook.scala" value="1375065164" />
+        <entry key="$PROJECT_DIR$/project/FrontendRunHook.scala" value="3188468051" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="3801438840" />
         <entry key="$PROJECT_DIR$/project/plugins.sbt" value="1488466746" />
       </map>
@@ -200,7 +194,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="386" y="39" width="1489" height="902" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12456263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -373,14 +366,14 @@
     <entry file="file://$PROJECT_DIR$/project/FrontendCommands.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/FrontendRunHook.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        <state relative-caret-position="-8">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
         </state>
       </provider>
     </entry>
