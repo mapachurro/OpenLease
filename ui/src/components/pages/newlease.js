@@ -3,7 +3,8 @@ import DraftOhioResidentialLease from "../../contracts/DraftOhioResidentialLease
 import getWeb3 from "../../utils/getWeb3";
 import { Container, Grid, Button, Form} from 'semantic-ui-react';
 import { APIClient, Openlaw } from 'openlaw';
-import Navbar from "../navbar"
+import Navbar from "../navbar";
+import 'dotenv'
 
     const dotenv = require ('dotenv');
     dotenv.config(); 
@@ -12,7 +13,7 @@ import Navbar from "../navbar"
     const OPENLAW_USER = "oliver.renwick@gmail.com"; //add your Openlaw login email
     const OPENLAW_PASSWORD = "Palabra12" //add your Openlaw password
     //create config 
-    console.log("user: " + process.env.OPENLAW_USER)
+    console.log("user: " + process.env.REACT_APP_OPENLAW_USER)
     const openLawConfig = {
       server:URL, 
       templateName:TEMPLATE_NAME,

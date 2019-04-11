@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed8fb95-913d-4bb3-8bbb-ebcab1bf7ad6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/openlease-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/openlease-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/openlease.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/openlease.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/FrontendCommands.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project/FrontendCommands.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/FrontendRunHook.scala" beforeDir="false" afterPath="$PROJECT_DIR$/project/FrontendRunHook.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui-build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/ui-build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/client/.env" beforeDir="false" afterPath="$PROJECT_DIR$/ui/client/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/client/src/components/pages/newlease.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/client/src/components/pages/newlease.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -41,20 +36,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ui-build.sbt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="617">
+              <caret line="69" column="50" lean-forward="true" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/FrontendCommands.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -90,17 +85,17 @@
         <option value="$PROJECT_DIR$/ui/contracts/DraftOhioResidentialLease.sol" />
         <option value="$PROJECT_DIR$/pgp.sbt" />
         <option value="$PROJECT_DIR$/ui/client/package.json" />
-        <option value="$PROJECT_DIR$/ui-build.sbt" />
         <option value="$PROJECT_DIR$/project/FrontendRunHook.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/project/FrontendCommands.scala" />
+        <option value="$PROJECT_DIR$/ui-build.sbt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="y" value="9" />
-    <option name="width" value="1934" />
+    <option name="x" value="522" />
+    <option name="y" value="23" />
+    <option name="width" value="1192" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -113,32 +108,11 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="openlease" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenLease" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="openlease" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenLease" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="openlease" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OpenLease" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554999773816" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555013028132" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -181,7 +155,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$/build.sbt" value="3325533389" />
-        <entry key="$PROJECT_DIR$/project/FrontendCommands.scala" value="495140133" />
+        <entry key="$PROJECT_DIR$/project/FrontendCommands.scala" value="1457661926" />
         <entry key="$PROJECT_DIR$/project/FrontendRunHook.scala" value="1375065164" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="3801438840" />
         <entry key="$PROJECT_DIR$/project/plugins.sbt" value="1488466746" />
@@ -213,10 +187,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="9" width="1934" height="900" extended-state="0" />
+    <frame x="522" y="23" width="1192" height="900" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19316968" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15724382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -384,17 +358,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui-build.sbt">
+    <entry file="file://$PROJECT_DIR$/project/FrontendCommands.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="136">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/FrontendCommands.scala">
+    <entry file="file://$PROJECT_DIR$/ui-build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="617">
+          <caret line="69" column="50" lean-forward="true" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
         </state>
       </provider>
     </entry>
