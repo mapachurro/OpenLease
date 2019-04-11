@@ -1,5 +1,14 @@
 {
+  "scripts" : 
+  {
+
+    "dev": "webpack --config webpack.config.dev.js",
+    "build": "webpack  --config webpack.config.build.js"
+  },
+
+
   "dependencies": {
-    "openlaw-elements": "^1.0.0-beta.16"
+    "openlaw-elements": "^1.0.0-beta.16",
+    "webpack-cli": "^3.3.0"
   }
 }

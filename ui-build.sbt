@@ -42,7 +42,7 @@ def ifNodeModulesInstalled(task: => Int)(implicit dir: File): Int =
 def executeUiTests(implicit dir: File): Int = ifNodeModulesInstalled(runOnCommandline(FrontendCommands.test))
 
 // Execute frontend prod build task. Update to change the frontend prod build task.
-def executeProdBuild(implicit dir: File): Int = ifNodeModulesInstalled(runOnCommandline(FrontendCommands.start))
+def executeProdBuild(implicit dir: File): Int = ifNodeModulesInstalled(runOnCommandline(FrontendCommands.build))
 
 
 // Create frontend build tasks for prod, dev and test execution.

@@ -5,12 +5,14 @@ import { Container, Grid, Button, Form} from 'semantic-ui-react';
 import { APIClient, Openlaw } from 'openlaw';
 import Navbar from "../navbar"
 
-
+    const dotenv = require ('dotenv');
+    dotenv.config(); 
     const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
-    const TEMPLATE_NAME = process.env.TEMPLATE_NAME; //name of template stored on Openlaw
-    const OPENLAW_USER = process.env.OPENLAW_USER; //add your Openlaw login email
-    const OPENLAW_PASSWORD = process.env.OPENLAW_PASSWORD //add your Openlaw password
+    const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
+    const OPENLAW_USER = "oliver.renwick@gmail.com"; //add your Openlaw login email
+    const OPENLAW_PASSWORD = "Palabra12" //add your Openlaw password
     //create config 
+    console.log("user: " + process.env.OPENLAW_USER)
     const openLawConfig = {
       server:URL, 
       templateName:TEMPLATE_NAME,
@@ -46,7 +48,13 @@ class App extends Component {
    UserObject: {},
    draftId: "",
    myTemplate: "",
-   creatorId: ""
+   creatorId: "",
+   web3: null,
+   accounts: null,
+   contract: null,
+   instance: null,
+   myTitle: "",
+   myCompiledTemplate: null,
 
   };
 
