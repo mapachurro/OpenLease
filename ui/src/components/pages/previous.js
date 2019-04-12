@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { APIClient, Openlaw } from 'openlaw';
+import { APIClient } from 'openlaw';
 import Navbar from "../navbar"
 
 

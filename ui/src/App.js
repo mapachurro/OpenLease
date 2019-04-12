@@ -6,7 +6,6 @@ import Overview from "./components/pages/overview.js";
 import Previous from "./components/pages/previous.js";
 import Signup from "./components/pages/signup.js"
 // import Autofill from "./components/pages/autofill.js"
-import "./App.css"
 
 
 function App() {

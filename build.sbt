@@ -2,6 +2,8 @@ name := """openlease"""
 
 version := "1.0-SNAPSHOT"
 
+herokuAppName in Compile := "desolate-lake-45911"
+
 lazy val root = (project in file(".")).enablePlugins(PlayScala).settings(
   watchSources ++= (baseDirectory.value / "public/ui" ** "*").get
 )

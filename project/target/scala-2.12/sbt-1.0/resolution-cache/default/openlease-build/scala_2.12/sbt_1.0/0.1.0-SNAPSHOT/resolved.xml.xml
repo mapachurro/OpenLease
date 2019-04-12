@@ -4,7 +4,7 @@
 		module="openlease-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190411183650"
+		publication="20190411205841"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
@@ -41,5 +41,7 @@
 			<artifact name="global-plugins" type="doc" ext="jar" conf="compile" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="com.typesafe.play" name="sbt-plugin" rev="2.6.13" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
+		<dependency org="com.typesafe.sbt" name="sbt-native-packager" rev="0.7.6" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
+		<dependency org="com.heroku" name="sbt-heroku" rev="2.1.2" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
 	</dependencies>
 </ivy-module>

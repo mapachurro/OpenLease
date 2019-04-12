@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "../navbar"
-import { APIClient, Openlaw } from 'openlaw';
+import { APIClient } from 'openlaw';
 
 const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
 // const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
