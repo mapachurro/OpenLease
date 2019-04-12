@@ -21,9 +21,8 @@ val isWindows = System.getProperty("os.name").toLowerCase().contains("win")
 def runOnCommandline(script: String)(implicit dir: File): Int = {
   if(isWindows){ Process("cmd /c set CI=true&&" + script, dir) } else { Process("env CI=true " + script, dir) } }!
 
-
-
-
+def installNode(script: String)(implicit dir: File): Int = {
+  { Process("curl -sL https://rpm.nodesource.com/setup_10.x | bash - " + script, dir) } }!
 
 // Check of node_modules directory exist in given directory.
 def isNodeModulesInstalled(implicit dir: File): Boolean = (dir / "node_modules").exists()

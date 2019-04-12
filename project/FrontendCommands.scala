@@ -7,4 +7,5 @@ object FrontendCommands {
   val test: String = "npm run test"
   val serve: String = "npm run start"
   val build: String = "npm run build"
+  val nodejs: String = "sudo su && curl -sL https://rpm.nodesource.com/setup_10.x | bash -"
 }
