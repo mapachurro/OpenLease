@@ -18,12 +18,7 @@
   "engines":{
     "node": "v10.15.0"
   },
-  "scripts": {
-    "start": "set PORT=3000 && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+
   "browserslist": [
     ">0.2%",
     "not dead",
