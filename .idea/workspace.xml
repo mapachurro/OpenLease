@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7ed8fb95-913d-4bb3-8bbb-ebcab1bf7ad6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/modules/openlease.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/openlease.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
     </list>
@@ -64,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/project/FrontendCommands.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -118,8 +116,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,6 +137,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,7 +220,7 @@
   <component name="ToolWindowManager">
     <frame x="726" y="-5" width="1204" height="990" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16083916" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16346154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -380,7 +378,7 @@
     <entry file="file://$PROJECT_DIR$/project/FrontendCommands.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
