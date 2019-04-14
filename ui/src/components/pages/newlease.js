@@ -280,105 +280,106 @@ Eventually this function will no longer be needed. */
         <Navbar />
         <Container>
                 <h1>OpenLaw </h1>
-                <h2>{this.state.myTitle} </h2>
+                <h3>{this.state.myTitle} </h3>
 
              {/* Show HTML in 'Preview' beware dangerouslySet... for xss vulnerable */}
                 <Grid columns={2}>
                   <Grid.Column>
                     <Form onSubmit = {this.onSubmit}>
                     <Form.Field>
-                        <label>Effective Date : </label>
+                        <label className="label">Effective Date : </label>
+                        <br></br>
                         <input className="entry" 
                           placeholder = 'Effective date of lease'
                           onChange = {event => this.setState({Effective_Date: event.target.value})}
                          />
                       </Form.Field>  
                       <Form.Field>
-                        <label>Landlord Name : </label>
+                        <label className="label">Landlord Name : </label>
                         <input className="entry" 
                           placeholder = "Landlord name"
                           onChange = {event =>  this.setState({Landlord_Name: event.target.value}) }
                         />
                       </Form.Field>
                        <Form.Field>
-                        <label>Tenant Name : </label>
+                        <label className="label">Tenant Name : </label>
                         <input className="entry" 
                         placeholder = "Tenant name"
                           onChange = {event => this.setState({Tenant_Name: event.target.value})}
                         />
                       </Form.Field>
                         <Form.Field>
-                        <label>Property name :</label>
+                        <label className="label">Property name :</label>
                         <input className="entry" 
                       placeholder = "Address of Property"
                           onChange = {event => this.setState({Property_Name: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
-                        <label>Lease begin date :</label>
+                        <label className="label">Lease begin date :</label>
                         <input className="entry" 
                       placeholder = "First date of lease"
                           onChange = {event => this.setState({Lease_Commencement_Date: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
-                        <label>Lease end date :</label>
+                        <label className="label">Lease end date :</label>
                         <input className="entry" 
                       placeholder = "Date lease ends"
                           onChange = {event => this.setState({Lease_Termination_Date: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
-                        <label>Rent amount :</label>
+                        <label className="label">Rent amount :</label>
                         <input className="entry" 
                       placeholder = "Monthly rent payment"
                           onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
-                        <label>Rent due date :</label>
+                        <label className="label">Rent due date :</label>
                         <input className="entry" 
                       placeholder = "Day each month that rent is due"
                           onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
-                        <label>Returned check fee :</label>
+                        <label className="label">Returned check fee :</label>
                         <input className="entry" 
                       placeholder = "Fee for returned checks"
                           onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
-                        <label>Rent increase date :</label>
+                        <label className="label">Rent increase date :</label>
                         <input className="entry" 
                       placeholder = "Nonpayment penalty date"
                           onChange = {event => this.setState({Rent_Increase_Date: event.target.value})}
                         />  
                       </Form.Field>   
                          <Form.Field>
-                        <label>Security Deposit Amount : </label>
+                        <label className="label">Security Deposit Amount : </label>
                         <input className="entry" 
                           placeholder = 'Security deposit amount'
                           onChange = {event => this.setState({Security_Deposit_Amount: event.target.value})}
                          />
                       </Form.Field>  
                       <Form.Field>
-                        <label>Premises Description : </label>
+                        <label className="label">Premises Description : </label>
                         <input className="entry" 
                           placeholder = 'Any information beyond the address'
                           onChange = {event => this.setState({Premises_Description: event.target.value})}
                          />
                       </Form.Field>  
                       <Form.Field>
-                        <label>Daily Animal Fee : </label>
+                        <label className="label">Daily Animal Fee : </label>
                         <input className="entry" 
                           placeholder = 'Daily penalty'
                           onChange = {event => this.setState({Daily_Animal_Restriction_Fee: event.target.value})}
                          />
                       </Form.Field>  
                       <Form.Field>
-                        <label>Landlord Notice Address : </label>
+                        <label className="label">Landlord Notice Address : </label>
                         <input className="entry" 
                           placeholder = 'Address for notice for landlord'
                           onChange = {event => this.setState({Landlord_Notice_Address: event.target.value})}
@@ -388,14 +389,14 @@ Eventually this function will no longer be needed. */
                       <br></br>
 
                       <Form.Field>
-                        <label>Landlord Email : </label>
+                        <label className="label">Landlord Email : </label>
                         <input className="entry" 
                           type="text" placeholder="Landlord Email Address : "
                           onChange={event => this.setState({Landlord_Email: event.target.value})}
                           />
                       </Form.Field>  
                        <Form.Field>
-                        <label>Tenant Email : </label>
+                        <label className="label">Tenant Email : </label>
                         <input className="entry" 
                           type="text" placeholder="Tenant Email Address : "
                           onChange={event => this.setState({Tenant_Email: event.target.value})} />

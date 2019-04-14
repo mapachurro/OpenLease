@@ -58,4 +58,9 @@ code {
 .entry {
   margin-left: 10px;
   margin-top: 5px;
+  width: 80%;
+}
+
+.label {
+  font-size: 5vw;
 }

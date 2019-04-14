@@ -1,12 +1,16 @@
-name := """openlease"""
+name := "openlease"
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
 
 herokuAppName in Compile := "desolate-lake-45911"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala).settings(
   watchSources ++= (baseDirectory.value / "public/ui" ** "*").get
 )
+
+packageName in Docker := "openlease-docker"
+
+dockerExposedPorts := Seq(3000)
 
 resolvers += Resolver.sonatypeRepo("snapshots")
 
