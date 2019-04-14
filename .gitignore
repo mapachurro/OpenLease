@@ -56,3 +56,17 @@ target
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+/Index_view.png
+/Former_leases.png
+/Login_view.png
+/New_lease.png
+/rootkey.csv
+/ec2keys.jpg
+/openleaseapisample.js
+/oliverskey.txt
+/'pre-edit template 4-8-19.txt'
+/ubunutkeys.jpg
+/appspec.yml
+/buildspec.yml
+/get-pip.py
