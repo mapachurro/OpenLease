@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+
+  build:
+    commands: sbt run
+
+artifacts:
+  files:
+    - '**/*'

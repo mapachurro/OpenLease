@@ -1,0 +1,15 @@
+
+version: 0.0
+os: linux
+files:
+  - source: /index.html
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: deploy/before_install.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: deploy/after_start.sh
+      timeout: 300
+      runas: root

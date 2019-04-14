@@ -32,3 +32,5 @@ yarn-error.log*
 /oliverskey.txt
 /pre-edit template 4-8-19.txt
 /ubunutkeys.jpg
+/appspec.yml
+/buildspec.yml
