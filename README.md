@@ -28,18 +28,31 @@ The following need to be installed:
 The software has been developed in a Windows environment and is being deployed in Linux. If you're trying to set it up on a remote server, these links will be helpful in order:
 
 -generate keys and add them to git:
+
 https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
 -become owner of directory:
+
 https://stackoverflow.com/questions/20276895/could-not-create-work-tree-dir-example-com-permission-denied
+
 -git clone the repo:
+
 git clone git@github.com:mapachurro/OpenLease.git
+
 -install nodejs
+
 https://github.com/nodesource/distributions/blob/master/README.md
+
 -install java, JRE and JDK as per the following:
+
 https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
+
 -install sbt as per:
+
 https://www.scala-sbt.org/1.0/docs/Installing-sbt-on-Linux.html
+
 -run 'npm install' in ./ui
+
 
 RUN SCRIPT:
 In root directory, run 'sbt stage' and check for any errors that need to be fixed. Then run 'sbt run'.
