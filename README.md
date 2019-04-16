@@ -1,3 +1,5 @@
+![alt text](https://github.com/mapachurro/OpenLease/blob/master/Presentation%20Screen.png)
+
 # openLease
 A mobile-focused platform, written in Scala, to leverage the capabilities of OpenLaw's smart contracts and offer the ability to execute a real estate lease on the blockchain.
 
