@@ -10,8 +10,8 @@ import 'dotenv'
     dotenv.config(); 
     const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
     const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
-    const OPENLAW_USER = "oliver.renwick@gmail.com"; //add your Openlaw login email
-    const OPENLAW_PASSWORD = "Palabra12" //add your Openlaw password
+    const OPENLAW_USER = ""; //add your Openlaw login email
+    const OPENLAW_PASSWORD = "" //add your Openlaw password
     //create config 
     console.log("user: " + process.env.REACT_APP_OPENLAW_USER)
     const openLawConfig = {
@@ -110,11 +110,6 @@ class App extends Component {
     }
      console.log("my compiled template..", myCompiledTemplate);
      this.setState({myCompiledTemplate});
-
-      // const userToken = await apiClient.getAccessToken(
-      //   "9285a52486fe289ad25c31df48d50107cc874adadd37e15eff42083aa7ca551e"
-      // );
-      // console.log(userToken)
 
     } catch (error) {
       // Catch any errors for any of the above operations.
