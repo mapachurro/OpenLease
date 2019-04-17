@@ -70,3 +70,4 @@ target
 /appspec.yml
 /buildspec.yml
 /get-pip.py
+/admincredentials.csv
