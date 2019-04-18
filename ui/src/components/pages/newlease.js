@@ -48,7 +48,7 @@ class App extends Component {
 
    UserObject: {},
    draftId: "",
-   myTemplate: "",
+   myTemplate: {},
    creatorId: "",
    web3: null,
    accounts: null,
@@ -245,7 +245,7 @@ Eventually this function will no longer be needed. */
       // console.log("Adminified!")
 
       //add Open Law params to be uploaded
-      const uploadParams = await this.buildOpenLawParamsObj(this.state.myTemplate,this.state.creatorId);
+      const uploadParams = await this.buildOpenLawParamsObj(this.state.myTemplate);
       console.log('parameters from user..', uploadParams.parameters);
       console.log('all parameters uploading...', uploadParams);
       
