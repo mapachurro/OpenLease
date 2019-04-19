@@ -5,6 +5,7 @@ import Newlease from "./components/pages/newlease.js";
 import Overview from "./components/pages/overview.js";
 import Previous from "./components/pages/previous.js";
 import Signup from "./components/pages/signup.js"
+import "./components/pages/newRlease"
 // import Autofill from "./components/pages/autofill.js"
 
 
@@ -16,7 +17,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Overview} />
         <Route exact path="/signup" component={Signup} />
-        <Route exact path="/login" component={Login} />  
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/newRlease" />  
         <Route path="/new" component={Newlease} />
         <Route exact path="/previous" component = {Previous} />
         {/* <Route exact path="/autofill" component = {Autofill} /> */}

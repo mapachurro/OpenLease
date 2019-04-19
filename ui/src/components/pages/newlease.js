@@ -24,7 +24,7 @@ import 'dotenv'
     //create an instance of the API client with url as parameter
     const apiClient = new APIClient(URL);
 
-class App extends Component {
+class Newlease extends Component {
   
 //initial state of variables for BillOfSale Template, and web3,etc
   state = { 
@@ -414,6 +414,6 @@ Eventually this function will no longer be needed. */
   }
 }
 
-export default App;
+export default Newlease;
 
 
