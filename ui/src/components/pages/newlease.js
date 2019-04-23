@@ -10,8 +10,8 @@ import 'dotenv'
     dotenv.config(); 
     const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
     const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
-    const OPENLAW_USER = ""; //add your Openlaw login email
-    const OPENLAW_PASSWORD = "" //add your Openlaw password
+    const OPENLAW_USER = "oliver.renwick@gmail.com"; //add your Openlaw login email
+    const OPENLAW_PASSWORD = "Palabra12" //add your Openlaw password
     //create config 
     // console.log("user: " + process.env.REACT_APP_OPENLAW_USER)
     const openLawConfig = {
@@ -260,11 +260,12 @@ Eventually this function will no longer be needed. */
       console.log('all parameters uploading...', uploadParams);
       
       //uploadDraft, sends a draft contract to "Draft Management", which can be edited. 
-      const draftId = await apiClient.uploadDraft(uploadParams.parameters);
-      console.log('draft id..', draftId);
-      this.setState({draftId});
+      // const draftId = await apiClient.uploadDraft(uploadParams.parameters);
+      // console.log('draft id..', draftId);
+      // this.setState({draftId});
 
       // uploadContract, this sends a completed contract to "Contract Management", where it can not be edited.
+      console.log('parameters uploaded')
       const result = await apiClient.uploadContract(uploadParams);
       console.log('results..', result)
        }
@@ -338,7 +339,7 @@ Eventually this function will no longer be needed. */
                         <label className="label">Rent amount :</label>
                         <input className="entry" 
                       placeholder = "Monthly rent payment"
-                          onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
+                          onChange = {event => this.setState({Rent_Amount: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
@@ -352,7 +353,7 @@ Eventually this function will no longer be needed. */
                         <label className="label">Returned check fee :</label>
                         <input className="entry" 
                       placeholder = "Fee for returned checks"
-                          onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
+                          onChange = {event => this.setState({Returned_Check_Fee: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
@@ -380,7 +381,7 @@ Eventually this function will no longer be needed. */
                         <label className="label">Daily Animal Fee : </label>
                         <input className="entry" 
                           placeholder = 'Daily penalty'
-                          onChange = {event => this.setState({Daily_Animal_Restriction_Fee: event.target.value})}
+                          onChange = {event => this.setState({Daily_Animal_Restriction_Violation_Fee: event.target.value})}
                          />
                       </Form.Field>  
                       <Form.Field>
