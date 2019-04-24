@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
 import Login from "./components/pages/login";
-import Newlease from "./components/pages/newlease.js";
+import createNew from "./components/pages/createNew";
+import Newlease from "./components/pages/newlease";
 import Overview from "./components/pages/overview.js";
 import Previous from "./components/pages/previous.js";
 import Signup from "./components/pages/signup.js"
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/login" component={Login} />
         <Route exact path="/newRlease" />  
         <Route path="/new" component={Newlease} />
+        <Route path="/createnew" component={createNew} />
         <Route exact path="/previous" component = {Previous} />
         {/* <Route exact path="/autofill" component = {Autofill} /> */}
       </Switch>

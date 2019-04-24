@@ -50,9 +50,9 @@ class Newlease extends Component {
    draftId: "",
    myTemplate: {},
    creatorId: "",
-   web3: null,
-   accounts: null,
-   contract: null,
+  //  web3: null,
+  //  accounts: null,
+  //  contract: null,
    instance: null,
    myTitle: "",
    myCompiledTemplate: null,
@@ -328,7 +328,7 @@ Eventually this function will no longer be needed. */
                         <label className="label">Rent amount :</label>
                         <input className="entry" 
                       placeholder = "Monthly rent payment"
-                          onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
+                          onChange = {event => this.setState({Rent_Amount: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
@@ -342,7 +342,7 @@ Eventually this function will no longer be needed. */
                         <label className="label">Returned check fee :</label>
                         <input className="entry" 
                       placeholder = "Fee for returned checks"
-                          onChange = {event => this.setState({Rent_Due_Date: event.target.value})}
+                          onChange = {event => this.setState({Returned_Check_Fee: event.target.value})}
                         />
                         </Form.Field>
                         <Form.Field>
