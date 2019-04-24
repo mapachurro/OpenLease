@@ -14,6 +14,11 @@
 
 // // https://docs.openlaw.io/openlaw-object/#compiletemplate
 // const { compiledTemplate } = Openlaw.compileTemplate('**Name**: [[]] [[]]');
+
+// apiClient.login('oliver.renwick@gmail.com', 'Palabra12');
+ 
+// // https://docs.openlaw.io/openlaw-object/#compiletemplate
+// const { compiledTemplate } = Openlaw.compileTemplate('**Name**: [[First Name]] [[Last Name]]');
 // // https://docs.openlaw.io/openlaw-object/#execute
 // const { executionResult, errorMessage } = Openlaw.execute(compiledTemplate, {}, {});
 // // https://docs.openlaw.io/openlaw-object/#getexecutedvariables
@@ -27,7 +32,7 @@
 // if (errorMessage) {
 //   console.error('Openlaw Execution Error:', errorMessage);
 // }
-
+ 
 // const onChange = (key, value) => console.log('KEY:', key, 'VALUE:', value);
 
 // const App = () => (

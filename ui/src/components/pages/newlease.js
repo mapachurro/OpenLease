@@ -10,10 +10,10 @@ import 'dotenv'
     dotenv.config(); 
     const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
     const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
-    const OPENLAW_USER = ""; //add your Openlaw login email
-    const OPENLAW_PASSWORD = "" //add your Openlaw password
+    const OPENLAW_USER = "oliver.renwick@gmail.com"; //add your Openlaw login email
+    const OPENLAW_PASSWORD = "Palabra12" //add your Openlaw password
     //create config 
-    console.log("user: " + process.env.REACT_APP_OPENLAW_USER)
+    // console.log("user: " + process.env.REACT_APP_OPENLAW_USER)
     const openLawConfig = {
       server:URL, 
       templateName:TEMPLATE_NAME,
@@ -81,18 +81,28 @@ class Newlease extends Component {
     //Login to your instance with your email and password, return JSON 
     apiClient.login(openLawConfig.userName,openLawConfig.password).then(console.log);
 
+    // const drafts = apiClient.getDraftVersions(
+    //   "9285a52486fe289ad25c31df48d50107cc874adadd37e15eff42083aa7ca551e",
+    //   1,
+    //   1,
+    // );
+    // console.log("drafts: " + drafts[0]);
+    // const userId = drafts.creatorId;
+    // console.log("userId, that is, creator ID: " + userId)
+
     //Retrieve your OpenLaw template by name, use async/await 
     const myTemplate = await apiClient.getTemplate(openLawConfig.templateName);
-   
+   console.log("myTemplate: " + myTemplate)
    //pull properties off of JSON and make into variables
     const myTitle = myTemplate.title;
     //set title state
     this.setState({myTitle});
+    //s
 
     //Retreive the OpenLaw Template, including MarkDown
     const myContent = myTemplate.content;
     this.setState({myTemplate});
-    console.log('myTemplate..',myTemplate);
+    console.log('myTemplate..', myTemplate);
 
     //Get the most recent version of the OpenLaw API Tutorial Template
     const versions = await apiClient.getTemplateVersions(openLawConfig.templateName, 20, 1);
@@ -193,15 +203,15 @@ Eventually this function will no longer be needed. */
 
   const landlord = await apiClient.getUserDetails(this.state.Landlord_Email);
   const tenant = await apiClient.getUserDetails(this.state.Tenant_Email);
-  console.log("landlord name: " + landlord.name)
-  console.log("tenant name: " + tenant.name)
+  // console.log("landlord name: " + landlord.name)
+  // console.log("tenant name: " + tenant.name)
   console.log(this.state.UserObject)
 
     const object = {
       templateId: myTemplate.id,
       title: myTemplate.title,
       text: myTemplate.content,
-      creator: this.state.creatorId,
+      creator: OPENLAW_USER,
       parameters: {
         "Effective Date": this.state.Effective_Date,
         "Landlord Name": this.state.Landlord_Name,
@@ -211,7 +221,7 @@ Eventually this function will no longer be needed. */
         "Lease Termination Date": this.state.Lease_Termination_Date,
         "Rent Amount": this.state.Rent_Amount,
         "Rent Due Date": this.state.Rent_Due_Date,
-        "Returned Check Fee": "",
+        "Returned Check Fee": this.state.Returned_Check_Fee,
         "Rent Increase Date": this.state.Rent_Increase_Date,
         "Security Deposit Amount": this.state.Security_Deposit_Amount,
         "Premises Description": this.state.Premises_Description,
@@ -224,7 +234,7 @@ Eventually this function will no longer be needed. */
       agreements: {},
       readonlyEmails: [],
       editEmails: [],
-      draftId: this.state.draftId
+      draftId: myTemplate.id
     };
     console.log(object)
     return object;
@@ -250,13 +260,14 @@ Eventually this function will no longer be needed. */
       console.log('all parameters uploading...', uploadParams);
       
       //uploadDraft, sends a draft contract to "Draft Management", which can be edited. 
-      const draftId = await apiClient.uploadDraft(uploadParams.parameters);
-      console.log('draft id..', draftId);
-      this.setState({draftId});
+      // const draftId = await apiClient.uploadDraft(uploadParams.parameters);
+      // console.log('draft id..', draftId);
+      // this.setState({draftId});
 
-      //uploadContract, this sends a completed contract to "Contract Management", where it can not be edited.
-      // const result = await apiClient.uploadContract(uploadParams);
-      // console.log('results..', result)
+      // uploadContract, this sends a completed contract to "Contract Management", where it can not be edited.
+      console.log('parameters uploaded')
+      const result = await apiClient.uploadContract(uploadParams);
+      console.log('results..', result)
        }
     catch(error){
       console.log(error);
@@ -370,7 +381,7 @@ Eventually this function will no longer be needed. */
                         <label className="label">Daily Animal Fee : </label>
                         <input className="entry" 
                           placeholder = 'Daily penalty'
-                          onChange = {event => this.setState({Daily_Animal_Restriction_Fee: event.target.value})}
+                          onChange = {event => this.setState({Daily_Animal_Restriction_Violation_Fee: event.target.value})}
                          />
                       </Form.Field>  
                       <Form.Field>
