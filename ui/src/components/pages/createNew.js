@@ -80,12 +80,6 @@ class CreateNew extends Component {
 
   };
 
-  // 
-  //  
-  // Beginning of openlaw-elements example code
-  // 
-  // 
-
   componentDidMount = async () => {
     this.update();
 
