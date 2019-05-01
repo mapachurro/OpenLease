@@ -1,17 +1,15 @@
 // import React, { Component, Fragment, useEffect, useState } from "react";
 import React from "react";
 import { APIClient, Openlaw } from 'openlaw';
-import {Container, Loader, Button} from "semantic-ui-react";
-import "semantic-ui-css/semantic.min.css";
+import { Container, Loader, Button } from "semantic-ui-react";
+// import "semantic-ui-css/semantic.min.css";
 import 'dotenv'
 import OpenLawForm from 'openlaw-elements';
-import '../../../node_modules/openlaw-elements/dist/openlaw-elements.min.css'   
+import '../../../node_modules/openlaw-elements/dist/openlaw-elements.min.css'
 import Navbar from "../navbar";
-import Collapsible from "../../Collapsible";
 import { render } from 'react-dom';
 
 require("dotenv").config();
-
 
 const EFFECTIVE_DATE = "Effective Date";
 const LANDLORD_NAME = "Landlord Name";
@@ -30,11 +28,10 @@ const LANDLORD_NOTICE_ADDRESS = "Notice for mail to landlord";
 const LANDLORD_EMAIL = "contact email for landlord";
 const TENANT_EMAIL = "contact email for tenant";
 
-
 const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
 const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
-const OPENLAW_USER = ""; //add your Openlaw login email
-const OPENLAW_PASSWORD = "" //add your Openlaw password
+const OPENLAW_USER = "oliver.renwick@gmail.com"; //add your Openlaw login email
+const OPENLAW_PASSWORD = "Palabra12" //add your Openlaw password
 //create config 
 console.log("user: " + process.env.REACT_APP_OPENLAW_USER)
 const openLawConfig = {
@@ -48,10 +45,9 @@ const apiClient = new APIClient(URL);
 
 class CreateNew extends React.Component {
 
-  componentDidMount = async () => {
-  // initialize field variables, OpenLaw Object Variables, etc
-  this.state = {
-
+  // initial state declaration
+  state = {
+    // Template values
     Effective_Date: undefined,
     Landlord_Name: undefined,
     Tenant_Name: undefined,
@@ -69,142 +65,151 @@ class CreateNew extends React.Component {
     Landlord_Email: undefined,
     Tenant_Email: undefined,
 
-    UserObject: {},
-    draftId: '',
-    template: {},
-    creatorId: '',
-    title: '',
+    // OpenLaw variables
+    title: "",
+    template: "",
+    creatorId: "",
     compiledTemplate: null,
-
-    definedValues: {},
-    executionResult: {},
     parameters: {},
-    variables: {},
+    executionResult: null,
+    variables: null,
+    draftId: "",
+
+    UserObject: {},
   };
 
-    // Instantiate OpenLaw API, log in
-    apiClient
-      .login(openLawConfig.userName, openLawConfig.password)
-      .then(console.log);
-    console.log("logged in!")
-    //Retrieve your OpenLaw template by name, use async/await 
-    const template = await apiClient.getTemplate(openLawConfig.templateName);
-
-    //Pass the returned object's title into a variable
-    const title = template.title;
-
-    // //set title state
-    this.setState({ title });
-
-    //Pass the template content into a variable
-    const myContent = template.content;
-    this.setState({ template });
-    console.log('template..', template);
-
-    //Get the most recent version of the template
-    const versions = await apiClient.getTemplateVersions(openLawConfig.templateName, 20, 1);
-    console.log("versions..", versions[0], versions.length);
-
-    //Get the creatorID from the template. 
-    const creatorId = versions[0].creatorId;
-    console.log("creatorId..",creatorId);
-    this.setState({creatorId});
-
-    //Get my compiled Template
-    const compiledTemplate = await Openlaw.compileTemplate(myContent);
-    if (compiledTemplate.isError) {
-      throw compiledTemplate.errorMessage;
-    }
-    this.setState({ compiledTemplate });
-    console.log("content inside didMount: " + this.state.template.content)
+  componentDidMount = async () => {
     
-    const parameters = {};
-    const { executionResult, errorMessage } = await Openlaw.execute(
-      compiledTemplate.compiledTemplate,
-      {},
-      parameters
-    );
+    try {
+    
+      // Instantiate OpenLaw API, log in
+      apiClient
+        .login(openLawConfig.userName, openLawConfig.password)
+        .then(console.log);
+      console.log("logged in!")
 
-    console.log("execution result: ", executionResult);
+      //Retrieve your OpenLaw template by name
+      const template = await apiClient.getTemplate(openLawConfig.templateName);
 
-    if (errorMessage) {
-      console.error("OpenLaw Execution Error: ", errorMessage);
+      //Pass the returned object's title into a variable
+      const title = template.title;
+
+      // set title state
+      // this.setState({ title });
+
+      //Pass the template content into a variable
+      const myContent = template.content;
+      console.log("Template content: ", myContent)
+
+      //Get the most recent version of the template
+      const versions = await apiClient.getTemplateVersions(
+        openLawConfig.templateName, 20, 1);
+      console.log("Template versions: ", versions[0], versions.length);
+
+      //Get the creatorID from the template. 
+      const creatorId = versions[0].creatorId;
+      console.log("creatorId..", creatorId);
+      // this.setState({ creatorId });
+
+      //Get my compiled Template
+      const compiledTemplate = await Openlaw.compileTemplate(myContent);
+      if (compiledTemplate.isError) {
+        throw "Template errror: ", compiledTemplate.errorMessage;
+      }
+      this.setState({ compiledTemplate });
+      console.log("content inside didMount: " + this.state.template.content)
+
+      const parameters = {};
+      const { executionResult, errorMessage } = await Openlaw.execute(
+        compiledTemplate.compiledTemplate,
+        {},
+        parameters
+      );
+
+      console.log("execution result: ", executionResult);
+
+      if (errorMessage) {
+        console.error("OpenLaw Execution Error: ", errorMessage);
+      }
+
+      const variables = await Openlaw.getExecutedVariables(executionResult, {});
+      console.log("variables:", variables);
+
+      this.setState({
+        title,
+        template,
+        creatorId,
+        compiledTemplate,
+        parameters,
+        executionResult,
+        variables
+      });
+    } //try
+    catch (error) {
+      console.log("unsuccessful submission", error);
     }
-
-    const variables = await Openlaw.getExecutedVariables(executionResult, {});
-    console.log("variables:", variables);
-
-    this.setState({
-      title,
-      template,
-      creatorId,
-      compiledTemplate,
-      parameters,
-      executionResult,
-      variables
-    });
   };
 
   onChange = (key, value) => {
-    switch(key){
-      case EFFECTIVE_DATE:  
-        this.setState({Effective_Date: value})
+    switch (key) {
+      case EFFECTIVE_DATE:
+        this.setState({ Effective_Date: value })
         break;
-        case LANDLORD_NAME:  
-        this.setState({Landlord_Name: value})
+      case LANDLORD_NAME:
+        this.setState({ Landlord_Name: value })
         break;
-        case TENANT_NAME:  
-        this.setState({Tenant_Name: value})
+      case TENANT_NAME:
+        this.setState({ Tenant_Name: value })
         break;
-        case PROPERTY_NAME:  
-        this.setState({Property_Name: value})
+      case PROPERTY_NAME:
+        this.setState({ Property_Name: value })
         break;
-        case LEASE_COMMENCEMENT_DATE:  
-        this.setState({Lease_Commencement_Date: value})
+      case LEASE_COMMENCEMENT_DATE:
+        this.setState({ Lease_Commencement_Date: value })
         break;
-        case LEASE_TERMINATION_DATE:  
-        this.setState({Lease_Termination_Date: value})
+      case LEASE_TERMINATION_DATE:
+        this.setState({ Lease_Termination_Date: value })
         break;
-        case RENT_AMOUNT:  
-        this.setState({Rent_Amount: value})
+      case RENT_AMOUNT:
+        this.setState({ Rent_Amount: value })
         break;
-        case RENT_DUE_DATE:  
-        this.setState({Rent_Due_Date: value})
+      case RENT_DUE_DATE:
+        this.setState({ Rent_Due_Date: value })
         break;
-        case RETURNED_CHECK_FEE:  
-        this.setState({Returned_Check_Fee: value})
+      case RETURNED_CHECK_FEE:
+        this.setState({ Returned_Check_Fee: value })
         break;
-        case RENT_INCREASE_DATE:  
-        this.setState({Rent_Increase_Date: value})
+      case RENT_INCREASE_DATE:
+        this.setState({ Rent_Increase_Date: value })
         break;
-        case SECURITY_DEPOSIT_AMOUNT:  
-        this.setState({Security_Deposit_Amount: value})
+      case SECURITY_DEPOSIT_AMOUNT:
+        this.setState({ Security_Deposit_Amount: value })
         break;
-        case PREMISES_DESCRIPTION:  
-        this.setState({Premises_Description: value})
+      case PREMISES_DESCRIPTION:
+        this.setState({ Premises_Description: value })
         break;
-        case DAILY_ANIMAL_RESTRICTION_VIOLATION_FEE:  
-        this.setState({Daily_Animal_Restriction_Violation_Fee: value})
+      case DAILY_ANIMAL_RESTRICTION_VIOLATION_FEE:
+        this.setState({ Daily_Animal_Restriction_Violation_Fee: value })
         break;
-        case LANDLORD_NOTICE_ADDRESS:  
-        this.setState({Landlord_Notice_Address: value})
+      case LANDLORD_NOTICE_ADDRESS:
+        this.setState({ Landlord_Notice_Address: value })
         break;
-        case LANDLORD_EMAIL:  
-        this.setState({Landlord_Email: value})
+      case LANDLORD_EMAIL:
+        this.setState({ Landlord_Email: value })
         break;
-        case TENANT_EMAIL:  
-        this.setState({Tenant_Email: value})
+      case TENANT_EMAIL:
+        this.setState({ Tenant_Email: value })
         break;
     }
     console.log("KEY: ", key, "VALUE: ", value);
   };
 
   render() {
-    const { variables, parameters, executionResult} = this.state;
+    const { variables, parameters, executionResult } = this.state;
     if (!executionResult) return <Loader active />;
     return (
       <Container text style={{ marginTop: "7em" }}>
-      <Navbar />
+        <Navbar />
         <h1>Openlaw Income Assignment Agreement</h1>
         <OpenLawForm
           apiClient={apiClient}
@@ -214,7 +219,7 @@ class CreateNew extends React.Component {
           openLaw={Openlaw}
           variables={variables}
         />
-        </Container>
+      </Container>
     );
   }
 }

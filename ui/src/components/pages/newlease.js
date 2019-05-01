@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import DraftOhioResidentialLease from "../../contracts/DraftOhioResidentialLease.json";
-// import getWeb3 from "../../utils/getWeb3";
 import { Container, Grid, Button, Form} from 'semantic-ui-react';
 import { APIClient, Openlaw } from 'openlaw';
 import Navbar from "../navbar";
@@ -50,45 +48,17 @@ class Newlease extends Component {
    draftId: "",
    myTemplate: {},
    creatorId: "",
-  //  web3: null,
-  //  accounts: null,
-  //  contract: null,
+
    instance: null,
    myTitle: "",
    myCompiledTemplate: null,
-
   };
 
   componentDidMount = async () => {
     try {
-      //Get network provider and web3 instance.
-      // const web3 = await getWeb3();
-      // const accounts = await web3.eth.getAccounts();
-      // console.log(accounts[0]);
-      // Get the contract instance.
-      // const networkId = await web3.eth.net.getId();
-      //Create an instance of smart contract 
-      // const deployedNetwork = DraftOhioResidentialLease.networks[networkId];
-      // const instance = new web3.eth.Contract(
-        // DraftOhioResidentialLease.abi,
-        // deployedNetwork && deployedNetwork.address,
-      // );
-
-      // Set web3, accounts, and contract to the state, and then proceed with an
-      // example of interacting with the contract's methods.
-      // this.setState({ web3, accounts, contract: instance }, this.runExample);
 
     //Login to your instance with your email and password, return JSON 
     apiClient.login(openLawConfig.userName,openLawConfig.password).then(console.log);
-
-    // const drafts = apiClient.getDraftVersions(
-    //   "9285a52486fe289ad25c31df48d50107cc874adadd37e15eff42083aa7ca551e",
-    //   1,
-    //   1,
-    // );
-    // console.log("drafts: " + drafts[0]);
-    // const userId = drafts.creatorId;
-    // console.log("userId, that is, creator ID: " + userId)
 
     //Retrieve your OpenLaw template by name, use async/await 
     const myTemplate = await apiClient.getTemplate(openLawConfig.templateName);
