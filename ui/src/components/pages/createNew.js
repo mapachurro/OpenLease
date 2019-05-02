@@ -7,7 +7,9 @@ import 'dotenv'
 import OpenLawForm from 'openlaw-elements';
 import '../../../node_modules/openlaw-elements/dist/openlaw-elements.min.css'
 import Navbar from "../navbar";
+import SubmitButton from "../submitButton";
 import { render } from 'react-dom';
+
 
 require("dotenv").config();
 
@@ -30,8 +32,8 @@ const TENANT_EMAIL = "contact email for tenant";
 
 const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
 const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
-const OPENLAW_USER = "oliver.renwick@gmail.com"; //add your Openlaw login email
-const OPENLAW_PASSWORD = "Palabra12" //add your Openlaw password
+const OPENLAW_USER = ""; //add your Openlaw login email
+const OPENLAW_PASSWORD = "" //add your Openlaw password
 //create config 
 console.log("user: " + process.env.REACT_APP_OPENLAW_USER)
 const openLawConfig = {
@@ -210,7 +212,7 @@ class CreateNew extends React.Component {
     return (
       <Container text style={{ marginTop: "7em" }}>
         <Navbar />
-        <h1>Openlaw Income Assignment Agreement</h1>
+        <h1>Draft Ohio Residential Lease</h1>
         <OpenLawForm
           apiClient={apiClient}
           executionResult={executionResult}
@@ -219,6 +221,7 @@ class CreateNew extends React.Component {
           openLaw={Openlaw}
           variables={variables}
         />
+
       </Container>
     );
   }

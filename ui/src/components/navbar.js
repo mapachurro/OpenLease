@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import "../index.css"
 
 class Navbar extends Component {
-  state = {
-    loggedIn: false,
-  };
 render(){
 return(
     <div>
