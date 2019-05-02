@@ -7,9 +7,8 @@ import 'dotenv'
 import OpenLawForm from 'openlaw-elements';
 import '../../../node_modules/openlaw-elements/dist/openlaw-elements.min.css'
 import Navbar from "../navbar";
-import SubmitButton from "../submitButton";
-import { render } from 'react-dom';
-
+// import SubmitButton from "../submitButton.js"
+// import { render } from 'react-dom';
 
 require("dotenv").config();
 
@@ -32,8 +31,8 @@ const TENANT_EMAIL = "contact email for tenant";
 
 const URL = "https://app.openlaw.io";  //url for your openlaw instance eg. "http://myinstancename.openlaw.io"
 const TEMPLATE_NAME = "Draft Ohio Residential Lease"; //name of template stored on Openlaw
-const OPENLAW_USER = ""; //add your Openlaw login email
-const OPENLAW_PASSWORD = "" //add your Openlaw password
+const OPENLAW_USER = "oliver.renwick@gmail.com"; //add your Openlaw login email
+const OPENLAW_PASSWORD = "Palabra12" //add your Openlaw password
 //create config 
 console.log("user: " + process.env.REACT_APP_OPENLAW_USER)
 const openLawConfig = {
@@ -96,9 +95,6 @@ class CreateNew extends React.Component {
       //Pass the returned object's title into a variable
       const title = template.title;
 
-      // set title state
-      // this.setState({ title });
-
       //Pass the template content into a variable
       const myContent = template.content;
       console.log("Template content: ", myContent)
@@ -111,12 +107,11 @@ class CreateNew extends React.Component {
       //Get the creatorID from the template. 
       const creatorId = versions[0].creatorId;
       console.log("creatorId..", creatorId);
-      // this.setState({ creatorId });
 
       //Get my compiled Template
       const compiledTemplate = await Openlaw.compileTemplate(myContent);
       if (compiledTemplate.isError) {
-        throw "Template errror: ", compiledTemplate.errorMessage;
+        throw "Template errror: " + compiledTemplate.errorMessage;
       }
       this.setState({ compiledTemplate });
       console.log("content inside didMount: " + this.state.template.content)
@@ -136,7 +131,7 @@ class CreateNew extends React.Component {
 
       const variables = await Openlaw.getExecutedVariables(executionResult, {});
       console.log("variables:", variables);
-
+      
       this.setState({
         title,
         template,
@@ -146,10 +141,12 @@ class CreateNew extends React.Component {
         executionResult,
         variables
       });
+
     } //try
     catch (error) {
       console.log("unsuccessful submission", error);
     }
+    
   };
 
   onChange = (key, value) => {
@@ -206,6 +203,55 @@ class CreateNew extends React.Component {
     console.log("KEY: ", key, "VALUE: ", value);
   };
 
+  // executeContract = async () => {
+  //   this.state = {
+  //   // Template values
+  //   Effective_Date: undefined,
+  //   Landlord_Name: undefined,
+  //   Tenant_Name: undefined,
+  //   Property_Location: undefined,
+  //   Lease_Commencement_Date: undefined,
+  //   Lease_Termination_Date: undefined,
+  //   Rent_Amount: undefined,
+  //   Rent_Due_Date: undefined,
+  //   Returned_Check_Fee: undefined,
+  //   Rent_Increase_Date: undefined,
+  //   Security_Deposit_Amount: undefined,
+  //   Premises_Description: undefined,
+  //   Daily_Animal_Restriction_Violation_Fee: undefined,
+  //   Landlord_Notice_Address: undefined,
+  //   Landlord_Email: undefined,
+  //   Tenant_Email: undefined,
+
+  //   // OpenLaw variables
+  //   title: "",
+  //   template: "",
+  //   creatorId: "",
+  //   compiledTemplate: null,
+  //   parameters: {},
+  //   executionResult: null,
+  //   variables: null,
+  //   draftId: "",
+
+  //   UserObject: {},
+
+  //   }
+
+  //   const signatures = {
+
+  //   }
+
+  //   try {
+  //     Openlaw.executeForReview(this.state.compiledTemplate, signatures, {}, parameters )
+   
+  //   } //end try
+  //   catch (error) {
+  //     console.log("unsuccessful submission", error);
+  //   }
+
+
+  // }
+
   render() {
     const { variables, parameters, executionResult } = this.state;
     if (!executionResult) return <Loader active />;
@@ -221,7 +267,7 @@ class CreateNew extends React.Component {
           openLaw={Openlaw}
           variables={variables}
         />
-
+       <Button onClick={this.executeContract}>Submit for Signatures</Button>
       </Container>
     );
   }
