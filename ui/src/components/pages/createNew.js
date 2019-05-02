@@ -204,52 +204,69 @@ class CreateNew extends React.Component {
   };
 
   // executeContract = async () => {
-  //   this.state = {
+  //  const {
   //   // Template values
-  //   Effective_Date: undefined,
-  //   Landlord_Name: undefined,
-  //   Tenant_Name: undefined,
-  //   Property_Location: undefined,
-  //   Lease_Commencement_Date: undefined,
-  //   Lease_Termination_Date: undefined,
-  //   Rent_Amount: undefined,
-  //   Rent_Due_Date: undefined,
-  //   Returned_Check_Fee: undefined,
-  //   Rent_Increase_Date: undefined,
-  //   Security_Deposit_Amount: undefined,
-  //   Premises_Description: undefined,
-  //   Daily_Animal_Restriction_Violation_Fee: undefined,
-  //   Landlord_Notice_Address: undefined,
-  //   Landlord_Email: undefined,
-  //   Tenant_Email: undefined,
+  //   Effective_Date,
+  //   Landlord_Name,
+  //   Tenant_Name,
+  //   Property_Name,
+  //   Lease_Commencement_Date,
+  //   Lease_Termination_Date,
+  //   Rent_Amount,
+  //   Rent_Due_Date,
+  //   Returned_Check_Fee,
+  //   Rent_Increase_Date,
+  //   Security_Deposit_Amount,
+  //   Premises_Description,
+  //   Daily_Animal_Restriction_Violation_Fee,
+  //   Landlord_Notice_Address,
+  //   Landlord_Email,
+  //   Tenant_Email,
 
   //   // OpenLaw variables
-  //   title: "",
-  //   template: "",
-  //   creatorId: "",
-  //   compiledTemplate: null,
-  //   parameters: {},
-  //   executionResult: null,
-  //   variables: null,
-  //   draftId: "",
+  //   // title,
+  //   // template,
+  //   // creatorId,
+  //   // compiledTemplate,
+  //   // parameters,
+  //   // executionResult,
+  //   // variables,
+  //   // draftId,
 
-  //   UserObject: {},
+  //   // UserObject,
+  //   } =this.state;
 
+  //   const execParameters = {
+  //     [EFFECTIVE_DATE]: Effective_Date,
+  //     [LANDLORD_NAME]: Landlord_Name,
+  //     [TENANT_NAME]: Tenant_Name,
+  //     [PROPERTY_NAME]: Property_Name,
+  //     [LEASE_COMMENCEMENT_DATE]: Lease_Commencement_Date,
+  //     [LEASE_TERMINATION_DATE]: Lease_Termination_Date,
+  //     [RENT_AMOUNT]: Rent_Amount,
+  //     [RENT_DUE_DATE]: Rent_Due_Date,
+  //     [RETURNED_CHECK_FEE]: Returned_Check_Fee,
+  //     [RENT_INCREASE_DATE]: Rent_Increase_Date,
+  //     [SECURITY_DEPOSIT_AMOUNT]: Security_Deposit_Amount,
+  //     [PREMISES_DESCRIPTION]: Premises_Description,
+  //     [DAILY_ANIMAL_RESTRICTION_VIOLATION_FEE]: Daily_Animal_Restriction_Violation_Fee,
+  //     [LANDLORD_NOTICE_ADDRESS]: Landlord_Notice_Address,
+  //     [LANDLORD_EMAIL]: Landlord_Email,
+  //     [TENANT_EMAIL]: Tenant_Email
   //   }
-
-  //   const signatures = {
-
-  //   }
-
-  //   try {
-  //     Openlaw.executeForReview(this.state.compiledTemplate, signatures, {}, parameters )
-   
-  //   } //end try
-  //   catch (error) {
-  //     console.log("unsuccessful submission", error);
-  //   }
-
-
+    
+  //    const signatures = {
+  //       "Oliver Renwick": "Oliver Renwick",
+  //       "Oliver Renwick": "Oliver Renwick"
+  //    }
+    
+  //    try {
+  //      Openlaw.executeForReview(this.state.compiledTemplate, signatures, {}, execParameters )
+  //    } //end try
+    
+  //    catch (error) {
+  //      console.log("unsuccessful submission", error);
+  //    }
   // }
 
   render() {
