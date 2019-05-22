@@ -203,71 +203,75 @@ class CreateNew extends React.Component {
     console.log("KEY: ", key, "VALUE: ", value);
   };
 
-  // executeContract = async () => {
-  //  const {
-  //   // Template values
-  //   Effective_Date,
-  //   Landlord_Name,
-  //   Tenant_Name,
-  //   Property_Name,
-  //   Lease_Commencement_Date,
-  //   Lease_Termination_Date,
-  //   Rent_Amount,
-  //   Rent_Due_Date,
-  //   Returned_Check_Fee,
-  //   Rent_Increase_Date,
-  //   Security_Deposit_Amount,
-  //   Premises_Description,
-  //   Daily_Animal_Restriction_Violation_Fee,
-  //   Landlord_Notice_Address,
-  //   Landlord_Email,
-  //   Tenant_Email,
+  executeContract = async () => {
+    var name1 = "Oliver Renwick";
+    var name2 = "Oliver Renwick";
+    var name3 = "Oliver Renwick";
+    var name4 = "Oliver Renwick";
+   const {
+    // Template values
+    Effective_Date,
+    Landlord_Name,
+    Tenant_Name,
+    Property_Name,
+    Lease_Commencement_Date,
+    Lease_Termination_Date,
+    Rent_Amount,
+    Rent_Due_Date,
+    Returned_Check_Fee,
+    Rent_Increase_Date,
+    Security_Deposit_Amount,
+    Premises_Description,
+    Daily_Animal_Restriction_Violation_Fee,
+    Landlord_Notice_Address,
+    Landlord_Email,
+    Tenant_Email,
 
-  //   // OpenLaw variables
-  //   // title,
-  //   // template,
-  //   // creatorId,
-  //   // compiledTemplate,
-  //   // parameters,
-  //   // executionResult,
-  //   // variables,
-  //   // draftId,
+    // OpenLaw variables
+    // title,
+    // template,
+    // creatorId,
+    // compiledTemplate,
+    // parameters,
+    // executionResult,
+    // variables,
+    // draftId,
 
-  //   // UserObject,
-  //   } =this.state;
+    // UserObject,
+    } =this.state;
 
-  //   const execParameters = {
-  //     [EFFECTIVE_DATE]: Effective_Date,
-  //     [LANDLORD_NAME]: Landlord_Name,
-  //     [TENANT_NAME]: Tenant_Name,
-  //     [PROPERTY_NAME]: Property_Name,
-  //     [LEASE_COMMENCEMENT_DATE]: Lease_Commencement_Date,
-  //     [LEASE_TERMINATION_DATE]: Lease_Termination_Date,
-  //     [RENT_AMOUNT]: Rent_Amount,
-  //     [RENT_DUE_DATE]: Rent_Due_Date,
-  //     [RETURNED_CHECK_FEE]: Returned_Check_Fee,
-  //     [RENT_INCREASE_DATE]: Rent_Increase_Date,
-  //     [SECURITY_DEPOSIT_AMOUNT]: Security_Deposit_Amount,
-  //     [PREMISES_DESCRIPTION]: Premises_Description,
-  //     [DAILY_ANIMAL_RESTRICTION_VIOLATION_FEE]: Daily_Animal_Restriction_Violation_Fee,
-  //     [LANDLORD_NOTICE_ADDRESS]: Landlord_Notice_Address,
-  //     [LANDLORD_EMAIL]: Landlord_Email,
-  //     [TENANT_EMAIL]: Tenant_Email
-  //   }
+    const execParameters = {
+      [EFFECTIVE_DATE]: Effective_Date,
+      [LANDLORD_NAME]: Landlord_Name,
+      [TENANT_NAME]: Tenant_Name,
+      [PROPERTY_NAME]: Property_Name,
+      [LEASE_COMMENCEMENT_DATE]: Lease_Commencement_Date,
+      [LEASE_TERMINATION_DATE]: Lease_Termination_Date,
+      [RENT_AMOUNT]: Rent_Amount,
+      [RENT_DUE_DATE]: Rent_Due_Date,
+      [RETURNED_CHECK_FEE]: Returned_Check_Fee,
+      [RENT_INCREASE_DATE]: Rent_Increase_Date,
+      [SECURITY_DEPOSIT_AMOUNT]: Security_Deposit_Amount,
+      [PREMISES_DESCRIPTION]: Premises_Description,
+      [DAILY_ANIMAL_RESTRICTION_VIOLATION_FEE]: Daily_Animal_Restriction_Violation_Fee,
+      [LANDLORD_NOTICE_ADDRESS]: Landlord_Notice_Address,
+      [LANDLORD_EMAIL]: Landlord_Email,
+      [TENANT_EMAIL]: Tenant_Email
+    }
     
-  //    const signatures = {
-  //       "Oliver Renwick": "Oliver Renwick",
-  //       "Oliver Renwick": "Oliver Renwick"
-  //    }
+     const signatures = {
+        "Oliver Renwick": "Oliver Renwick",
+        "Oliver Renwick": "Oliver Renwick"
+     }
     
-  //    try {
-  //      Openlaw.executeForReview(this.state.compiledTemplate, signatures, {}, execParameters )
-  //    } //end try
+     try {
+       Openlaw.executeForReview(this.state.compiledTemplate, signatures, {}, execParameters )
+     } //end try
     
-  //    catch (error) {
-  //      console.log("unsuccessful submission", error);
-  //    }
-  // }
+     catch (error) {
+       console.log("unsuccessful submission", error);
+     }
+  }
 
   render() {
     const { variables, parameters, executionResult } = this.state;
