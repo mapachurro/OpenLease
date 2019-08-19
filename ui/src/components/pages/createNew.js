@@ -46,6 +46,8 @@ const apiClient = new APIClient(URL);
 
 class CreateNew extends React.Component {
 
+  
+
   // initial state declaration
   state = {
     // Template values
@@ -203,11 +205,9 @@ class CreateNew extends React.Component {
     console.log("KEY: ", key, "VALUE: ", value);
   };
 
-  executeContract = async () => {
-    var name1 = "Oliver Renwick";
-    var name2 = "Oliver Renwick";
-    var name3 = "Oliver Renwick";
-    var name4 = "Oliver Renwick";
+
+ executeContract = () => {
+
    const {
     // Template values
     Effective_Date,
@@ -227,17 +227,6 @@ class CreateNew extends React.Component {
     Landlord_Email,
     Tenant_Email,
 
-    // OpenLaw variables
-    // title,
-    // template,
-    // creatorId,
-    // compiledTemplate,
-    // parameters,
-    // executionResult,
-    // variables,
-    // draftId,
-
-    // UserObject,
     } =this.state;
 
     const execParameters = {
