@@ -1,0 +1,226 @@
+{
+  "contract_name": "WhitelistAuthority",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "codeAddress",
+          "type": "address"
+        },
+        {
+          "name": "sig",
+          "type": "bytes4"
+        },
+        {
+          "name": "can",
+          "type": "bool"
+        }
+      ],
+      "name": "setAnyoneCanCall",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newAuthority",
+          "type": "address"
+        }
+      ],
+      "name": "setAuthority",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "callerAddress",
+          "type": "address"
+        },
+        {
+          "name": "codeAddress",
+          "type": "address"
+        },
+        {
+          "name": "sig",
+          "type": "bytes4"
+        },
+        {
+          "name": "can",
+          "type": "bool"
+        }
+      ],
+      "name": "setCanCall",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "callerAddress",
+          "type": "address"
+        },
+        {
+          "name": "codeAddress",
+          "type": "address"
+        },
+        {
+          "name": "sig",
+          "type": "bytes4"
+        }
+      ],
+      "name": "canCall",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "authority",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "callerAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "codeAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "sig",
+          "type": "bytes4"
+        },
+        {
+          "indexed": false,
+          "name": "can",
+          "type": "bool"
+        }
+      ],
+      "name": "SetCanCall",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "codeAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "sig",
+          "type": "bytes4"
+        },
+        {
+          "indexed": false,
+          "name": "can",
+          "type": "bool"
+        }
+      ],
+      "name": "SetAnyoneCanCall",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "oldOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnerUpdate",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "oldAuthority",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newAuthority",
+          "type": "address"
+        }
+      ],
+      "name": "AuthorityUpdate",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x60606040525b60008054600160a060020a03191633600160a060020a0390811691909117808355604051911691907f343765429aea5a34b3ff6a3785a98a5abb2597aca87bfbb58632c173d585373a908290a35b5b610591806100636000396000f300606060405236156100675763ffffffff60e060020a60003504166302acdb44811461006c57806313af4035146100ab5780637a9e5e4b146100c657806387045369146100e15780638da5cb5b14610126578063b70096131461014f578063bf7e214f1461018f575b610000565b3461000057610097600160a060020a0360043516600160e060020a03196024351660443515156101b8565b604080519115158252519081900360200190f35b34610000576100c4600160a060020a036004351661024d565b005b34610000576100c4600160a060020a03600435166102c6565b005b3461000057610097600160a060020a0360043581169060243516600160e060020a0319604435166064351515610340565b604080519115158252519081900360200190f35b34610000576101336103e4565b60408051600160a060020a039092168252519081900360200190f35b3461000057610097600160a060020a0360043581169060243516600160e060020a0319604435166103f3565b604080519115158252519081900360200190f35b346100005761013361047a565b60408051600160a060020a039092168252519081900360200190f35b60006101c2610489565b15156101cd57610000565b600160a060020a0384166000818152600360209081526040808320600160e060020a0319881680855290835292819020805460ff1916871515908117909155815190815290519293927f2bdcdc8a0588683c308a993fd1243cffdf4da84fc0e91b056dbe7baced0b43b2929181900390910190a35060015b5b9392505050565b610255610489565b151561026057610000565b60008054604051600160a060020a03808516939216917f343765429aea5a34b3ff6a3785a98a5abb2597aca87bfbb58632c173d585373a91a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0383161790555b5b50565b6102ce610489565b15156102d957610000565b600154604051600160a060020a038084169216907fa1d9e0b26ffdd95159e4605308c755be7b756e3e5dd5c5756b4c77f644a5236490600090a36001805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0383161790555b5b50565b600061034a610489565b151561035557610000565b600160a060020a038581166000818152600260209081526040808320948916808452948252808320600160e060020a0319891680855290835292819020805460ff191688151590811790915581519081529051929493927f2f92249a3089c63a63689d414f60bbb3cb57484dfac21dd4e39605e6dd845c62929181900390910190a45060015b5b949350505050565b600054600160a060020a031681565b600160a060020a0382166000908152600360209081526040808320600160e060020a03198516845290915281205460ff161561043157506001610245565b50600160a060020a0380841660009081526002602090815260408083209386168352928152828220600160e060020a0319851683529052205460ff16610245565b5b9392505050565b600154600160a060020a031681565b6000805433600160a060020a03908116911614156104a957506001610560565b600154600160a060020a031615156104c357506000610560565b600154604080516000602091820181905282517fb7009613000000000000000000000000000000000000000000000000000000008152600160a060020a03338116600483015230811660248301528235600160e060020a03191660448301529351939094169363b7009613936064808301949391928390030190829087803b156100005760325a03f1156100005750506040515191506105609050565b5b5b905600a165627a7a723058206361a797599733692d330e0432cf5cef0cdd7d1e45d8ef4d57d8374767be96370029",
+  "networks": {},
+  "schema_version": "0.0.4",
+  "updated_at": 1485371857578
+}

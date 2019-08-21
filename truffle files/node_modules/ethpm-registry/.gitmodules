@@ -1,0 +1,3 @@
+[submodule "contracts/escape"]
+	path = contracts/escape
+	url = git@github.com:ConsenSys/escape.git

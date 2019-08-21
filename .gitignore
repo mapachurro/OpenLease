@@ -1,26 +1,16 @@
-*.class
-*.log
-keys.jpg
-rootkey.csv
-openleasekey.pem
-openleasekey.ppk
-JenkinsInstance.pem
-JenkinsInstance.ppk
-OL_4.pem
-OL_4.ppk
-node_modules
-
-
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-./node_modules
+/node_modules
+/ui/node_modules
+/.pnp
+.pnp.js
 
 # testing
-./coverage
+/coverage
 
 # production
-./build
+/build
 
 # misc
 .DS_Store
@@ -28,34 +18,10 @@ node_modules
 .env.development.local
 .env.test.local
 .env.production.local
-./.env
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-./admincredentials.csv
-./JenkinsInstance.pem
-./JenkinsInstance.ppk
-./keys.jpg
-./OL_4.pem
-./OL_4.ppk
-./rootkey.csv
-
-logs
-target
-./.idea
-./.idea_modules
-./.classpath
-./.project
-./.settings
-./RUNNING_PID
-./public
-
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
 
 /Index_view.png
 /Former_leases.png
@@ -65,9 +31,7 @@ target
 /ec2keys.jpg
 /openleaseapisample.js
 /oliverskey.txt
-/'pre-edit template 4-8-19.txt'
+/pre-edit template 4-8-19.txt
 /ubunutkeys.jpg
 /appspec.yml
 /buildspec.yml
-/get-pip.py
-/admincredentials.csv

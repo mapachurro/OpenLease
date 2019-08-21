@@ -1,60 +1,44 @@
-![alt text](https://github.com/mapachurro/OpenLease/blob/master/Presentation%20Screen.png)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# openLease
-A mobile-focused platform, written in Scala, to leverage the capabilities of OpenLaw's smart contracts and offer the ability to execute a real estate lease on the blockchain.
+## Available Scripts
 
-SUMMARY:
-A mobile-focused web app designed to allow individuals with minimal to no technical expertise to execute binding lease contracts via the OpenLaw project operating on the Ethereum blockchain. 
+In the project directory, you can run:
 
-Huge shout out to https://github.com/yohangz/scala-play-react-seed for providing the basic backend.
+### `npm start`
 
-RATIONALE:
-There are currently tools being developed on the Ethereum blockchain network that enable individuals to enter into binding legal agreements wherein the agreements themselves have programmatic functions; for example, the agreement itself is capable of executing payments, with no additional effort needed by the parties. These agreements have additional advantages, namely of being impossible to lose or misplace -- they will always be available on the blockchain -- and of being executable anywhere. One no longer need meet in person, in front of a notary, etc., to physically sign a lease.
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-These advantages become even more meaningful when one considers the needs of a large portion of the population (at least in the United States) who would be taking advantage of this service: those who live in rented homes. Many renters are economically disadvantaged, and often can be ignorant, for a variety of reasons, of their rights and responsibilities as a tenant. This framework would ideally allow them to have more agency over their contractual agreement: to set the terms for it, and not be as burdened by the process itself, with the assurance that their lease will always be available to them in the event of litigation arising from it. Often someone who is renting does not have reliable access to the internet except on their phone, which is why a mobile-focused approach is so important.
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-FUTURE GOALS:
--Include contractual calls to enable automated payments, both via crypto and via fiat currencies
--Employ OpenLaw's upcoming 'clause' functionality to allow leases to be built in a modular fashion, clause-by-clause
+### `npm test`
 
-HOW TO MAKE IT WORK:
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**Please note -- currently in development**
+### `npm run build`
 
-The following need to be installed:
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
--Java (JRE and JDK)
--Node.js
--sbt
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-The software has been developed in a Windows environment and is being deployed in Linux. If you're trying to set it up on a remote server, these links will be helpful in order:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
--generate keys and add them to git:
+### `npm run eject`
 
-https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
--become owner of directory:
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-https://stackoverflow.com/questions/20276895/could-not-create-work-tree-dir-example-com-permission-denied
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
--git clone the repo:
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-git clone git@github.com:mapachurro/OpenLease.git
+## Learn More
 
--install nodejs
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-https://github.com/nodesource/distributions/blob/master/README.md
-
--install java, JRE and JDK as per the following:
-
-https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
-
--install sbt as per:
-
-https://www.scala-sbt.org/1.0/docs/Installing-sbt-on-Linux.html
-
--run 'npm install' in ./ui
-
-
-RUN SCRIPT:
-In root directory, run 'sbt stage' and check for any errors that need to be fixed. Then run 'sbt run'.
+To learn React, check out the [React documentation](https://reactjs.org/).

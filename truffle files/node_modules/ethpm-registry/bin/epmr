@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+var yargs = require('yargs');
+var EPMRegistry = require("../index");
+var Web3 = require("web3");
+
+var args = yargs
+    .command("new", "Deploy a new instance of the EPM Registry", function(yargs) {
+        return yargs.option('host', {
+          description: "HTTP host of Ethereum node",
+          alias: 'h',
+          default: 'localhost'
+        }).option('port', {
+          description: "HTTP port",
+          alias: 'p',
+          default: '8545'
+        }).option('from', {
+          description: "From address that will send this transaction",
+          alias: 'f',
+          type: "string"
+        }).demand(['from'])
+    })
+    .help()
+    .usage("Usage: $0 [command] [options]")
+
+var argv = args.argv;
+
+if (argv._.length == 0) {
+  args.showHelp();
+}
+
+var command = argv._[0];
+
+if (command == "new") {
+  EPMRegistry.deploy(new Web3.providers.HttpProvider("http://" + argv.host + ":" + argv.port), argv.from).then(function(registry) {
+    console.log("New registry deployed to: " + registry.address);
+  }).catch(function(err) {
+    console.log(err.stack);
+  });
+}

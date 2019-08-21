@@ -1,0 +1,34 @@
+{
+  "contract_name": "Authority",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "callerAddress",
+          "type": "address"
+        },
+        {
+          "name": "codeAddress",
+          "type": "address"
+        },
+        {
+          "name": "sig",
+          "type": "bytes4"
+        }
+      ],
+      "name": "canCall",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "networks": {},
+  "schema_version": "0.0.4",
+  "updated_at": 1485371857574
+}
