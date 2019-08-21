@@ -1,5 +1,9 @@
 ![alt text](https://github.com/mapachurro/OpenLease/blob/master/Presentation%20Screen.png)
 
+¡¡¡NEW!!!
+
+NOW featuring a new branch -- ReactRemaster -- featuring a stripped-down, React-only version of the app, for greater deployability and ease of adaptation.
+
 # openLease
 A mobile-focused platform, written in Scala, to leverage the capabilities of OpenLaw's smart contracts and offer the ability to execute a real estate lease on the blockchain.
 
