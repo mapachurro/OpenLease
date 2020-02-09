@@ -1,3 +1,11 @@
+This is an updated version of the app, stripped of the complex sbt/Scala backend and implemented purely in React.
+
+I am building out an OpenLaw backend thorugh a private instance via Kaleido (www.kaleido.io); the plan is to manage login data and functionality through that priate chain instance, as it would defeat the purpose to have someone go sign up with OpenLaw just to be able to use OpenLease functionality.
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
