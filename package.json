@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://openlease.herokuapp.com/",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "openlaw": "^0.1.25",
     "openlaw-elements": "^1.0.0-beta.16",
     "react": "^16.6.3",
